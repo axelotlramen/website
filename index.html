@@ -8,10 +8,12 @@
         font-family: sans-serif;
         background: #d8e2dc;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         margin: 0;
+        gap: 2rem;
       }
 
       .card {
@@ -65,14 +67,44 @@
         border-radius: 8px;
         text-align: center;
       }
+
+      .mini-card {
+        background: #ffcadd;
+        border-radius: 16px;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        color: #333;
+        width: 250px;
+      }
+
+      .mini-card h3 {
+        margin: 0 0 0.5rem 0;
+        color: #9d8189;
+      }
+
+      .mini-card .line {
+        margin: 0.25rem 0;
+        font-size: 0.95rem;
+        color: #9d8189;
+      }
     </style>
   </head>
   <body>
+    <!-- Main HSR Card -->
     <div class="card" id="card">
       <div class="avatar" id="avatar"></div>
       <div class="nickname">Loading...</div>
       <div class="server-level"></div>
       <div class="stats"></div>
+    </div>
+
+    <!-- Trailblaze Card -->
+    <div class="mini-card" id="trailblaze-card">
+      <h3>Today's Status</h3>
+      <div class="line" id="stamina">Trailblaze Power: --/300</div>
+      <div class="line" id="train">Daily Training: --/500</div>
+      <div class="line" id="logged-in">Logged In Today: --</div>
     </div>
 
     <script>
@@ -84,16 +116,18 @@
           const data = await response.json();
           const sr = data.hsr;
 
+          // Avatar
           const avatarContainer = document.getElementById("avatar");
           avatarContainer.innerHTML = `
-  <img src="${sr.avatar}" alt="Avatar" style="
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-  ">
-`;
+            <img src="${sr.avatar}" alt="Avatar" style="
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            ">
+          `;
 
+          // Main card info
           document.querySelector(".nickname").innerText = sr.nickname;
           document.querySelector(".server-level").innerText =
             `NA | Level ${sr.level}`;
@@ -105,6 +139,16 @@
         <div class="stat">Characters<br><strong>${sr.avatar_count}</strong></div>
         <div class="stat">Chests<br><strong>${sr.chest_count}</strong></div>
       `;
+
+          // Trailblaze mini card
+          const stamina = sr.stamina ?? 0;
+          const train = sr.current_train_score ?? 0; // make sure your JSON has this
+          document.getElementById("stamina").innerHTML =
+            `Trailblaze Power: <strong>${stamina}/300</strong>`;
+          document.getElementById("train").innerHTML =
+            `Daily Training: <strong>${train}/500</strong>`;
+          document.getElementById("logged-in").innerHTML =
+            `Logged In Today: <strong>${train != 0 ? "Yes" : "No"}</strong>`;
         } catch (err) {
           console.error(err);
           document.getElementById("card").innerText = "Failed to load stats.";
