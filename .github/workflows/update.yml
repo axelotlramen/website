@@ -25,8 +25,7 @@ jobs:
         env:
           HOYOLAB_LTUID: ${{ secrets.HOYOLAB_LTUID }}
           HOYOLAB_LTOKEN: ${{ secrets.HOYOLAB_LTOKEN }}
-          HOYOLAB_COOKIE_TOKEN: ${{ secrets.HOYOLAB_COOKIE_TOKEN }}
-          HOYOLAB_ACCOUNT_ID: ${{ secrets.HOYOLAB_ACCOUNT_ID }}
+          HOYOLAB_HSR_UID: ${{ secrets.HOYOLAB_HSR_UID }}
         run: python update_stats.py
 
       - name: Commit & push
