@@ -1,12 +1,44 @@
 {
-  "last_updated": "2026-02-15T03:20:19.591673",
-  "genshin": {
-    "resin": 200,
-    "commissions_done": 0,
-    "commissions_total": 4
-  },
+  "last_updated": "2026-02-15T03:41:35.197823",
+  "genshin": {},
   "hsr": {
-    "stamina": 183,
-    "expeditions": 0
+    "nickname": "Caelus",
+    "server": "prod_official_usa",
+    "level": 70,
+    "achievements": 1518,
+    "active_days": 810,
+    "avatar_count": 51,
+    "chest_count": 1641,
+    "five_star_characters": [
+      "Trailblazer",
+      "Dan Heng \u2022 Permansor Terrae",
+      "Phainon",
+      "Cipher",
+      "Anaxa",
+      "Mydei",
+      "Aglaea",
+      "The Herta",
+      "Sunday",
+      "Firefly",
+      "Robin",
+      "Dr. Ratio",
+      "Aventurine",
+      "Ruan Mei",
+      "Argenti",
+      "Feixiao",
+      "Huohuo",
+      "Dan Heng \u2022 Imbibitor Lunae",
+      "Seele",
+      "Bronya",
+      "Archer",
+      "Saber",
+      "Kafka",
+      "Himeko",
+      "Gepard",
+      "Welt",
+      "Hysilens",
+      "Bailu",
+      "Yanqing"
+    ]
   }
 }
