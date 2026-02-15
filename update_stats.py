@@ -12,27 +12,36 @@ async def main():
     cookies = {
         "ltuid_v2": os.environ["HOYOLAB_LTUID"],
         "ltoken_v2": os.environ["HOYOLAB_LTOKEN"],
-        "cookie_token_v2": os.environ["HOYOLAB_COOKIE_TOKEN"],
-        "account_id_v2": os.environ["HOYOLAB_ACCOUNT_ID"],
     }
 
     client = genshin.Client(cookies)
 
-    # Example: Fetch Genshin daily notes
-    notes = await client.get_notes(uid=606196392)  # replace with your UID
-    # Example: Fetch Honkai: Star Rail daily notes
-    hsr_notes = await client.get_starrail_notes(uid=615226764)  # replace with UID
+    hsr_uid = int(os.environ["HOYOLAB_HSR_UID"])
+
+    # Fetch full Star Rail profile
+    user = await client.get_starrail_user(hsr_uid)
+
+    # Fetch characters
+    character_response = await client.get_starrail_characters(hsr_uid)
+    characters = character_response.avatar_list
+
+    # Filter 5-star characters
+    five_stars = [
+        char.name for char in characters if char.rarity == 5
+    ]
 
     data = {
         "last_updated": datetime.utcnow().isoformat(),
-        "genshin": {
-            "resin": notes.current_resin,
-            "commissions_done": notes.completed_commissions,
-            "commissions_total": notes.max_commissions,
-        },
+        "genshin": {},
         "hsr": {
-            "stamina": hsr_notes.current_stamina,
-            "expeditions": len(hsr_notes.expeditions),
+            "nickname": user.info.nickname,
+            "server": user.info.server,
+            "level": user.info.level,
+            "achievements": user.stats.achievement_num,
+            "active_days": user.stats.active_days,
+            "avatar_count": user.stats.avatar_num,
+            "chest_count": user.stats.chest_num,
+            "five_star_characters": five_stars,
         },
     }
 
