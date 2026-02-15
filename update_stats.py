@@ -31,6 +31,8 @@ async def main():
         char.name for char in characters if char.rarity == 5
     ]
 
+    hsr_notes = await client.get_starrail_notes(uid=hsr_uid)
+
     data = {
         "last_updated": datetime.utcnow().isoformat(),
         "genshin": {},
@@ -38,12 +40,15 @@ async def main():
             "nickname": user.info.nickname,
             "server": user.info.server,
             "level": user.info.level,
-            "avatar": user.info.avatar,
+            "avatar": "data/avatar.png",
             "achievements": user.stats.achievement_num,
             "active_days": user.stats.active_days,
             "avatar_count": user.stats.avatar_num,
             "chest_count": user.stats.chest_num,
             "five_star_characters": five_stars,
+
+            "stamina": hsr_notes.current_stamina,
+            "current_train_score": hsr_notes.current_train_score,
         },
     }
 

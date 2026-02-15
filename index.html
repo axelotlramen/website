@@ -86,13 +86,13 @@
 
           const avatarContainer = document.getElementById("avatar");
           avatarContainer.innerHTML = `
-            <img src=${sr.avatar}" alt="Avatar" style="
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                object-fit: cover;
-            ">
-        `;
+  <img src="${sr.avatar}" alt="Avatar" style="
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+  ">
+`;
 
           document.querySelector(".nickname").innerText = sr.nickname;
           document.querySelector(".server-level").innerText =
@@ -102,7 +102,7 @@
           statsContainer.innerHTML = `
         <div class="stat">Active Days<br><strong>${sr.active_days}</strong></div>
         <div class="stat">Achievements<br><strong>${sr.achievements}</strong></div>
-        <div class="stat">Avatars<br><strong>${sr.avatar_count}</strong></div>
+        <div class="stat">Characters<br><strong>${sr.avatar_count}</strong></div>
         <div class="stat">Chests<br><strong>${sr.chest_count}</strong></div>
       `;
         } catch (err) {
