@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-15T17:42:38.788109",
+  "last_updated": "2026-02-15T17:45:40.395638",
   "genshin": {},
   "hsr": {
     "nickname": "Caelus",
@@ -41,16 +41,58 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 96,
+    "stamina": 97,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Breached Nest",
       "total_stars": 36,
       "floor_data": {
-        "floor": "Breached Nest (I)",
-        "cycles": 0,
-        "first_half": [],
-        "second_half": []
+        "floor": "Breached Nest (XII)",
+        "cycles": 9,
+        "first_half": [
+          {
+            "id": 1220,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1309,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 1304,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1406,
+            "level": 80,
+            "eidolon": 1
+          }
+        ],
+        "second_half": [
+          {
+            "id": 1405,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1313,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 8007,
+            "level": 80,
+            "eidolon": 6
+          },
+          {
+            "id": 1414,
+            "level": 80,
+            "eidolon": 2
+          }
+        ]
       }
     }
   }
