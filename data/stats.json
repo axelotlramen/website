@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-15T04:33:35.633687",
+  "last_updated": "2026-02-15T12:13:17.312856",
   "genshin": {},
   "hsr": {
     "nickname": "Caelus",
@@ -7,12 +7,13 @@
     "level": 70,
     "avatar": "data/avatar.png",
     "achievements": 1518,
-    "active_days": 810,
+    "active_days": 811,
     "avatar_count": 51,
     "chest_count": 1641,
     "five_star_characters": [
       "Trailblazer",
       "Dan Heng \u2022 Permansor Terrae",
+      "Hysilens",
       "Phainon",
       "Cipher",
       "Anaxa",
@@ -37,11 +38,10 @@
       "Himeko",
       "Gepard",
       "Welt",
-      "Hysilens",
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 195,
+    "stamina": 41,
     "current_train_score": 500
   }
 }
