@@ -1,56 +1,56 @@
-Date,Banner,Character,G/L/W,Pity
-10/2/2023,Beginner Banner,Bronya,,50
-10/27/2023,Limited Character,Seele,W,24
-11/8/2023,Standard Banner,Gepard,,79
-11/15/2023,Limited Character,Himeko,L,39
-11/15/2023,Limited Character,Huohuo,G,81
-12/6/2023,Standard Banner,Himeko LC,,43
-12/6/2023,Limited Character,Argenti,W,78
-12/27/2023,Limited Character,Welt,L,77
-2/5/2024,Limited Character,DHIL,G,78
-3/3/2024,Standard Banner,Welt,,78
-4/17/2024,Limited Character,Aventurine,W,78
-4/17/2024,Limited LC,Aventurine LC,W,45
-5/10/2024,Limited Character,Yanqing,L,79
-5/10/2024,Limited Character,Robin,G,15
-6/19/2024,Limited Character,Ruan Mei,W,82
-6/21/2024,Limited Character,Firefly,W,83
-7/12/2024,Standard Banner,Welt LC,,77
-8/3/2024,Standard Banner,Clara LC,,10
-9/5/2024,Limited Character,Gepard,L,24
-9/9/2024,Limited Character,Feixiao,G,47
-9/9/2024,Limited Character,Robin,W,52
-9/9/2024,Limited LC,Feixiao LC,W,24
-12/3/2024,Limited Character,Bailu,L,75
-12/3/2024,Limited Character,Sunday,G,74
-12/3/2024,Limited Character,Sunday,W,79
-12/3/2024,Limited LC,Sunday LC,W,67
-12/3/2024,Standard Banner,Himeko,,79
-1/15/2025,Limited Character,The Herta,W,75
-1/15/2025,Limited LC,The Herta LC,W,42
-2/7/2025,Limited Character,Aglaea,W,36
-2/7/2025,Limited LC,Aglaea LC,W,68
-3/19/2025,Limited Character,Mydei,W,83
-3/19/2025,Limited LC,Bronya LC,L,47
-3/19/2025,Limited LC,Mydei LC,G,69
-4/2/2025,Standard Banner,Himeko LC,,74
-4/30/2025,Limited Character,Anaxa,W,78
-6/11/2025,Limited Character,Seele,L,73
-6/20/2025,Limited Character,Cipher,G,16
-6/20/2025,Limited LC,Cipher LC,W,61
-7/11/2025,Character Collaboration,Saber,W,76
-7/11/2025,Light Cone Collaboration,Welt LC,L,67
-7/11/2025,Light Cone Collaboration,Saber LC,G,67
-9/1/2025,Standard Banner,Yanqing,,77
-9/20/2025,Standard Banner,Himeko,,9
-10/15/2025,Limited Character,Bronya,L,76
-10/15/2025,Limited Character,DHPT,G,77
-10/15/2025,Limited Character,DHPT,W,82
-10/15/2025,Limited LC,DHPT LC,W,68
-10/15/2025,Limited LC,DHPT LC,W,2
-11/26/2025,Limited Character,Cipher,W,77
-11/26/2025,Limited Character,Phainon,W,11
-2/1/2026,Limited Character,Sunday,W,65
-2/1/2026,Limited Character,Seele,L,12
-2/1/2026,Standard Banner,Bronya LC,,79
-2/13/2026,Limited Character,Hysilens,G,83
+Date,Banner,Character ID,Character,G/L/W,Pity
+10/2/2023,Beginner Banner,1101,Bronya,,50
+10/27/2023,Limited Character,1102,Seele,W,24
+11/8/2023,Standard Banner,1104,Gepard,,79
+11/15/2023,Limited Character,1003,Himeko,L,39
+11/15/2023,Limited Character,1217,Huohuo,G,81
+12/6/2023,Standard Banner,23000,Himeko LC,,43
+12/6/2023,Limited Character,1302,Argenti,W,78
+12/27/2023,Limited Character,1004,Welt,L,77
+2/5/2024,Limited Character,1213,DHIL,G,78
+3/3/2024,Standard Banner,1004,Welt,,78
+4/17/2024,Limited Character,1304,Aventurine,W,78
+4/17/2024,Limited LC,23023,Aventurine LC,W,45
+5/10/2024,Limited Character,1209,Yanqing,L,79
+5/10/2024,Limited Character,1309,Robin,G,15
+6/19/2024,Limited Character,1303,Ruan Mei,W,82
+6/21/2024,Limited Character,1310,Firefly,W,83
+7/12/2024,Standard Banner,23004,Welt LC,,77
+8/3/2024,Standard Banner,23002,Clara LC,,10
+9/5/2024,Limited Character,1104,Gepard,L,24
+9/9/2024,Limited Character,1220,Feixiao,G,47
+9/9/2024,Limited Character,1309,Robin,W,52
+9/9/2024,Limited LC,23031,Feixiao LC,W,24
+12/3/2024,Limited Character,1211,Bailu,L,75
+12/3/2024,Limited Character,1313,Sunday,G,74
+12/3/2024,Limited Character,1313,Sunday,W,79
+12/3/2024,Limited LC,23034,Sunday LC,W,67
+12/3/2024,Standard Banner,1003,Himeko,,79
+1/15/2025,Limited Character,1401,The Herta,W,75
+1/15/2025,Limited LC,23037,The Herta LC,W,42
+2/7/2025,Limited Character,1402,Aglaea,W,36
+2/7/2025,Limited LC,23036,Aglaea LC,W,68
+3/19/2025,Limited Character,1404,Mydei,W,83
+3/19/2025,Limited LC,23003,Bronya LC,L,47
+3/19/2025,Limited LC,23039,Mydei LC,G,69
+4/2/2025,Standard Banner,23000,Himeko LC,,74
+4/30/2025,Limited Character,1405,Anaxa,W,78
+6/11/2025,Limited Character,1102,Seele,L,73
+6/20/2025,Limited Character,1406,Cipher,G,16
+6/20/2025,Limited LC,23043,Cipher LC,W,61
+7/11/2025,Character Collaboration,1014,Saber,W,76
+7/11/2025,Light Cone Collaboration,23004,Welt LC,L,67
+7/11/2025,Light Cone Collaboration,23035,Saber LC,G,67
+9/1/2025,Standard Banner,1209,Yanqing,,77
+9/20/2025,Standard Banner,1003,Himeko,,9
+10/15/2025,Limited Character,1101,Bronya,L,76
+10/15/2025,Limited Character,1414,DHPT,G,77
+10/15/2025,Limited Character,1414,DHPT,W,82
+10/15/2025,Limited LC,23051,DHPT LC,W,68
+10/15/2025,Limited LC,23051,DHPT LC,W,2
+11/26/2025,Limited Character,1406,Cipher,W,77
+11/26/2025,Limited Character,1408,Phainon,W,11
+2/1/2026,Limited Character,1313,Sunday,W,65
+2/1/2026,Limited Character,1102,Seele,L,12
+2/1/2026,Standard Banner,23003,Bronya LC,,79
+2/13/2026,Limited Character,1410,Hysilens,G,83
