@@ -32,6 +32,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stats.json
-          git commit -m "Update stats.json"
+          git add data/stats.json data/avatar.png
+          git commit -m "Update stats & avatar"
           git push

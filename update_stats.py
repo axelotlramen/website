@@ -4,6 +4,7 @@ import asyncio
 import json
 import os
 from datetime import datetime
+import requests
 
 
 async def main():
@@ -47,6 +48,21 @@ async def main():
     }
 
     os.makedirs("data", exist_ok=True)
+
+    avatar_url = user.info.avatar
+    avatar_path = "data/avatar"
+
+    try:
+        r = requests.get(avatar_url, timeout=10)
+        if r.status_code == 200:
+            with open(avatar_path, "wb") as f:
+                f.write(r.content)
+        else:
+            print("Failed to download avatar, status code:", r.status_code)
+            avatar_path = ""
+    except Exception as e:
+        print("Failed to fownload avatar:", e)
+        avatar_path = ""
 
     with open("data/stats.json", "w") as f:
         json.dump(data, f, indent=2)
