@@ -92,6 +92,90 @@
         color: #ccc;
       }
 
+      .moc-container {
+        width: 800px;
+        max-width: 95vw;
+        background: #2c2c36;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .moc-card {
+        background: #3a3a46;
+        border-radius: 12px;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+
+      .moc-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .moc-floor {
+        font-weight: bold;
+        color: #ffd966;
+      }
+
+      .moc-cycles {
+        color: #ccc;
+        font-size: 0.9rem;
+      }
+
+      .moc-node-row {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .moc-node {
+        flex: 1;
+        min-width: 0;
+        background: #2f2f3a;
+        padding: 0.75rem;
+        border-radius: 10px;
+        margin-bottom: 0.75rem;
+      }
+
+      .moc-node-title {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+        color: #aaa;
+      }
+
+      .moc-avatars {
+        display: flex;
+        gap: 10px;
+      }
+
+      .moc-avatar {
+        position: relative;
+      }
+
+      .moc-avatar img {
+        width: 56px;
+        height: 56px;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+      }
+
+      .eidolon-badge {
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
+        background: #ffd966;
+        color: #1e1e24;
+        font-size: 0.65rem;
+        font-weight: bold;
+        padding: 2px 5px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+      }
+
       /* Horizontal Pull Grid */
       .pull-grid-container {
         width: 800px;
@@ -185,6 +269,11 @@
       <div class="line" id="logged-in">Logged In Today: --</div>
     </div>
 
+    <div class="moc-container">
+      <h2>Memory of Chaos</h2>
+      <div id="moc-content"></div>
+    </div>
+
     <!-- Horizontal Pull Grid -->
     <div class="pull-grid-container">
       <h2>Pull History</h2>
@@ -195,6 +284,81 @@
     <div id="tooltip"></div>
 
     <script>
+      function renderMoC(data) {
+        const moc = data.hsr.memory_of_chaos;
+        if (!moc || !moc.floor_data) return;
+
+        const container = document.getElementById("moc-content");
+        container.innerHTML = "";
+
+        const floor = moc.floor_data;
+
+        const card = document.createElement("div");
+        card.classList.add("moc-card");
+
+        // Header
+        const header = document.createElement("div");
+        header.classList.add("moc-header");
+
+        const floorTitle = document.createElement("div");
+        floorTitle.classList.add("moc-floor");
+        floorTitle.textContent = floor.floor;
+
+        const cycles = document.createElement("div");
+        cycles.classList.add("moc-cycles");
+        cycles.textContent = `Cycles: ${floor.cycles} | ⭐ ${moc.total_stars}`;
+
+        header.appendChild(floorTitle);
+        header.appendChild(cycles);
+        card.appendChild(header);
+
+        const nodeRow = document.createElement("div");
+        nodeRow.classList.add("moc-node-row");
+
+        // Node 1
+        nodeRow.appendChild(createNode("Node 1", floor.first_half));
+
+        // Node 2
+        nodeRow.appendChild(createNode("Node 2", floor.second_half));
+
+        card.appendChild(nodeRow);
+
+        container.appendChild(card);
+      }
+
+      function createNode(title, characters) {
+        const node = document.createElement("div");
+        node.classList.add("moc-node");
+
+        const nodeTitle = document.createElement("div");
+        nodeTitle.classList.add("moc-node-title");
+        nodeTitle.textContent = title;
+
+        const avatarRow = document.createElement("div");
+        avatarRow.classList.add("moc-avatars");
+
+        characters.forEach((char) => {
+          const wrapper = document.createElement("div");
+          wrapper.classList.add("moc-avatar");
+
+          const img = document.createElement("img");
+          img.src = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${char.id}.webp`;
+
+          const badge = document.createElement("div");
+          badge.classList.add("eidolon-badge");
+          badge.textContent = `E${char.eidolon}`;
+
+          wrapper.appendChild(img);
+          wrapper.appendChild(badge);
+          avatarRow.appendChild(wrapper);
+        });
+
+        node.appendChild(nodeTitle);
+        node.appendChild(avatarRow);
+
+        return node;
+      }
+
       async function loadStats() {
         try {
           const response = await fetch("data/stats.json");
@@ -236,6 +400,8 @@
             `Daily Training: <strong>${train}/500</strong>`;
           document.getElementById("logged-in").innerHTML =
             `Logged In Today: <strong>${train != 0 ? "Yes" : "No"}</strong>`;
+
+          renderMoC(data);
         } catch (err) {
           console.error(err);
           document.getElementById("card").innerText = "Failed to load stats.";
