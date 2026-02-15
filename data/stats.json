@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-15T04:18:54.765191",
+  "last_updated": "2026-02-15T04:33:35.633687",
   "genshin": {},
   "hsr": {
     "nickname": "Caelus",
@@ -40,6 +40,8 @@
       "Hysilens",
       "Bailu",
       "Yanqing"
-    ]
+    ],
+    "stamina": 195,
+    "current_train_score": 500
   }
 }
