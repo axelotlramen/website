@@ -28,7 +28,7 @@ async def main():
         "genshin": {
             "resin": notes.current_resin,
             "commissions_done": notes.completed_commissions,
-            "commissions_total": notes.total_commissions,
+            "commissions_total": notes.max_commissions,
         },
         "hsr": {
             "stamina": hsr_notes.current_stamina,
