@@ -6,6 +6,27 @@ import os
 from datetime import datetime
 import requests
 
+def download_google_sheet():
+    sheet_url = os.environ["GOOGLE_SHEET_CSV_URL"]
+    output_path = "data/sheet.csv"
+
+    os.makedirs("data", exist_ok=True)
+
+    try:
+        print("Downloading Google Sheet CSV...")
+        r = requests.get(sheet_url, timeout=15)
+        print("Status:", r.status_code)
+
+        if r.status_code == 200:
+            with open(output_path, "wb") as f:
+                f.write(r.content)
+            print("Saved to", output_path)
+        else:
+            print("Failed to download sheet")
+
+    except Exception as e:
+        print("Error downloading sheet:", e)
+
 
 async def main():
     # Grab your cookie from Hoyolab (ltuid, ltoken, cookie_token, account_id, etc.)
@@ -73,6 +94,8 @@ async def main():
 
     with open("data/stats.json", "w") as f:
         json.dump(data, f, indent=2)
+
+    download_google_sheet()
 
 
 if __name__ == "__main__":
