@@ -34,7 +34,7 @@ async def fetch_memory_of_chaos(client, uid):
         if not challenge:
             return {}
         
-        floor_12 = challenge.floors[11]
+        floor_12 = challenge.floors[0]
 
         floor_data = {
             "floor": floor_12.name,
