@@ -50,10 +50,12 @@ async def main():
     os.makedirs("data", exist_ok=True)
 
     avatar_url = user.info.avatar
-    avatar_path = "data/avatar"
+    avatar_path = "data/avatar.png"
 
     try:
+        print("Downloading avatar...")
         r = requests.get(avatar_url, timeout=10)
+        print("HTTP Status Code:", r.status_code)
         if r.status_code == 200:
             with open(avatar_path, "wb") as f:
                 f.write(r.content)
@@ -61,7 +63,7 @@ async def main():
             print("Failed to download avatar, status code:", r.status_code)
             avatar_path = ""
     except Exception as e:
-        print("Failed to fownload avatar:", e)
+        print("Failed to download avatar:", e)
         avatar_path = ""
 
     with open("data/stats.json", "w") as f:
