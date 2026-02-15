@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-15T17:21:41.383533",
+  "last_updated": "2026-02-15T17:42:38.788109",
   "genshin": {},
   "hsr": {
     "nickname": "Caelus",
@@ -41,7 +41,17 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 93,
-    "current_train_score": 500
+    "stamina": 96,
+    "current_train_score": 500,
+    "memory_of_chaos": {
+      "season": "Breached Nest",
+      "total_stars": 36,
+      "floor_data": {
+        "floor": "Breached Nest (I)",
+        "cycles": 0,
+        "first_half": [],
+        "second_half": []
+      }
+    }
   }
 }
