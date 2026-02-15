@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>axelotlramen's Gacha Page</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #d8e2dc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .card {
+        background: #ffe5d9;
+        border-radius: 16px;
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        color: #333;
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #ffcadd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .nickname {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        color: #f4acb7;
+      }
+
+      .server-level {
+        font-size: 0.9rem;
+        color: #9d8189;
+        margin-bottom: 1rem;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: #9d8189;
+      }
+
+      .stat {
+        background: #ffcadd;
+        padding: 0.5rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <div class="avatar">🎮</div>
+      <div class="nickname">Loading...</div>
+      <div class="server-level"></div>
+      <div class="stats"></div>
+    </div>
+
+    <script>
+      async function loadStats() {
+        try {
+          const response = await fetch("data/stats.json");
+          if (!response.ok) throw new Error("Failed to fetch JSON");
+
+          const data = await response.json();
+          const sr = data.hsr;
+
+          const avatar = document.querySelector(".avatar");
+          avatar.innerText = "🚀";
+
+          document.querySelector(".nickname").innerText = sr.nickname;
+          document.querySelector(".server-level").innerText =
+            `NA | Level ${sr.level}`;
+
+          const statsContainer = document.querySelector(".stats");
+          statsContainer.innerHTML = `
+        <div class="stat">Active Days<br><strong>${sr.active_days}</strong></div>
+        <div class="stat">Achievements<br><strong>${sr.achievements}</strong></div>
+        <div class="stat">Avatars<br><strong>${sr.avatar_count}</strong></div>
+        <div class="stat">Chests<br><strong>${sr.chest_count}</strong></div>
+      `;
+        } catch (err) {
+          console.error(err);
+          document.getElementById("card").innerText = "Failed to load stats.";
+        }
+      }
+      loadStats();
+    </script>
+  </body>
+</html>

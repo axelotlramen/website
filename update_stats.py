@@ -37,6 +37,7 @@ async def main():
             "nickname": user.info.nickname,
             "server": user.info.server,
             "level": user.info.level,
+            "avatar": user.info.avatar,
             "achievements": user.stats.achievement_num,
             "active_days": user.stats.active_days,
             "avatar_count": user.stats.avatar_num,
