@@ -6,32 +6,35 @@
     <style>
       body {
         font-family: sans-serif;
-        background: #d8e2dc;
+        background: #1e1e24;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+
+        justify-content: flex-start;
         align-items: center;
-        min-height: 100vh;
+
         margin: 0;
+        padding: 2rem 0;
         gap: 2rem;
+        color: #eee;
       }
 
       .card {
-        background: #ffe5d9;
+        background: #2c2c36;
         border-radius: 16px;
         padding: 1.5rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        color: #333;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        color: #eee;
       }
 
       .avatar {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        background: #ffcadd;
+        background: #4a3f55;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -44,12 +47,12 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 0.25rem;
-        color: #f4acb7;
+        color: #ffd966;
       }
 
       .server-level {
         font-size: 0.9rem;
-        color: #9d8189;
+        color: #aaa;
         margin-bottom: 1rem;
       }
 
@@ -58,35 +61,110 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 0.5rem;
         font-size: 0.85rem;
-        color: #9d8189;
+        color: #ccc;
       }
 
       .stat {
-        background: #ffcadd;
+        background: #3a3a46;
         padding: 0.5rem;
         border-radius: 8px;
         text-align: center;
       }
 
       .mini-card {
-        background: #ffcadd;
+        background: #3a3a46;
         border-radius: 16px;
         padding: 1rem 1.5rem;
         text-align: center;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-        color: #333;
+        color: #eee;
         width: 250px;
       }
 
       .mini-card h3 {
         margin: 0 0 0.5rem 0;
-        color: #9d8189;
+        color: #ffd966;
       }
 
       .mini-card .line {
         margin: 0.25rem 0;
         font-size: 0.95rem;
-        color: #9d8189;
+        color: #ccc;
+      }
+
+      /* Horizontal Pull Grid */
+      .pull-grid-container {
+        width: 800px;
+        max-width: 95vw;
+        padding: 1rem;
+        background: #2c2c36;
+        border-radius: 16px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+
+      .pull-grid-container h2 {
+        color: #ffd966;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+        text-align: left;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+      }
+
+      .pull-grid {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      .pull-item {
+        position: relative;
+        display: inline-block;
+      }
+
+      .pull-item img {
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        object-fit: cover;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        transition: transform 0.15s;
+        border: 3px solid grey;
+      }
+
+      .pull-item img:hover {
+        transform: scale(1.2);
+      }
+
+      .pull-badge {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background: #ffd966;
+        color: #1e1e24;
+        font-size: 0.65rem;
+        font-weight: bold;
+        padding: 2px 5px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        pointer-events: none;
+      }
+
+      #tooltip {
+        position: absolute;
+        background: #3a3a46;
+        color: #ffd966;
+        padding: 6px 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        font-size: 0.85rem;
+        pointer-events: none;
+        display: none;
+        white-space: pre-line;
+        z-index: 100;
       }
     </style>
   </head>
@@ -106,6 +184,15 @@
       <div class="line" id="train">Daily Training: --/500</div>
       <div class="line" id="logged-in">Logged In Today: --</div>
     </div>
+
+    <!-- Horizontal Pull Grid -->
+    <div class="pull-grid-container">
+      <h2>Pull History</h2>
+      <div class="pull-grid" id="pull-grid"></div>
+    </div>
+
+    <!-- Custom Tooltip -->
+    <div id="tooltip"></div>
 
     <script>
       async function loadStats() {
@@ -154,7 +241,142 @@
           document.getElementById("card").innerText = "Failed to load stats.";
         }
       }
+
+      function pityColor(pity) {
+        // Clamp pity between 1 and 90
+        pity = Math.max(1, Math.min(90, pity));
+
+        if (pity <= 45) {
+          // interpolate between low (#57bb8a) and mid (#ffd666)
+          const t = (pity - 1) / (45 - 1);
+          return lerpColor("#57bb8a", "#ffd666", t);
+        } else {
+          // interpolate between mid (#ffd666) and high (#e67c73)
+          const t = (pity - 45) / (90 - 45);
+          return lerpColor("#ffd666", "#e67c73", t);
+        }
+      }
+
+      // Helper to interpolate two hex colors
+      function lerpColor(a, b, t) {
+        const ah = parseInt(a.slice(1), 16),
+          bh = parseInt(b.slice(1), 16);
+        const ar = (ah >> 16) & 0xff,
+          ag = (ah >> 8) & 0xff,
+          ab = ah & 0xff;
+        const br = (bh >> 16) & 0xff,
+          bg = (bh >> 8) & 0xff,
+          bb = bh & 0xff;
+        const rr = Math.round(ar + (br - ar) * t),
+          rg = Math.round(ag + (bg - ag) * t),
+          rb = Math.round(ab + (bb - ab) * t);
+        return `rgb(${rr},${rg},${rb})`;
+      }
+
+      async function loadTimeline() {
+        try {
+          const response = await fetch("data/sheet.csv");
+          const text = await response.text();
+
+          const rows = text.trim().split("\n").slice(1); // remove header
+
+          const entries = rows.map((row) => {
+            const [date, banner, id, character, glw, pity] = row.split(",");
+            return {
+              date: date.trim(),
+              banner: banner.trim(),
+              id: parseInt(id.trim()),
+              character: character.trim(),
+              result: glw.trim(),
+              pity: parseInt(pity.trim()),
+            };
+          });
+
+          // Sort newest first
+          entries.reverse();
+
+          const tooltip = document.getElementById("tooltip");
+          const grid = document.getElementById("pull-grid");
+
+          entries.forEach((entry) => {
+            // generate icon url automatically
+            let iconURL = "";
+
+            if (entry.id >= 20000) {
+              iconURL = `https://stardb.gg/api/static/StarRailResWebp/icon/light_cone/${entry.id}.webp`;
+            } else {
+              iconURL = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${entry.id}.webp`;
+            }
+
+            // Determine result text
+            let resultText = "";
+            let resultClass = "";
+
+            if (entry.result === "W") {
+              resultText = "Win";
+              resultClass = "win";
+            } else if (entry.result === "L") {
+              resultText = "Lose";
+              resultClass = "lose";
+            } else if (entry.result === "G") {
+              resultText = "Guaranteed";
+              resultClass = "guaranteed";
+            }
+
+            const container = document.createElement("div");
+            container.classList.add("pull-item");
+
+            const img = document.createElement("img");
+            img.src = iconURL;
+
+            // Tooltip text
+            const tooltipText = `${entry.character} • ${entry.banner}\nResult: ${resultText}\nPity: ${entry.pity}\nDate: ${entry.date}`;
+
+            img.addEventListener("mouseenter", (e) => {
+              tooltip.style.display = "block";
+              tooltip.innerText = tooltipText;
+            });
+            img.addEventListener("mousemove", (e) => {
+              tooltip.style.left = e.pageX + 10 + "px";
+              tooltip.style.top = e.pageY + 10 + "px";
+            });
+            img.addEventListener("mouseleave", () => {
+              tooltip.style.display = "none";
+            });
+
+            switch (resultText.toLowerCase()) {
+              case "win":
+                img.style.borderColor = "green";
+                break;
+              case "lose":
+                img.style.borderColor = "red";
+                break;
+              case "guaranteed":
+                img.style.borderColor = "gold";
+                break;
+              default:
+                img.style.borderColor = "grey";
+            }
+
+            // Pity badge
+            const badge = document.createElement("span");
+            badge.classList.add("pull-badge");
+            badge.innerText = entry.pity;
+
+            badge.style.background = pityColor(entry.pity);
+
+            container.appendChild(img);
+            container.appendChild(badge);
+
+            grid.appendChild(container);
+          });
+        } catch (err) {
+          console.error("Failed to load timeline:", err);
+        }
+      }
+
       loadStats();
+      loadTimeline();
     </script>
   </body>
 </html>
