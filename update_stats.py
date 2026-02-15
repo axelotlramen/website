@@ -27,6 +27,46 @@ def download_google_sheet():
     except Exception as e:
         print("Error downloading sheet:", e)
 
+async def fetch_memory_of_chaos(client, uid):
+    try:
+        challenge = await client.get_starrail_challenge(uid=uid)
+
+        if not challenge:
+            return {}
+        
+        floor_12 = challenge.floors[11]
+
+        floor_data = {
+            "floor": floor_12.name,
+            "cycles": floor_12.round_num,
+            "first_half": [],
+            "second_half": [],
+        }
+
+        for avatar in floor_12.node_1.avatars:
+            floor_data["first_half"].append({
+                "id": avatar.id,
+                "level": avatar.level,
+                "eidolon": avatar.rank, 
+            })
+
+        for avatar in floor_12.node_2.avatars:
+            floor_data["second_half"].append({
+                "id": avatar.id,
+                "level": avatar.level,
+                "eidolon": avatar.rank, 
+            })
+
+        return {
+            "season": challenge.name,
+            "total_stars": challenge.total_stars,
+            "floor_data": floor_data
+        }
+    
+    except Exception as e:
+        print("Failed to fetch Memory of Chaos:", e)
+        return {}
+
 
 async def main():
     # Grab your cookie from Hoyolab (ltuid, ltoken, cookie_token, account_id, etc.)
@@ -53,6 +93,7 @@ async def main():
     ]
 
     hsr_notes = await client.get_starrail_notes(uid=hsr_uid)
+    moc_data = await fetch_memory_of_chaos(client, hsr_uid)
 
     data = {
         "last_updated": datetime.utcnow().isoformat(),
@@ -70,6 +111,8 @@ async def main():
 
             "stamina": hsr_notes.current_stamina,
             "current_train_score": hsr_notes.current_train_score,
+
+            "memory_of_chaos": moc_data,
         },
     }
 
