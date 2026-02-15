@@ -1,2 +1,2 @@
-genshin.py
+genshin
 ramael
