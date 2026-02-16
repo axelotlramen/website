@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-02-15T17:45:40.395638",
+  "last_updated": "2026-02-16T17:34:14.111536",
   "genshin": {},
   "hsr": {
     "nickname": "Caelus",
     "server": "prod_official_usa",
     "level": 70,
     "avatar": "data/avatar.png",
-    "achievements": 1518,
-    "active_days": 811,
+    "achievements": 1545,
+    "active_days": 812,
     "avatar_count": 51,
-    "chest_count": 1641,
+    "chest_count": 1707,
     "five_star_characters": [
       "Trailblazer",
       "Dan Heng \u2022 Permansor Terrae",
@@ -41,7 +41,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 97,
+    "stamina": 95,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Breached Nest",
