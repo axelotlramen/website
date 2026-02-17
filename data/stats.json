@@ -1,12 +1,13 @@
 {
-  "last_updated": "2026-02-17T12:59:26.441756",
+  "last_updated": "2026-02-17T13:07:56.531492",
   "genshin": {
     "nickname": "axelle",
-    "server": "",
     "level": 57,
+    "avatar": "data/genshin_avatar.png",
+    "avatar_url": "",
     "achievements": 873,
     "active_days": 302,
-    "character_count": 54,
+    "avatar_count": 54,
     "oculus": 996,
     "chest_count": 3503,
     "five_star_characters": [
@@ -32,9 +33,8 @@
   },
   "hsr": {
     "nickname": "Caelus",
-    "server": "prod_official_usa",
     "level": 70,
-    "avatar": "data/avatar.png",
+    "avatar": "data/hsr_avatar.png",
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u65dyd/26936b2f8c6d65ddbad9b3250f20d4c0.png",
     "achievements": 1555,
     "active_days": 813,
@@ -71,7 +71,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 19,
+    "stamina": 21,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Breached Nest",
