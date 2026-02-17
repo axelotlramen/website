@@ -85,9 +85,8 @@ async def fetch_hsr_data(client, uid):
 
         return {
             "nickname": user.info.nickname,
-            "server": user.info.server,
             "level": user.info.level,
-            "avatar": "data/avatar.png",
+            "avatar": "data/hsr_avatar.png",
             "avatar_url": user.info.avatar,
             "achievements": user.stats.achievement_num,
             "active_days": user.stats.active_days,
@@ -121,11 +120,12 @@ async def fetch_genshin_data(client, uid):
 
         return {
             "nickname": user.info.nickname,
-            "server": user.info.server,
             "level": user.info.level,
+            "avatar": "data/genshin_avatar.png",
+            "avatar_url": user.info.icon,
             "achievements": user.stats.achievements,
             "active_days": user.stats.days_active,
-            "character_count": user.stats.characters,
+            "avatar_count": user.stats.characters,
             "oculus": oculus,
             "chest_count": chests,
             "five_star_characters": five_stars,
@@ -164,22 +164,34 @@ async def main():
 
     os.makedirs("data", exist_ok=True)
 
-    avatar_url = hsr_data.get("avatar_url", "")
-    avatar_path = "data/avatar.png"
+    hsr_avatar_url = hsr_data.get("avatar_url", "")
+    hsr_avatar_path = "data/hsr_avatar.png"
+    genshin_avatar_url = genshin_data.get("avatar_url", "")
+    genshin_avatar_path = "data/genshin_avatar.png"
 
     try:
         print("Downloading avatar...")
-        r = requests.get(avatar_url, timeout=10)
-        print("HTTP Status Code:", r.status_code)
-        if r.status_code == 200:
-            with open(avatar_path, "wb") as f:
-                f.write(r.content)
+        hsr_r = requests.get(hsr_avatar_url, timeout=10)
+        genshin_r = requests.get(genshin_avatar_url, timeout=10)
+        print("HTTP Status Code:", hsr_r.status_code)
+        print("HTTP Status Code:", genshin_r.status_code)
+        if hsr_r.status_code == 200:
+            with open(hsr_avatar_path, "wb") as f:
+                f.write(hsr_r.content)
         else:
-            print("Failed to download avatar, status code:", r.status_code)
-            avatar_path = ""
+            print("Failed to download avatar, status code:", hsr_r.status_code)
+            hsr_avatar_path = ""
+
+        if genshin_r.status_code == 200:
+            with open(genshin_avatar_path, "wb") as f:
+                f.write(genshin_r.content)
+        else:
+            print("Failed to download avatar, status code:", genshin_r.status_code)
+            genshin_avatar_path = ""
+        
     except Exception as e:
         print("Failed to download avatar:", e)
-        avatar_path = ""
+        hsr_avatar_path = ""
 
     with open("data/stats.json", "w") as f:
         json.dump(data, f, indent=2)
