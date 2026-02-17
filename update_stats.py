@@ -122,7 +122,7 @@ async def fetch_genshin_data(client, uid):
             "nickname": user.info.nickname,
             "level": user.info.level,
             "avatar": "data/genshin_avatar.png",
-            "avatar_url": user.info.icon,
+            "avatar_url": user.info.in_game_avatar,
             "achievements": user.stats.achievements,
             "active_days": user.stats.days_active,
             "avatar_count": user.stats.characters,

@@ -34,6 +34,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stats.json data/avatar.png data/sheet.csv
+          git add data/stats.json data/hsr_avatar.png data/genshin_avatar.png data/sheet.csv
           git commit -m "Update stats & avatar & sheet"
           git push
