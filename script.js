@@ -255,6 +255,20 @@ async function loadTimeline() {
         tooltip.style.display = "none";
       });
 
+      switch (entry.result) {
+        case "W":
+          img.style.borderColor = "green";
+          break;
+        case "L":
+          img.style.borderColor = "red";
+          break;
+        case "G":
+          img.style.borderColor = "gold";
+          break;
+        default:
+          img.style.borderColor = "grey";
+      }
+
       const badge = document.createElement("span");
       badge.classList.add("pull-badge");
       badge.innerText = entry.pity;
@@ -264,6 +278,34 @@ async function loadTimeline() {
       container.appendChild(badge);
       grid.appendChild(container);
     });
+
+    const latestFiveStar = entries[0];
+
+    if (latestFiveStar) {
+      const latestContainer = document.getElementById("home-latest-pull");
+
+      let img_src;
+
+      if (latestFiveStar.id >= 20000) {
+        img_src = `https://stardb.gg/api/static/StarRailResWebp/icon/light_cone/${latestFiveStar.id}.webp`;
+      } else {
+        img_src = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${latestFiveStar.id}.webp`;
+      }
+
+      latestContainer.innerHTML = `
+            <div class="card">
+            <div class="avatar">
+                <img src="${img_src}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+            </div>
+            <h2>Latest HSR 5★ Pull</h2>
+            <p class="latest-name">${latestFiveStar.character}</p>
+                <div class="latest-meta">
+                    <p>Pity: ${latestFiveStar.pity}</p>
+                    <p>Date: ${latestFiveStar.date}</p>
+                </div>
+            </div>
+        `;
+    }
   } catch (err) {
     console.error("Failed to load timeline:", err);
   }

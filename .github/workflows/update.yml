@@ -2,7 +2,8 @@ name: Update Hoyolab Stats
 
 on:
   schedule:
-    - cron: "0 17 * * *" # runs daily at 12pm EST
+    - cron: "0 10 * * *" # ~5am EST / 6am EDT
+    - cron: "0 22 * * *" # ~5pm EST / 6pm EDT
   workflow_dispatch: # allows manual runs too
 
 jobs:
