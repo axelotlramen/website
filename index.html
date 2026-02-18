@@ -6,31 +6,49 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Main HSR Card -->
-    <div class="card" id="card">
-      <div class="avatar" id="avatar"></div>
-      <div class="nickname">Loading...</div>
-      <div class="server-level"></div>
-      <div class="stats"></div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2 class="logo">Gacha</h2>
+      <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('hsr')">Honkai: Star Rail</button>
+        <button onclick="showPage('genshin')">Genshin Impact</button>
+      </nav>
     </div>
 
-    <!-- Trailblaze Card -->
-    <div class="mini-card" id="trailblaze-card">
-      <h3>Today's Status</h3>
-      <div class="line" id="stamina">Trailblaze Power: --/300</div>
-      <div class="line" id="train">Daily Training: --/500</div>
-      <div class="line" id="logged-in">Logged In Today: --</div>
-    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- HOME PAGE -->
+      <section id="home" class="page active">
+        <h1>Home</h1>
+        <div class="home-grid">
+          <div id="home-hsr"></div>
+          <div id="home-genshin"></div>
+        </div>
+      </section>
 
-    <div class="moc-container">
-      <h2>Memory of Chaos</h2>
-      <div id="moc-content"></div>
-    </div>
+      <!-- HSR PAGE -->
+      <section id="hsr" class="page">
+        <h1>Honkai: Star Rail</h1>
 
-    <!-- Horizontal Pull Grid -->
-    <div class="pull-grid-container">
-      <h2>Pull History</h2>
-      <div class="pull-grid" id="pull-grid"></div>
+        <div id="hsr-profile"></div>
+        <div id="trailblaze-card"></div>
+        <div class="moc-container">
+          <h2>Memory of Chaos</h2>
+          <div id="moc-content"></div>
+        </div>
+        <div class="pull-grid-container">
+          <h2>Pull History</h2>
+          <div id="pull-grid" class="pull-grid"></div>
+        </div>
+      </section>
+
+      <!-- GENSHIN PAGE -->
+      <section id="genshin" class="page">
+        <h1>Genshin Impact</h1>
+        <div id="genshin-profile"></div>
+        <div id="genshin-notes"></div>
+      </section>
     </div>
 
     <!-- Custom Tooltip -->

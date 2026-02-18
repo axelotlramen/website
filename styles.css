@@ -2,15 +2,73 @@ body {
   font-family: sans-serif;
   background: #1e1e24;
   display: flex;
-  flex-direction: column;
-
-  justify-content: flex-start;
-  align-items: center;
 
   margin: 0;
   padding: 2rem 0;
   gap: 2rem;
   color: #eee;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #16161b;
+  padding: 1.5rem 1rem;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar .logo {
+  color: #ffd966;
+  margin-bottom: 2rem;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ccc;
+  text-align: left;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sidebar button:hover {
+  background: #2c2c36;
+  color: #ffd966;
+}
+
+/* Main area */
+.main-content {
+  margin-left: 220px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.page {
+  display: none;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.page.active {
+  display: flex;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .card {

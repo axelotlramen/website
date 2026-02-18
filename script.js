@@ -1,5 +1,21 @@
+/* =========================
+   Navigation
+========================= */
+
+function showPage(pageId) {
+  document.querySelectorAll(".page").forEach((p) => {
+    p.classList.remove("active");
+  });
+
+  document.getElementById(pageId).classList.add("active");
+}
+
+/* =========================
+   Memory of Chaos
+========================= */
+
 function renderMoC(data) {
-  const moc = data.hsr.memory_of_chaos;
+  const moc = data?.hsr?.memory_of_chaos;
   if (!moc || !moc.floor_data) return;
 
   const container = document.getElementById("moc-content");
@@ -10,7 +26,6 @@ function renderMoC(data) {
   const card = document.createElement("div");
   card.classList.add("moc-card");
 
-  // Header
   const header = document.createElement("div");
   header.classList.add("moc-header");
 
@@ -29,14 +44,10 @@ function renderMoC(data) {
   const nodeRow = document.createElement("div");
   nodeRow.classList.add("moc-node-row");
 
-  // Node 1
   nodeRow.appendChild(createNode("Node 1", floor.first_half));
-
-  // Node 2
   nodeRow.appendChild(createNode("Node 2", floor.second_half));
 
   card.appendChild(nodeRow);
-
   container.appendChild(card);
 }
 
@@ -73,83 +84,117 @@ function createNode(title, characters) {
   return node;
 }
 
-async function loadStats() {
-  try {
-    const response = await fetch("data/stats.json");
-    if (!response.ok) throw new Error("Failed to fetch JSON");
+/* =========================
+   HSR Profile Render
+========================= */
 
-    const data = await response.json();
-    const sr = data.hsr;
+function renderHSR(data) {
+  const sr = data.hsr;
+  if (!sr) return;
 
-    // Avatar
-    const avatarContainer = document.getElementById("avatar");
-    avatarContainer.innerHTML = `
-            <img src="${sr.avatar}" alt="Avatar" style="
-              width: 100%;
-              height: 100%;
-              border-radius: 50%;
-              object-fit: cover;
-            ">
-          `;
+  const container = document.getElementById("hsr-profile");
 
-    // Main card info
-    document.querySelector(".nickname").innerText = sr.nickname;
-    document.querySelector(".server-level").innerText =
-      `NA | Level ${sr.level}`;
-
-    const statsContainer = document.querySelector(".stats");
-    statsContainer.innerHTML = `
+  container.innerHTML = `
+    <div class="card">
+      <div class="avatar">
+        <img src="${sr.avatar}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+      </div>
+      <div class="nickname">${sr.nickname}</div>
+      <div class="server-level">NA | Level ${sr.level}</div>
+      <div class="stats">
         <div class="stat">Active Days<br><strong>${sr.active_days}</strong></div>
         <div class="stat">Achievements<br><strong>${sr.achievements}</strong></div>
         <div class="stat">Characters<br><strong>${sr.avatar_count}</strong></div>
         <div class="stat">Chests<br><strong>${sr.chest_count}</strong></div>
-      `;
+      </div>
+    </div>
+  `;
 
-    // Trailblaze mini card
-    const stamina = sr.stamina ?? 0;
-    const train = sr.current_train_score ?? 0; // make sure your JSON has this
-    document.getElementById("stamina").innerHTML =
-      `Trailblaze Power: <strong>${stamina}/300</strong>`;
-    document.getElementById("train").innerHTML =
-      `Daily Training: <strong>${train}/500</strong>`;
-    document.getElementById("logged-in").innerHTML =
-      `Logged In Today: <strong>${train != 0 ? "Yes" : "No"}</strong>`;
+  // Trailblaze card
+  const trail = document.getElementById("trailblaze-card");
 
-    renderMoC(data);
-  } catch (err) {
-    console.error(err);
-    document.getElementById("card").innerText = "Failed to load stats.";
-  }
+  trail.innerHTML = `
+    <div class="mini-card">
+      <h3>Today's Status</h3>
+      <div class="line">Trailblaze Power: <strong>${sr.stamina ?? 0}/300</strong></div>
+      <div class="line">Daily Training: <strong>${sr.current_train_score ?? 0}/500</strong></div>
+      <div class="line">Logged In Today: <strong>${(sr.current_train_score ?? 0) != 0 ? "Yes" : "No"}</strong></div>
+    </div>
+  `;
 }
 
+/* =========================
+   Genshin Render
+========================= */
+
+function renderGenshin(data) {
+  const gi = data.genshin;
+  if (!gi) return;
+
+  const container = document.getElementById("genshin-profile");
+
+  container.innerHTML = `
+    <div class="card">
+      <div class="avatar">
+        <img src="${gi.avatar}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+      </div>
+      <div class="nickname">${gi.nickname}</div>
+      <div class="server-level">AR ${gi.level}</div>
+      <div class="stats">
+        <div class="stat">Achievements<br><strong>${gi.achievements}</strong></div>
+        <div class="stat">Active Days<br><strong>${gi.active_days}</strong></div>
+        <div class="stat">Characters<br><strong>${gi.avatar_count}</strong></div>
+        <div class="stat">Oculus<br><strong>${gi.oculus}</strong></div>
+        <div class="stat">Chests<br><strong>${gi.chest_count}</strong></div>
+      </div>
+    </div>
+  `;
+
+  // Notes card
+  const notes = document.getElementById("genshin-notes");
+
+  notes.innerHTML = `
+    <div class="mini-card">
+      <h3>Today's Status</h3>
+      <div class="line">Resin: <strong>${gi.resin ?? 0}/200</strong></div>
+      <div class="line">Daily Tasks: <strong>${gi.daily_task ?? 0}/4</strong></div>
+      <div class="line">Logged In Today: <strong>${(gi.daily_task ?? 0) != 0 ? "Yes" : "No"}</strong></div>
+    </div>
+  `;
+}
+
+/* =========================
+   Pull Timeline
+========================= */
+
 function pityColor(pity) {
-  // Clamp pity between 1 and 90
   pity = Math.max(1, Math.min(90, pity));
 
   if (pity <= 45) {
-    // interpolate between low (#57bb8a) and mid (#ffd666)
-    const t = (pity - 1) / (45 - 1);
+    const t = (pity - 1) / 44;
     return lerpColor("#57bb8a", "#ffd666", t);
   } else {
-    // interpolate between mid (#ffd666) and high (#e67c73)
-    const t = (pity - 45) / (90 - 45);
+    const t = (pity - 45) / 45;
     return lerpColor("#ffd666", "#e67c73", t);
   }
 }
 
-// Helper to interpolate two hex colors
 function lerpColor(a, b, t) {
-  const ah = parseInt(a.slice(1), 16),
-    bh = parseInt(b.slice(1), 16);
-  const ar = (ah >> 16) & 0xff,
-    ag = (ah >> 8) & 0xff,
-    ab = ah & 0xff;
-  const br = (bh >> 16) & 0xff,
-    bg = (bh >> 8) & 0xff,
-    bb = bh & 0xff;
-  const rr = Math.round(ar + (br - ar) * t),
-    rg = Math.round(ag + (bg - ag) * t),
-    rb = Math.round(ab + (bb - ab) * t);
+  const ah = parseInt(a.slice(1), 16);
+  const bh = parseInt(b.slice(1), 16);
+
+  const ar = (ah >> 16) & 0xff;
+  const ag = (ah >> 8) & 0xff;
+  const ab = ah & 0xff;
+
+  const br = (bh >> 16) & 0xff;
+  const bg = (bh >> 8) & 0xff;
+  const bb = bh & 0xff;
+
+  const rr = Math.round(ar + (br - ar) * t);
+  const rg = Math.round(ag + (bg - ag) * t);
+  const rb = Math.round(ab + (bb - ab) * t);
+
   return `rgb(${rr},${rg},${rb})`;
 }
 
@@ -158,8 +203,7 @@ async function loadTimeline() {
     const response = await fetch("data/sheet.csv");
     const text = await response.text();
 
-    const rows = text.trim().split("\n").slice(1); // remove header
-
+    const rows = text.trim().split("\n").slice(1);
     const entries = rows.map((row) => {
       const [date, banner, id, character, glw, pity] = row.split(",");
       return {
@@ -172,86 +216,107 @@ async function loadTimeline() {
       };
     });
 
-    // Sort newest first
     entries.reverse();
 
-    const tooltip = document.getElementById("tooltip");
     const grid = document.getElementById("pull-grid");
+    const tooltip = document.getElementById("tooltip");
+
+    grid.innerHTML = "";
 
     entries.forEach((entry) => {
-      // generate icon url automatically
-      let iconURL = "";
-
-      if (entry.id >= 20000) {
-        iconURL = `https://stardb.gg/api/static/StarRailResWebp/icon/light_cone/${entry.id}.webp`;
-      } else {
-        iconURL = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${entry.id}.webp`;
-      }
-
-      // Determine result text
-      let resultText = "";
-      let resultClass = "";
-
-      if (entry.result === "W") {
-        resultText = "Win";
-        resultClass = "win";
-      } else if (entry.result === "L") {
-        resultText = "Lose";
-        resultClass = "lose";
-      } else if (entry.result === "G") {
-        resultText = "Guaranteed";
-        resultClass = "guaranteed";
-      }
-
       const container = document.createElement("div");
       container.classList.add("pull-item");
 
       const img = document.createElement("img");
-      img.src = iconURL;
 
-      // Tooltip text
-      const tooltipText = `${entry.character} • ${entry.banner}\nResult: ${resultText}\nPity: ${entry.pity}\nDate: ${entry.date}`;
+      if (entry.id >= 20000) {
+        img.src = `https://stardb.gg/api/static/StarRailResWebp/icon/light_cone/${entry.id}.webp`;
+      } else {
+        img.src = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${entry.id}.webp`;
+      }
+
+      const tooltipText =
+        `${entry.character} • ${entry.banner}\n` +
+        `Result: ${entry.result}\n` +
+        `Pity: ${entry.pity}\n` +
+        `Date: ${entry.date}`;
 
       img.addEventListener("mouseenter", (e) => {
         tooltip.style.display = "block";
         tooltip.innerText = tooltipText;
       });
+
       img.addEventListener("mousemove", (e) => {
         tooltip.style.left = e.pageX + 10 + "px";
         tooltip.style.top = e.pageY + 10 + "px";
       });
+
       img.addEventListener("mouseleave", () => {
         tooltip.style.display = "none";
       });
 
-      switch (resultText.toLowerCase()) {
-        case "win":
-          img.style.borderColor = "green";
-          break;
-        case "lose":
-          img.style.borderColor = "red";
-          break;
-        case "guaranteed":
-          img.style.borderColor = "gold";
-          break;
-        default:
-          img.style.borderColor = "grey";
-      }
-
-      // Pity badge
       const badge = document.createElement("span");
       badge.classList.add("pull-badge");
       badge.innerText = entry.pity;
-
       badge.style.background = pityColor(entry.pity);
 
       container.appendChild(img);
       container.appendChild(badge);
-
       grid.appendChild(container);
     });
   } catch (err) {
     console.error("Failed to load timeline:", err);
+  }
+}
+
+/* =========================
+   Load Everything
+========================= */
+
+function renderHome(data) {
+  const sr = data.hsr;
+  const gi = data.genshin;
+
+  const homeHSR = document.getElementById("home-hsr");
+  const homeGI = document.getElementById("home-genshin");
+
+  if (sr) {
+    homeHSR.innerHTML = `
+      <div class="card">
+        <h2>Honkai: Star Rail</h2>
+        <div class="nickname">${sr.nickname}</div>
+        <div>Level ${sr.level}</div>
+        <div>⭐ MoC Stars: ${sr.memory_of_chaos?.total_stars ?? 0}</div>
+        <div>Trailblaze Power: ${sr.stamina ?? 0}/300</div>
+      </div>
+    `;
+  }
+
+  if (gi) {
+    homeGI.innerHTML = `
+      <div class="card">
+        <h2>Genshin Impact</h2>
+        <div class="nickname">${gi.nickname}</div>
+        <div>AR ${gi.level}</div>
+        <div>Achievements: ${gi.achievements}</div>
+      </div>
+    `;
+  }
+}
+
+async function loadStats() {
+  try {
+    const response = await fetch("data/stats.json");
+    if (!response.ok) throw new Error("Failed to fetch JSON");
+
+    const data = await response.json();
+
+    renderHome(data);
+    renderHSR(data);
+    renderMoC(data);
+    renderGenshin(data);
+  } catch (err) {
+    console.error(err);
   }
 }
 
