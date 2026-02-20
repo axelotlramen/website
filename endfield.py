@@ -270,7 +270,7 @@ if __name__ == "__main__":
 
     profiles = [
         Profile(
-            cred=os.environ["ENDFIELD_CRED"],
+            cred="",
             sk_game_role=os.environ["ENDFIELD_GAME_ROLE"],
             platform="3",
             v_name="1.0.0",
@@ -294,4 +294,12 @@ if __name__ == "__main__":
     notifier = DiscordNotifier(discord_config)
     notifier.send(results)
 
+    # Fail workflow if any account failed
+    all_success = all(r["success"] for r in results)
+
+    if not all_success:
+        logging.error("One or more check-ins failed. Exiting with error code.")
+        sys.exit(1)
+
+    logging.info("All check-ins successful.")
     logging.info("Script finished.")
