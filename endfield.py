@@ -26,6 +26,7 @@ from typing import List, Dict, Any
 import logging
 import sys
 import os
+from datetime import datetime, timezone
 
 
 ATTENDANCE_URL = "https://zonai.skport.com/web/v1/game/endfield/attendance"
@@ -245,7 +246,11 @@ class DiscordNotifier:
             "embeds": [{
                 "title": "Endfield Daily Check-in Report",
                 "color": embed_color,
-                "fields": fields
+                "fields": fields,
+                "footer": {
+                    "text": f"Time: {datetime.now(timezone.utc).strftime('%m/%d/%Y, %I:%M:%S %p')} (UTC)",
+                    "icon_url": "https://assets.skport.com/assets/favicon.ico"
+                }
             }]
         }
 

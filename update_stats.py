@@ -3,7 +3,7 @@ import genshin
 import asyncio
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 import requests
 
 def download_google_sheet():
@@ -169,15 +169,17 @@ class StatsDiscordNotifier:
 
         embed = {
             "title": "Hoyolab Stats Updated",
+            "description": "✅ **Site updated successfully!**",
             "color": embed_color,
             "fields": fields,
             "footer": {
-                "text": f"Last Updated: {datetime.utcnow().isoformat()} UTC"
+                "text": f"Time: {datetime.now(timezone.utc).strftime('%m/%d/%Y, %I:%M:%S %p')} (UTC)",
+                "icon_url": "https://www.hoyolab.com/favicon.ico"
             }
         }
 
         payload = {
-            "username": "Hoyolab Stats Bat",
+            "username": "Hoyolab Stats Bot",
             "embeds": [embed]
         }
 
