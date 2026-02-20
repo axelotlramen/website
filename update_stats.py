@@ -138,65 +138,146 @@ async def fetch_genshin_data(client, uid):
         print("Failed to fetch Genshin data:", e)
         return {}
 
+class StatsDiscordNotifier:
+    def __init__(self, webhook: str, discord_id: str | None = None):
+        self.webhook = webhook
+        self.discord_id = discord_id
+        
+    def send(self, genshin_data: dict, hsr_data: dict, success: bool, error_message: str | None = None):
+        embed_color = 5763719 if success else 15548997
+
+        fields = [
+            {
+                "name": "Genshin Impact",
+                "value": (
+                    f"**AR:** {genshin_data.get('level', 'N/A')}\n"
+                    f"**Achievements:** {genshin_data.get('achievements', 'N/A')}\n"
+                    f"**Active Days:** {genshin_data.get('active_days', 'N/A')}\n"
+                ),
+                "inline": True
+            },
+            {
+                "name": "Honkai: Star Rail",
+                "value": (
+                    f"**Trailblaze Level:** {hsr_data.get('level', 'N/A')}\n"
+                    f"**Achievements:** {hsr_data.get('achievements', 'N/A')}\n"
+                    f"**Active Days:** {hsr_data.get('active_days', 'N/A')}\n"
+                ),
+                "inline": True
+            }
+        ]
+
+        embed = {
+            "title": "Hoyolab Stats Updated",
+            "color": embed_color,
+            "fields": fields,
+            "footer": {
+                "text": f"Last Updated: {datetime.utcnow().isoformat()} UTC"
+            }
+        }
+
+        payload = {
+            "username": "Hoyolab Stats Bat",
+            "embeds": [embed]
+        }
+
+        if not success and self.discord_id:
+            payload["content"] = f"<@{self.discord_id}> Stats update failed!\n{error_message or ''}"
+
+        try:
+            response = requests.post(self.webhook, json=payload)
+            response.raise_for_status()
+        except Exception as e:
+            raise
 
 async def main():
-    # Grab your cookie from Hoyolab (ltuid, ltoken, cookie_token, account_id, etc.)
-    # Store it in GitHub secrets instead of hardcoding!
-    cookies = {
-        "ltuid_v2": os.environ["HOYOLAB_LTUID"],
-        "ltoken_v2": os.environ["HOYOLAB_LTOKEN"],
-    }
-
-    client = genshin.Client(cookies)
-
-    hsr_uid = int(os.environ["HOYOLAB_HSR_UID"])
-    genshin_uid = int(os.environ["HOYOLAB_GENSHIN_UID"])
-
-    # fetch both games
-    hsr_data = await fetch_hsr_data(client, hsr_uid)
-    genshin_data = await fetch_genshin_data(client, genshin_uid)
-
-    data = {
-        "last_updated": datetime.utcnow().isoformat(),
-        "genshin": genshin_data,
-        "hsr": hsr_data,
-    }
-
-    os.makedirs("data", exist_ok=True)
-
-    hsr_avatar_url = hsr_data.get("avatar_url", "")
-    hsr_avatar_path = "data/hsr_avatar.png"
-    genshin_avatar_url = genshin_data.get("avatar_url", "")
-    genshin_avatar_path = "data/genshin_avatar.png"
+    notifier = StatsDiscordNotifier(
+        webhook=os.environ["HOYOLAB_WEBHOOK"],
+        discord_id=os.environ["DISCORD_ID"]
+    )
 
     try:
-        print("Downloading avatar...")
-        hsr_r = requests.get(hsr_avatar_url, timeout=10)
-        genshin_r = requests.get(genshin_avatar_url, timeout=10)
-        print("HTTP Status Code:", hsr_r.status_code)
-        print("HTTP Status Code:", genshin_r.status_code)
-        if hsr_r.status_code == 200:
-            with open(hsr_avatar_path, "wb") as f:
-                f.write(hsr_r.content)
-        else:
-            print("Failed to download avatar, status code:", hsr_r.status_code)
-            hsr_avatar_path = ""
+        # ---------------------------
+        # Setup + Client
+        # ---------------------------
+   
+        cookies = {
+            "ltuid_v2": os.environ["HOYOLAB_LTUID"],
+            "ltoken_v2": os.environ["HOYOLAB_LTOKEN"],
+        }
 
-        if genshin_r.status_code == 200:
-            with open(genshin_avatar_path, "wb") as f:
-                f.write(genshin_r.content)
-        else:
-            print("Failed to download avatar, status code:", genshin_r.status_code)
-            genshin_avatar_path = ""
-        
+        client = genshin.Client(cookies)
+
+        hsr_uid = int(os.environ["HOYOLAB_HSR_UID"])
+        genshin_uid = int(os.environ["HOYOLAB_GENSHIN_UID"])
+
+        # ---------------------------
+        # Fetch Data
+        # ---------------------------
+        hsr_data = await fetch_hsr_data(client, hsr_uid)
+        genshin_data = await fetch_genshin_data(client, genshin_uid)
+
+        data = {
+            "last_updated": datetime.utcnow().isoformat(),
+            "genshin": genshin_data,
+            "hsr": hsr_data,
+        }
+
+        os.makedirs("data", exist_ok=True)
+
+        # ---------------------------
+        # Avatar Download (Non-Fatal)
+        # ---------------------------
+        try:
+            print("Downloading avatars...")
+
+            hsr_avatar_url = hsr_data.get("avatar_url", "")
+            genshin_avatar_url = genshin_data.get("avatar_url", "")
+
+            if hsr_avatar_url:
+                r = requests.get(hsr_avatar_url, timeout=10)
+                r.raise_for_status()
+                with open("data/hsr_avatar.png", "wb") as f:
+                    f.write(r.content)
+
+            if genshin_avatar_url:
+                r = requests.get(genshin_avatar_url, timeout=10)
+                r.raise_for_status()
+                with open("data/genshin_avatar.png", "wb") as f:
+                    f.write(r.content)
+
+        except Exception as avatar_error:
+            print(f"Avatar download failed: {avatar_error}")
+
+        # ---------------------------
+        # Save JSON
+        # ---------------------------
+        with open("data/stats.json", "w") as f:
+            json.dump(data, f, indent=2)
+
+        download_google_sheet()
+
+        # ---------------------------
+        # SUCCESS NOTIFICATION
+        # ---------------------------
+        notifier.send(
+            genshin_data=genshin_data,
+            hsr_data=hsr_data,
+            success=True
+        )
+
     except Exception as e:
-        print("Failed to download avatar:", e)
-        hsr_avatar_path = ""
+        # ---------------------------
+        # FAILURE NOTIFICATION
+        # ---------------------------
+        notifier.send(
+            genshin_data={},
+            hsr_data={},
+            success=False,
+            error_message=str(e)
+        )
 
-    with open("data/stats.json", "w") as f:
-        json.dump(data, f, indent=2)
-
-    download_google_sheet()
+        raise
 
 
 if __name__ == "__main__":
