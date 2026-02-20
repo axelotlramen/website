@@ -216,21 +216,24 @@ class EndfieldClient:
 # ---------------------------
 
 class DiscordNotifier:
-
     def __init__(self, config: DiscordConfig):
         self.config = config
+        self.logger = logging.getLogger("DiscordNotifier")
 
     def send(self, results: List[Dict[str, Any]]):
 
         if not self.config.enabled:
+            self.logger.info("Discord notifications disabled.")
             return
+        
+        self.logger.info("Sending webhook notification...")
 
         all_success = all(r["success"] for r in results)
         embed_color = 5763719 if all_success else 15548997
 
         fields = [
             {
-                "name": f"{r['name']}",
+                "name": f"👤 {r['name']}",
                 "value": f"**Status:** {r['status']}\n**Rewards:**\n{r['rewards']}",
                 "inline": True
             }
@@ -249,7 +252,11 @@ class DiscordNotifier:
         if not all_success and self.config.discord_id:
             payload["content"] = f"<@{self.config.discord_id}> Error occurred!"
 
-        requests.post(self.config.webhook, json=payload)
+        try:
+            requests.post(self.config.webhook, json=payload)
+            self.logger.info("Webhook sent successfully.")
+        except Exception as e:
+            self.logger.error(f"Failed to send webhook: {e}", exc_info=True)
 
 
 # ---------------------------
@@ -283,3 +290,8 @@ if __name__ == "__main__":
         client = EndfieldClient(profile)
         result = client.claim_attendance()
         results.append(result)
+
+    notifier = DiscordNotifier(discord_config)
+    notifier.send(results)
+
+    logging.info("Script finished.")
