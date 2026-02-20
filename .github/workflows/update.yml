@@ -22,7 +22,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run script
+      # --------------------------
+      # HOYOLAB SCRIPT
+      # --------------------------
+      - name: Run update_stats
         env:
           HOYOLAB_LTUID: ${{ secrets.HOYOLAB_LTUID }}
           HOYOLAB_LTOKEN: ${{ secrets.HOYOLAB_LTOKEN }}
@@ -30,6 +33,17 @@ jobs:
           HOYOLAB_GENSHIN_UID: ${{ secrets.HOYOLAB_GENSHIN_UID }}
           GOOGLE_SHEET_CSV_URL: ${{ secrets.GOOGLE_SHEET_CSV_URL }}
         run: python update_stats.py
+
+      # --------------------------
+      # ENDFIELD SCRIPT
+      # --------------------------
+      - name: Run endfield
+        env:
+          ENDFIELD_CRED: ${{ secrets.ENDFIELD_CRED }}
+          ENDFIELD_GAME_ROLE: ${{ secrets.ENDFIELD_GAME_ROLE }}
+          ENDFIELD_WEBHOOK: ${{ secrets.ENDFIELD_WEBHOOK }}
+          DISCORD_ID: ${{ secrets.DISCORD_ID }}
+        run: python endfield.py
 
       - name: Commit & push
         run: |
