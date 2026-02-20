@@ -270,7 +270,7 @@ if __name__ == "__main__":
 
     profiles = [
         Profile(
-            cred="",
+            cred=os.environ["ENDFIELD_CRED"],
             sk_game_role=os.environ["ENDFIELD_GAME_ROLE"],
             platform="3",
             v_name="1.0.0",
