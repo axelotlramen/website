@@ -1,5 +1,5 @@
 # update_stats.py
-import genshin
+import genshin # type: ignore
 import asyncio
 import json
 import os
@@ -137,22 +137,49 @@ async def fetch_genshin_data(client, uid):
     except Exception as e:
         print("Failed to fetch Genshin data:", e)
         return {}
+    
+def calculate_delta(old_value, new_value):
+    try:
+        old_value = int(old_value)
+        new_value = int(new_value)
+        diff = new_value - old_value
+
+        if diff > 0:
+            return f"{new_value} (⬆️ +{diff})"
+        elif diff < 0:
+            return f"{new_value} ({diff})"
+        else:
+            return f"{new_value}"
+    except Exception:
+        return str(new_value)
 
 class StatsDiscordNotifier:
     def __init__(self, webhook: str, discord_id: str | None = None):
         self.webhook = webhook
         self.discord_id = discord_id
         
-    def send(self, genshin_data: dict, hsr_data: dict, success: bool, error_message: str | None = None):
+    def send(self, old_data: dict | None, genshin_data: dict, hsr_data: dict, success: bool, error_message: str | None = None):
         embed_color = 5763719 if success else 15548997
+
+        if old_data:
+            old_genshin = old_data.get("genshin", {})
+            old_hsr = old_data.get("hsr", {})
+        else:
+            old_genshin = {}
+            old_hsr = {}
 
         fields = [
             {
                 "name": "Genshin Impact",
                 "value": (
                     f"**AR:** {genshin_data.get('level', 'N/A')}\n"
-                    f"**Achievements:** {genshin_data.get('achievements', 'N/A')}\n"
-                    f"**Active Days:** {genshin_data.get('active_days', 'N/A')}\n"
+                    f"**Achievements:** {calculate_delta(old_genshin.get('achievements', '0'), genshin_data.get('achievements', '0'))}\n"
+                    f"**Active Days:** {calculate_delta(old_genshin.get('active_days', '0'), genshin_data.get('active_days', '0'))}\n"
+                    f"**Character Count:** {calculate_delta(old_genshin.get('avatar_count', '0'), genshin_data.get('avatar_count', '0'))}\n"
+                    f"**Oculus:** {calculate_delta(old_genshin.get('oculus', '0'), genshin_data.get('oculus', '0'))}\n"
+                    f"**Chest Count:** {calculate_delta(old_genshin.get('chest_count', '0'), genshin_data.get('chest_count', '0'))}\n"
+                    f"**Resin:** {calculate_delta(old_genshin.get('resin', '0'), genshin_data.get('resin', '0'))}\n"
+                    f"**Daily Tasks:** {calculate_delta(old_genshin.get('daily_task', '0'), genshin_data.get('daily_task', '0'))}\n"
                 ),
                 "inline": True
             },
@@ -160,8 +187,12 @@ class StatsDiscordNotifier:
                 "name": "Honkai: Star Rail",
                 "value": (
                     f"**Trailblaze Level:** {hsr_data.get('level', 'N/A')}\n"
-                    f"**Achievements:** {hsr_data.get('achievements', 'N/A')}\n"
-                    f"**Active Days:** {hsr_data.get('active_days', 'N/A')}\n"
+                    f"**Achievements:** {calculate_delta(old_hsr.get('achievements', '0'), hsr_data.get('achievements', '0'))}\n"
+                    f"**Active Days:** {calculate_delta(old_hsr.get('active_days', '0'), hsr_data.get('active_days', '0'))}\n"
+                    f"**Character Count:** {calculate_delta(old_hsr.get('avatar_count', '0'), hsr_data.get('avatar_count', '0'))}\n"
+                    f"**Chest Count:** {calculate_delta(old_hsr.get('chest_count', '0'), hsr_data.get('chest_count', '0'))}\n"
+                    f"**Trailblaze Power:** {calculate_delta(old_hsr.get('stamina', '0'), hsr_data.get('stamina', '0'))}\n"
+                    f"**Daily Training:** {calculate_delta(old_hsr.get('current_train_score', '0'), hsr_data.get('current_train_score', '0'))}\n"
                 ),
                 "inline": True
             }
@@ -254,6 +285,15 @@ async def main():
         # ---------------------------
         # Save JSON
         # ---------------------------
+        old_data = None
+
+        if os.path.exists("data/stats.json"):
+            try:
+                with open("data/stats.json", "r") as f:
+                    old_data = json.load(f)
+            except Exception:
+                old_data = None
+
         with open("data/stats.json", "w") as f:
             json.dump(data, f, indent=2)
 
@@ -263,6 +303,7 @@ async def main():
         # SUCCESS NOTIFICATION
         # ---------------------------
         notifier.send(
+            old_data=old_data,
             genshin_data=genshin_data,
             hsr_data=hsr_data,
             success=True
@@ -273,6 +314,7 @@ async def main():
         # FAILURE NOTIFICATION
         # ---------------------------
         notifier.send(
+            old_data={},
             genshin_data={},
             hsr_data={},
             success=False,
