@@ -82,17 +82,17 @@ class EndfieldClient:
         return ts
 
     def _generate_sign(self, path: str, body: str, timestamp: str, token: str) -> str:
-        header_json = json.dumps({
-            "platform": self.profile.platform,
-            "timestamp": timestamp,
-            "dId": "",
-            "vName": self.profile.v_name
-        }, separators=(",", ":"))
+        header_json = (
+            f'{{"platform":"{self.profile.platform}",'
+            f'"timestamp":"{timestamp}",'
+            f'"dId":"",'
+            f'"vName":"{self.profile.v_name}"}}'
+        )
 
         raw_string = path + body + timestamp + header_json
 
         hmac_digest = hmac.new(
-            token.encode(),
+            (token or "").encode(),
             raw_string.encode(),
             hashlib.sha256
         ).hexdigest()
@@ -104,6 +104,8 @@ class EndfieldClient:
         self.logger.info("Refreshing token...")
 
         headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/plain, */*",
             "cred": self.profile.cred,
             "platform": self.profile.platform,
             "vName": self.profile.v_name,
@@ -150,13 +152,24 @@ class EndfieldClient:
         )
 
         headers = {
-            "cred": self.profile.cred,
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0",
+            "Accept": "*/*",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "Referer": "https://game.skport.com/",
+            "Content-Type": "application/json",
+            "sk-language": "en",
             "sk-game-role": self.profile.sk_game_role,
+            "cred": self.profile.cred,
             "platform": self.profile.platform,
             "vName": self.profile.v_name,
             "timestamp": timestamp,
             "sign": sign,
-            "Content-Type": "application/json"
+            "Origin": "https://game.skport.com",
+            "Connection": "keep-alive",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "same-site"
         }
 
         try:

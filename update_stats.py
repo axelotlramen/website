@@ -6,6 +6,7 @@ import os
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import requests
+import time
 
 def download_google_sheet():
     sheet_url = os.environ["GOOGLE_SHEET_CSV_URL"]
