@@ -27,6 +27,7 @@ import logging
 import sys
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 
 ATTENDANCE_URL = "https://zonai.skport.com/web/v1/game/endfield/attendance"
@@ -241,6 +242,8 @@ class DiscordNotifier:
             for r in results
         ]
 
+        now_est = datetime.now(ZoneInfo("America/New_York"))
+
         payload = {
             "username": "Endfield Assistant",
             "embeds": [{
@@ -248,7 +251,7 @@ class DiscordNotifier:
                 "color": embed_color,
                 "fields": fields,
                 "footer": {
-                    "text": f"Time: {datetime.now(timezone.utc).strftime('%m/%d/%Y, %I:%M:%S %p')} (UTC)",
+                    "text": f"Time: {now_est.strftime('%m/%d/%Y, %I:%M:%S %p')} (ET)",
                     "icon_url": "https://assets.skport.com/assets/favicon.ico"
                 }
             }]

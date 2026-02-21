@@ -4,6 +4,7 @@ import asyncio
 import json
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 import requests
 
 def download_google_sheet():
@@ -145,7 +146,7 @@ def calculate_delta(old_value, new_value):
         diff = new_value - old_value
 
         if diff > 0:
-            return f"{new_value} (⬆️ +{diff})"
+            return f"{new_value} (+{diff})"
         elif diff < 0:
             return f"{new_value} ({diff})"
         else:
@@ -198,13 +199,15 @@ class StatsDiscordNotifier:
             }
         ]
 
+        now_est = datetime.now(ZoneInfo("America/New_York"))
+
         embed = {
             "title": "Hoyolab Stats Updated",
             "description": "✅ **Site updated successfully!**",
             "color": embed_color,
             "fields": fields,
             "footer": {
-                "text": f"Time: {datetime.now(timezone.utc).strftime('%m/%d/%Y, %I:%M:%S %p')} (UTC)",
+                "text": f"Time: {now_est.strftime('%m/%d/%Y, %I:%M:%S %p')} (ET)",
                 "icon_url": "https://www.hoyolab.com/favicon.ico"
             }
         }
