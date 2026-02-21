@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-21T05:38:02.574675",
+  "last_updated": "2026-02-21T10:15:19.221170",
   "genshin": {
     "nickname": "axelle",
     "level": 57,
@@ -28,8 +28,8 @@
       "Diluc",
       "Jean"
     ],
-    "resin": 45,
-    "daily_task": 4
+    "resin": 80,
+    "daily_task": 0
   },
   "hsr": {
     "nickname": "Caelus",
@@ -71,8 +71,8 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 176,
-    "current_train_score": 500,
+    "stamina": 222,
+    "current_train_score": 0,
     "memory_of_chaos": {
       "season": "Breached Nest",
       "total_stars": 36,
