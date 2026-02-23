@@ -237,13 +237,9 @@ async def main():
         # ---------------------------
         # Setup + Client
         # ---------------------------
-   
-        cookies = {
-            "ltuid_v2": os.environ["HOYOLAB_LTUID"],
-            "ltoken_v2": os.environ["HOYOLAB_LTOKEN"],
-        }
 
-        client = genshin.Client(cookies)
+        client = genshin.Client()
+        await client.login_with_password(os.environ["HOYOLAB_USER_EMAIL"], os.environ["HOYOLAB_USER_PASSWORD"])
 
         hsr_uid = int(os.environ["HOYOLAB_HSR_UID"])
         genshin_uid = int(os.environ["HOYOLAB_GENSHIN_UID"])
@@ -253,6 +249,7 @@ async def main():
         # ---------------------------
         hsr_data = await fetch_hsr_data(client, hsr_uid)
         genshin_data = await fetch_genshin_data(client, genshin_uid)
+        hsr_diary = await client.get_starrail_diary(uid=hsr_uid)
 
         data = {
             "last_updated": datetime.utcnow().isoformat(),
