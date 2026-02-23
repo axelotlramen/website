@@ -1,9 +1,8 @@
-name: Update Hoyolab Stats
+name: Update And Run Tasks
 
 on:
   schedule:
-    - cron: "0 10 * * *" # ~5am EST / 6am EDT
-    - cron: "0 22 * * *" # ~5pm EST / 6pm EDT
+    - cron: "0 17 * * *" # ~12pm EST (17:00 UTC)
   workflow_dispatch: # allows manual runs too
 
 jobs:
@@ -25,7 +24,7 @@ jobs:
       # --------------------------
       # HOYOLAB SCRIPT
       # --------------------------
-      - name: Run update_stats
+      - name: Run update_stats and monthly_calculator
         env:
           HOYOLAB_USER_EMAIL: ${{ secrets.HOYOLAB_USER_EMAIL }}
           HOYOLAB_USER_PASSWORD: ${{ secrets.HOYOLAB_USER_PASSWORD }}
@@ -34,7 +33,9 @@ jobs:
           GOOGLE_SHEET_CSV_URL: ${{ secrets.GOOGLE_SHEET_CSV_URL }}
           HOYOLAB_WEBHOOK: ${{ secrets.HOYOLAB_WEBHOOK }}
           DISCORD_ID: ${{ secrets.DISCORD_ID }}
-        run: python update_stats.py
+        run: |
+          python update_stats.py
+          python monthly_calculator.py
 
       # --------------------------
       # ENDFIELD SCRIPT
