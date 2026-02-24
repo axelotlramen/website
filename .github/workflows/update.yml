@@ -24,16 +24,16 @@ jobs:
       # --------------------------
       # HOYOLAB SCRIPT
       # --------------------------
-      - name: Run update_stats
-        env:
-          HOYOLAB_USER_EMAIL: ${{ secrets.HOYOLAB_USER_EMAIL }}
-          HOYOLAB_USER_PASSWORD: ${{ secrets.HOYOLAB_USER_PASSWORD }}
-          HOYOLAB_HSR_UID: ${{ secrets.HOYOLAB_HSR_UID }}
-          HOYOLAB_GENSHIN_UID: ${{ secrets.HOYOLAB_GENSHIN_UID }}
-          GOOGLE_SHEET_CSV_URL: ${{ secrets.GOOGLE_SHEET_CSV_URL }}
-          HOYOLAB_WEBHOOK: ${{ secrets.HOYOLAB_WEBHOOK }}
-          DISCORD_ID: ${{ secrets.DISCORD_ID }}
-        run: python update_stats.py
+      # - name: Run update_stats
+      #   env:
+      #     HOYOLAB_USER_EMAIL: ${{ secrets.HOYOLAB_USER_EMAIL }}
+      #     HOYOLAB_USER_PASSWORD: ${{ secrets.HOYOLAB_USER_PASSWORD }}
+      #     HOYOLAB_HSR_UID: ${{ secrets.HOYOLAB_HSR_UID }}
+      #     HOYOLAB_GENSHIN_UID: ${{ secrets.HOYOLAB_GENSHIN_UID }}
+      #     GOOGLE_SHEET_CSV_URL: ${{ secrets.GOOGLE_SHEET_CSV_URL }}
+      #     HOYOLAB_WEBHOOK: ${{ secrets.HOYOLAB_WEBHOOK }}
+      #     DISCORD_ID: ${{ secrets.DISCORD_ID }}
+      #   run: python update_stats.py
 
       # --------------------------
       # ENDFIELD SCRIPT
