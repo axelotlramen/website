@@ -339,7 +339,7 @@ async def main():
         # ---------------------------
 
         client = genshin.Client()
-        await client.login_with_password(os.environ["HOYOLAB_USER_EMAIL"], os.environ["HOYOLAB_USER_PASSWORD"])
+        await asyncio.wait_for(client.login_with_password(os.environ["HOYOLAB_USER_EMAIL"], os.environ["HOYOLAB_USER_PASSWORD"]), timeout=30)
 
         hsr_uid = int(os.environ["HOYOLAB_HSR_UID"])
         genshin_uid = int(os.environ["HOYOLAB_GENSHIN_UID"])
@@ -404,7 +404,7 @@ async def main():
         # ---------------------------
         elapsed = time.perf_counter() - start_time
         logger.info(f"Stats update completed in {elapsed:.2f}s")
-        
+
         notifier.send(
             old_data=old_data,
             genshin_data=genshin_data,
