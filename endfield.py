@@ -28,6 +28,7 @@ import sys
 import os
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
+import time
 
 
 ATTENDANCE_URL = "https://zonai.skport.com/web/v1/game/endfield/attendance"
@@ -285,6 +286,7 @@ class DiscordNotifier:
 # ---------------------------
 
 if __name__ == "__main__":
+    start_time = time.perf_counter()
     setup_logging(debug=True)
 
     logging.info("Starting Endfield Check-in Script")
@@ -312,6 +314,8 @@ if __name__ == "__main__":
         result = client.claim_attendance()
         results.append(result)
 
+    elapsed = time.perf_counter() - start_time
+    logging.info(f"Stats update completed in {elapsed:.2f}s")
     notifier = DiscordNotifier(discord_config)
     notifier.send(results)
 
