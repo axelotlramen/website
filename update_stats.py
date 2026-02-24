@@ -8,8 +8,23 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import requests
 import time
+import logging
+import sys
+
+def setup_logging(debug: bool = True):
+    level = logging.DEBUG if debug else logging.INFO
+
+    logging.basicConfig(
+        level=level,
+        format="%(asctime)s | %(levelname)-8s | %(name)s | %(message)s",
+        handlers=[
+            logging.StreamHandler(sys.stdout),
+            logging.FileHandler("hoyolab.log", mode="a")
+        ]
+    )
 
 async def fetch_memory_of_chaos(client, uid):
+    logger = logging.getLogger("fetch_memory_of_chaos")
     try:
         challenge = await client.get_starrail_challenge(uid=uid)
 
@@ -46,10 +61,11 @@ async def fetch_memory_of_chaos(client, uid):
         }
     
     except Exception as e:
-        print("Failed to fetch Memory of Chaos:", e)
+        logger.error("Failed to fetch Memory of Chaos", exc_info=True)
         return {}
     
 async def fetch_hsr_data(client, uid):
+    logger = logging.getLogger("fetch_hsr_data")
     try:
         user = await client.get_starrail_user(uid)
 
@@ -82,10 +98,11 @@ async def fetch_hsr_data(client, uid):
             "memory_of_chaos": moc_data,
         }
     except Exception as e:
-        print("Failed to fetch HSR data:", e)
+        logger.error("Failed to fetch HSR data", exc_info=True)
         return {}
     
 async def fetch_genshin_data(client, uid):
+    logger = logging.getLogger("fetch_genshin_data")
     try:
         user = await client.get_genshin_user(uid)
         characters = await client.get_genshin_characters(uid)
@@ -117,7 +134,7 @@ async def fetch_genshin_data(client, uid):
         }
     
     except Exception as e:
-        print("Failed to fetch Genshin data:", e)
+        logger.error("Failed to fetch Genshin data", exc_info=True)
         return {}
     
 def calculate_delta(old_value, new_value):
@@ -240,6 +257,7 @@ def write_data(rows):
         writer.writerows(rows)
 
 async def update_hsr_diary_csv(client, hsr_uid):
+    logger = logging.getLogger("update_hsr_diary_csv")
     os.makedirs("data", exist_ok=True)
 
     hsr_diary = await client.get_starrail_diary(uid=hsr_uid)
@@ -304,10 +322,12 @@ async def update_hsr_diary_csv(client, hsr_uid):
     rows.append(new_row)
     write_data(rows)
 
-    print("HSR Diary CSV Updated.")
+    logger.info("HSR Diary CSV updated successfully.")
     return new_row
 
 async def main():
+    start_time = time.perf_counter()
+    logger = logging.getLogger("main")
     notifier = StatsDiscordNotifier(
         webhook=os.environ["HOYOLAB_WEBHOOK"],
         discord_id=os.environ["DISCORD_ID"]
@@ -382,6 +402,9 @@ async def main():
         # ---------------------------
         # SUCCESS NOTIFICATION
         # ---------------------------
+        elapsed = time.perf_counter() - start_time
+        logger.info(f"Stats update completed in {elapsed:.2f}s")
+        
         notifier.send(
             old_data=old_data,
             genshin_data=genshin_data,
@@ -405,4 +428,12 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    setup_logging(debug=True)
+    logging.info("Starting Hoyolab Stats Update Script")
+
+    try:
+        asyncio.run(main())
+        logging.info("Script finished successfuly.")
+    except Exception:
+        logging.exception("Script crashed.")
+        raise
