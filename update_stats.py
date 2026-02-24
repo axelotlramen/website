@@ -1,33 +1,13 @@
 # update_stats.py
 import genshin # type: ignore
 import asyncio
+import csv
 import json
 import os
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 import requests
 import time
-
-def download_google_sheet():
-    sheet_url = os.environ["GOOGLE_SHEET_CSV_URL"]
-    output_path = "data/sheet.csv"
-
-    os.makedirs("data", exist_ok=True)
-
-    try:
-        print("Downloading Google Sheet CSV...")
-        r = requests.get(sheet_url, timeout=15)
-        print("Status:", r.status_code)
-
-        if r.status_code == 200:
-            with open(output_path, "wb") as f:
-                f.write(r.content)
-            print("Saved to", output_path)
-        else:
-            print("Failed to download sheet")
-
-    except Exception as e:
-        print("Error downloading sheet:", e)
 
 async def fetch_memory_of_chaos(client, uid):
     try:
@@ -227,6 +207,106 @@ class StatsDiscordNotifier:
         except Exception as e:
             raise
 
+# reading trailblaze monthly calculator
+PULL_COST = 160
+FIVE_STAR_PITY = 80
+THREE_WEEKS = 21
+CSV_FILE = "data/hsr_diary_log.csv"
+
+def read_existing_data():
+    if not os.path.exists(CSV_FILE):
+        return []
+    
+    with open(CSV_FILE, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        return list(reader)
+    
+def write_data(rows):
+    fieldnames = [
+        "Date",
+        "Jades Net Gain",
+        "Pulls Net Gain",
+        "Stellar Jades",
+        "Pulls",
+        "Total Pulls",
+        "Currency Needed for 5 Star",
+        "3-Week Avg Gain",
+        "Estimated Days Til 5 Star"
+    ]
+
+    with open(CSV_FILE, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+async def update_hsr_diary_csv(client, hsr_uid):
+    os.makedirs("data", exist_ok=True)
+
+    hsr_diary = await client.get_starrail_diary(uid=hsr_uid)
+    day_data = hsr_diary.day_data
+
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    jades_gain = day_data.current_hcoin
+    pulls_gain = day_data.current_rails_pass
+
+    rows = read_existing_data()
+
+    rows = [r for r in rows if r["Date"] != today]
+
+    if rows:
+        last_row = rows[-1]
+        prev_jades = int(last_row["Stellar Jades"])
+        prev_pulls = float(last_row["Pulls"])
+    else:
+        prev_jades = 0
+        prev_pulls = 0
+
+    new_jades_total = prev_jades + jades_gain
+    new_pulls_total = prev_pulls + pulls_gain
+
+    total_pulls = new_jades_total / PULL_COST + new_pulls_total
+    currency_needed = max(FIVE_STAR_PITY - total_pulls, 0) * PULL_COST
+
+    rows_for_avg = rows[-(THREE_WEEKS - 1):]
+    gains = []
+
+    for r in rows_for_avg:
+        total_gain = int(r["Jades Net Gain"]) + int(r["Pulls Net Gain"]) * PULL_COST
+        gains.append(total_gain)
+
+    today_total_gain = jades_gain + pulls_gain * PULL_COST
+    gains.append(today_total_gain)
+
+    if len(gains) >= THREE_WEEKS:
+        avg_gain = sum(gains[-THREE_WEEKS:]) / THREE_WEEKS
+    else:
+        avg_gain = None
+
+    estimated_days = (
+        currency_needed / avg_gain
+        if avg_gain and avg_gain > 0
+        else None
+    )
+
+    new_row = {
+        "Date": today,
+        "Jades Net Gain": jades_gain,
+        "Pulls Net Gain": pulls_gain,
+        "Stellar Jades": new_jades_total,
+        "Pulls": new_pulls_total,
+        "Total Pulls": round(total_pulls, 2),
+        "Currency Needed for 5 Star": round(currency_needed, 2),
+        "3-Week Avg Gain": round(avg_gain, 2) if avg_gain else "",
+        "Estimated Days Til 5 Star": round(estimated_days, 2) if estimated_days else ""
+    }
+
+    rows.append(new_row)
+    write_data(rows)
+
+    print("HSR Diary CSV Updated.")
+    return new_row
+
 async def main():
     notifier = StatsDiscordNotifier(
         webhook=os.environ["HOYOLAB_WEBHOOK"],
@@ -249,7 +329,8 @@ async def main():
         # ---------------------------
         hsr_data = await fetch_hsr_data(client, hsr_uid)
         genshin_data = await fetch_genshin_data(client, genshin_uid)
-        hsr_diary = await client.get_starrail_diary(uid=hsr_uid)
+        csv_row = await update_hsr_diary_csv(client, hsr_uid)
+        print(csv_row)
 
         data = {
             "last_updated": datetime.utcnow().isoformat(),
@@ -297,8 +378,6 @@ async def main():
 
         with open("data/stats.json", "w") as f:
             json.dump(data, f, indent=2)
-
-        download_google_sheet()
 
         # ---------------------------
         # SUCCESS NOTIFICATION
