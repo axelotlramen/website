@@ -1,4 +1,7 @@
 # update_stats.py
+from locale import currency
+from turtle import update
+
 import genshin # type: ignore
 import asyncio
 import csv
@@ -10,6 +13,8 @@ import requests
 import time
 import logging
 import sys
+from dataclasses import dataclass
+from typing import Optional
 
 def setup_logging(debug: bool = True):
     level = logging.DEBUG if debug else logging.INFO
@@ -225,81 +230,101 @@ class StatsDiscordNotifier:
             raise
 
 # reading trailblaze monthly calculator
-PULL_COST = 160
-FIVE_STAR_PITY = 80
-THREE_WEEKS = 21
-CSV_FILE = "data/hsr_diary_log.csv"
+@dataclass
+class GameConfig:
+    name: str
+    csv_file: str
+    currency_name: str
+    pull_item_name: str
+    pull_cost: int
+    five_star_pity: int
+    diary_fetcher: callable
+    currency_attr: str
+    pull_attr: Optional[str] = None
 
-def read_existing_data():
-    if not os.path.exists(CSV_FILE):
+HSR_CONFIG = GameConfig(
+    name="HSR",
+    csv_file="data/hsr_diary_log.csv",
+    currency_name="Stellar Jades",
+    pull_item_name="Passes",
+    pull_cost=160,
+    five_star_pity=80,
+    diary_fetcher=lambda client, uid: client.get_starrail_diary(uid=uid),
+    currency_attr="current_hcoin",
+    pull_attr="current_rails_pass"
+)
+
+GENSHIN_CONFIG = GameConfig(
+    name="Genshin",
+    csv_file="data/genshin_diary_log.csv",
+    currency_name="Primogems",
+    pull_item_name="Fates",
+    pull_cost=160,
+    five_star_pity=80,
+    diary_fetcher=lambda client, uid: client.get_genshin_diary(uid=uid),
+    currency_attr="current_primogems",
+    pull_attr=""
+)
+
+def read_existing_data(csv_file):
+    if not os.path.exists(csv_file):
         return []
     
-    with open(CSV_FILE, newline="", encoding="utf-8") as f:
+    with open(csv_file, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         return list(reader)
     
-def write_data(rows):
-    fieldnames = [
-        "Date",
-        "Jades Net Gain",
-        "Pulls Net Gain",
-        "Stellar Jades",
-        "Pulls",
-        "Total Pulls",
-        "Currency Needed for 5 Star",
-        "3-Week Avg Gain",
-        "Estimated Days Til 5 Star"
-    ]
-
-    with open(CSV_FILE, "w", newline="", encoding="utf-8") as f:
+def write_data(csv_file, rows, fieldnames):
+    with open(csv_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
 
-async def update_hsr_diary_csv(client, hsr_uid):
-    logger = logging.getLogger("update_hsr_diary_csv")
+async def update_diary_csv(client, uid, config: GameConfig):
+    logger = logging.getLogger(f"update_{config.name.lower()}_diary")
     os.makedirs("data", exist_ok=True)
 
-    hsr_diary = await client.get_starrail_diary(uid=hsr_uid)
-    day_data = hsr_diary.day_data
+    diary = await config.diary_fetcher(client, uid)
+    day_data = diary.day_data
 
     today = datetime.now().strftime("%Y-%m-%d")
 
-    jades_gain = day_data.current_hcoin
-    pulls_gain = day_data.current_rails_pass
+    currency_gain = getattr(day_data, config.currency_attr)
+    
+    if config.pull_attr:
+        pulls_gain = getattr(day_data, config.pull_attr)
+    else:
+        pulls_gain = 0
 
-    rows = read_existing_data()
-
+    rows = read_existing_data(config.csv_file)
     rows = [r for r in rows if r["Date"] != today]
 
     if rows:
         last_row = rows[-1]
-        prev_jades = int(last_row["Stellar Jades"])
+        prev_currency = int(last_row[config.currency_name])
         prev_pulls = float(last_row["Pulls"])
     else:
-        prev_jades = 0
+        prev_currency = 0
         prev_pulls = 0
 
-    new_jades_total = prev_jades + jades_gain
+    new_currency_total = prev_currency + currency_gain
     new_pulls_total = prev_pulls + pulls_gain
 
-    total_pulls = new_jades_total / PULL_COST + new_pulls_total
-    currency_needed = max(FIVE_STAR_PITY - total_pulls, 0) * PULL_COST
+    total_pulls = new_currency_total / config.pull_cost + new_pulls_total
+    currency_needed = max(config.five_star_pity - total_pulls, 0) * config.pull_cost
 
+    THREE_WEEKS = 21
     rows_for_avg = rows[-(THREE_WEEKS - 1):]
-    gains = []
+    gains = [
+        int(r["Net Currency Gain"]) + int(r["Pulls Net Gain"]) * config.pull_cost for r in rows_for_avg
+    ]
 
-    for r in rows_for_avg:
-        total_gain = int(r["Jades Net Gain"]) + int(r["Pulls Net Gain"]) * PULL_COST
-        gains.append(total_gain)
-
-    today_total_gain = jades_gain + pulls_gain * PULL_COST
+    today_total_gain = currency_gain + pulls_gain * config.pull_cost
     gains.append(today_total_gain)
 
-    if len(gains) >= THREE_WEEKS:
-        avg_gain = sum(gains[-THREE_WEEKS:]) / THREE_WEEKS
-    else:
-        avg_gain = None
+    avg_gain = (
+        sum(gains[-THREE_WEEKS:]) / THREE_WEEKS if len(gains) >= THREE_WEEKS else None
+    )
 
     estimated_days = (
         currency_needed / avg_gain
@@ -307,11 +332,23 @@ async def update_hsr_diary_csv(client, hsr_uid):
         else None
     )
 
+    fieldnames = [
+        "Date",
+        "Net Currency Gain",
+        "Pulls Net Gain",
+        config.currency_name,
+        "Pulls",
+        "Total Pulls",
+        "Currency Needed for 5 Star",
+        "3 Week Avg Gain",
+        "Estimated Days Til 5 Star"
+    ]
+
     new_row = {
         "Date": today,
-        "Jades Net Gain": jades_gain,
+        "Jades Net Gain": currency_gain,
         "Pulls Net Gain": pulls_gain,
-        "Stellar Jades": new_jades_total,
+        config.currency_name: new_currency_total,
         "Pulls": new_pulls_total,
         "Total Pulls": round(total_pulls, 2),
         "Currency Needed for 5 Star": round(currency_needed, 2),
@@ -320,9 +357,9 @@ async def update_hsr_diary_csv(client, hsr_uid):
     }
 
     rows.append(new_row)
-    write_data(rows)
+    write_data(config.csv_file, rows, fieldnames)
 
-    logger.info("HSR Diary CSV updated successfully.")
+    logger.info(f"{config.name} diary updated successfully.")
     return new_row
 
 async def main():
@@ -349,8 +386,8 @@ async def main():
         # ---------------------------
         hsr_data = await fetch_hsr_data(client, hsr_uid)
         genshin_data = await fetch_genshin_data(client, genshin_uid)
-        csv_row = await update_hsr_diary_csv(client, hsr_uid)
-        print(csv_row)
+        await update_diary_csv(client, hsr_uid, HSR_CONFIG)
+        await update_diary_csv(client, genshin_uid, GENSHIN_CONFIG)
 
         data = {
             "last_updated": datetime.utcnow().isoformat(),
