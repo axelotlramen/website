@@ -339,7 +339,7 @@ async def main():
         # ---------------------------
 
         client = genshin.Client()
-        await asyncio.wait_for(client.set_cookies(os.environ["HOYOLAB_USER_COOKIES"]), timeout=30)
+        client.set_cookies(os.environ["HOYOLAB_USER_COOKIES"])
 
         hsr_uid = int(os.environ["HOYOLAB_HSR_UID"])
         genshin_uid = int(os.environ["HOYOLAB_GENSHIN_UID"])
