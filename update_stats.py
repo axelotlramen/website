@@ -340,13 +340,13 @@ async def update_diary_csv(client, uid, config: GameConfig):
         "Pulls",
         "Total Pulls",
         "Currency Needed for 5 Star",
-        "3 Week Avg Gain",
+        "3-Week Avg Gain",
         "Estimated Days Til 5 Star"
     ]
 
     new_row = {
         "Date": today,
-        "Jades Net Gain": currency_gain,
+        "Net Currency Gain": currency_gain,
         "Pulls Net Gain": pulls_gain,
         config.currency_name: new_currency_total,
         "Pulls": new_pulls_total,
