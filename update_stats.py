@@ -1,13 +1,10 @@
 # update_stats.py
-from locale import currency
-from turtle import update
-
 import genshin # type: ignore
 import asyncio
 import csv
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime
 from zoneinfo import ZoneInfo
 import requests
 import time
@@ -227,6 +224,57 @@ class StatsDiscordNotifier:
         except Exception as e:
             raise
 
+    def send_diary(self, hsr_diary: dict | None, genshin_diary: dict | None):
+        embed_color = 5763719
+
+        now_est = datetime.now(ZoneInfo("America/New_York"))
+
+        fields = []
+        
+        if genshin_diary:
+            fields.append({
+                "name": "Genshin Impact",
+                "value": (
+                    f"**Net Currency Gain:** {genshin_diary.get('Net Currency Gain', '0')}\n"
+                    f"**Pulls Net Gain:** {genshin_diary.get('Pulls Net Gain', '0')}\n"
+                    f"**Total Pulls:** {genshin_diary.get('Total Pulls', '0')}\n"
+                ),
+                "inline": True
+            })
+
+        if hsr_diary:
+            fields.append({
+                "name": "Honkai: Star Rail",
+                "value": (
+                    f"**Net Currency Gain:** {hsr_diary.get('Net Currency Gain', '0')}\n"
+                    f"**Pulls Net Gain:** {hsr_diary.get('Pulls Net Gain', '0')}\n"
+                    f"**Total Pulls:** {hsr_diary.get('Total Pulls', '0')}\n"
+                ),
+                "inline": True
+            })
+
+        embed = {
+            "title": "Daily Pull Progress Update",
+            "description": "📈 **Diary Updated Successfully**",
+            "color": embed_color,
+            "fields": fields,
+            "footer": {
+                "text": f"Time: {now_est.strftime('%m/%d/%Y, %I:%M:%S %p')} (ET)",
+                "icon_url": "https://www.hoyolab.com/favicon.ico"
+            }
+        }
+
+        payload = {
+            "username": "Hoyolab Stats Bot",
+            "embeds": [embed]
+        }
+
+        try:
+            response = requests.post(self.webhook, json=payload, timeout=10)
+            response.raise_for_status()
+        except Exception as e:
+            raise
+
 # reading trailblaze monthly calculator
 @dataclass
 class GameConfig:
@@ -236,7 +284,7 @@ class GameConfig:
     pull_item_name: str
     pull_cost: int
     five_star_pity: int
-    diary_fetcher: callable
+    diary_fetcher: callable # type: ignore
     currency_attr: str
     pull_attr: Optional[str] = None
 
@@ -384,8 +432,8 @@ async def main():
         # ---------------------------
         hsr_data = await fetch_hsr_data(client, hsr_uid)
         genshin_data = await fetch_genshin_data(client, genshin_uid)
-        await update_diary_csv(client, hsr_uid, HSR_CONFIG)
-        await update_diary_csv(client, genshin_uid, GENSHIN_CONFIG)
+        hsr_diary = await update_diary_csv(client, hsr_uid, HSR_CONFIG)
+        genshin_diary = await update_diary_csv(client, genshin_uid, GENSHIN_CONFIG)
 
         data = {
             "last_updated": datetime.utcnow().isoformat(),
@@ -421,6 +469,10 @@ async def main():
             genshin_data=genshin_data,
             hsr_data=hsr_data,
             success=True
+        )
+        notifier.send_diary(
+            hsr_diary=hsr_diary,
+            genshin_diary=genshin_diary
         )
 
     except Exception as e:
