@@ -10,6 +10,14 @@ A small website that visualizes
 
 Built using vanilla HTML, CSS, and JavaScript, with a Python automation pipeline
 
+To run on a local computer, simply run
+
+```bash
+python3 -m http.server 8000
+```
+
+and open `http://localhost:8000`.
+
 ## How It Works
 
 ### Data Collection

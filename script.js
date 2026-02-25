@@ -97,7 +97,7 @@ function renderHSR(data) {
   container.innerHTML = `
     <div class="card">
       <div class="avatar">
-        <img src="${sr.avatar}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        <img src="${sr.avatar_url}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
       </div>
       <div class="nickname">${sr.nickname}</div>
       <div class="server-level">NA | Level ${sr.level}</div>
@@ -136,7 +136,7 @@ function renderGenshin(data) {
   container.innerHTML = `
     <div class="card">
       <div class="avatar">
-        <img src="${gi.avatar}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        <img src="${gi.avatar_url}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
       </div>
       <div class="nickname">${gi.nickname}</div>
       <div class="server-level">AR ${gi.level}</div>

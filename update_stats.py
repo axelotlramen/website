@@ -89,7 +89,6 @@ async def fetch_hsr_data(client, uid):
         return {
             "nickname": user.info.nickname,
             "level": user.info.level,
-            "avatar": "data/hsr_avatar.png",
             "avatar_url": user.info.avatar,
             "achievements": user.stats.achievement_num,
             "active_days": user.stats.active_days,
@@ -125,7 +124,6 @@ async def fetch_genshin_data(client, uid):
         return {
             "nickname": user.info.nickname,
             "level": user.info.level,
-            "avatar": "data/genshin_avatar.png",
             "avatar_url": user.info.in_game_avatar,
             "achievements": user.stats.achievements,
             "active_days": user.stats.days_active,
@@ -396,30 +394,6 @@ async def main():
         }
 
         os.makedirs("data", exist_ok=True)
-
-        # ---------------------------
-        # Avatar Download (Non-Fatal)
-        # ---------------------------
-        try:
-            print("Downloading avatars...")
-
-            hsr_avatar_url = hsr_data.get("avatar_url", "")
-            genshin_avatar_url = genshin_data.get("avatar_url", "")
-
-            if hsr_avatar_url:
-                r = requests.get(hsr_avatar_url, timeout=10)
-                r.raise_for_status()
-                with open("data/hsr_avatar.png", "wb") as f:
-                    f.write(r.content)
-
-            if genshin_avatar_url:
-                r = requests.get(genshin_avatar_url, timeout=10)
-                r.raise_for_status()
-                with open("data/genshin_avatar.png", "wb") as f:
-                    f.write(r.content)
-
-        except Exception as avatar_error:
-            print(f"Avatar download failed: {avatar_error}")
 
         # ---------------------------
         # Save JSON
