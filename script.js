@@ -167,37 +167,6 @@ function renderGenshin(data) {
    Pull Timeline
 ========================= */
 
-function pityColor(pity) {
-  pity = Math.max(1, Math.min(90, pity));
-
-  if (pity <= 45) {
-    const t = (pity - 1) / 44;
-    return lerpColor("#57bb8a", "#ffd666", t);
-  } else {
-    const t = (pity - 45) / 45;
-    return lerpColor("#ffd666", "#e67c73", t);
-  }
-}
-
-function lerpColor(a, b, t) {
-  const ah = parseInt(a.slice(1), 16);
-  const bh = parseInt(b.slice(1), 16);
-
-  const ar = (ah >> 16) & 0xff;
-  const ag = (ah >> 8) & 0xff;
-  const ab = ah & 0xff;
-
-  const br = (bh >> 16) & 0xff;
-  const bg = (bh >> 8) & 0xff;
-  const bb = bh & 0xff;
-
-  const rr = Math.round(ar + (br - ar) * t);
-  const rg = Math.round(ag + (bg - ag) * t);
-  const rb = Math.round(ab + (bb - ab) * t);
-
-  return `rgb(${rr},${rg},${rb})`;
-}
-
 async function loadTimeline() {
   try {
     const response = await fetch("data/sheet.csv");
@@ -217,67 +186,6 @@ async function loadTimeline() {
     });
 
     entries.reverse();
-
-    const grid = document.getElementById("pull-grid");
-    const tooltip = document.getElementById("tooltip");
-
-    grid.innerHTML = "";
-
-    entries.forEach((entry) => {
-      const container = document.createElement("div");
-      container.classList.add("pull-item");
-
-      const img = document.createElement("img");
-
-      if (entry.id >= 20000) {
-        img.src = `https://stardb.gg/api/static/StarRailResWebp/icon/light_cone/${entry.id}.webp`;
-      } else {
-        img.src = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${entry.id}.webp`;
-      }
-
-      const tooltipText =
-        `${entry.character} • ${entry.banner}\n` +
-        `Result: ${entry.result}\n` +
-        `Pity: ${entry.pity}\n` +
-        `Date: ${entry.date}`;
-
-      img.addEventListener("mouseenter", (e) => {
-        tooltip.style.display = "block";
-        tooltip.innerText = tooltipText;
-      });
-
-      img.addEventListener("mousemove", (e) => {
-        tooltip.style.left = e.pageX + 10 + "px";
-        tooltip.style.top = e.pageY + 10 + "px";
-      });
-
-      img.addEventListener("mouseleave", () => {
-        tooltip.style.display = "none";
-      });
-
-      switch (entry.result) {
-        case "W":
-          img.style.borderColor = "green";
-          break;
-        case "L":
-          img.style.borderColor = "red";
-          break;
-        case "G":
-          img.style.borderColor = "gold";
-          break;
-        default:
-          img.style.borderColor = "grey";
-      }
-
-      const badge = document.createElement("span");
-      badge.classList.add("pull-badge");
-      badge.innerText = entry.pity;
-      badge.style.background = pityColor(entry.pity);
-
-      container.appendChild(img);
-      container.appendChild(badge);
-      grid.appendChild(container);
-    });
 
     const latestFiveStar = entries[0];
 
