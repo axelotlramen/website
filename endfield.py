@@ -16,6 +16,7 @@ Changes made:
 This script is for personal automation use only.
 """
 
+from re import M
 import time
 import json
 import hmac
@@ -142,7 +143,8 @@ class EndfieldClient:
                 "name": self.profile.account_name,
                 "success": False,
                 "status": "Token Refresh Failed",
-                "rewards": str(e)
+                "rewards": str(e),
+                "icon": "",
             }
 
         sign = self._generate_sign(
@@ -185,14 +187,16 @@ class EndfieldClient:
                 "name": self.profile.account_name,
                 "success": False,
                 "status": "Request Failed",
-                "rewards": str(e)
+                "rewards": str(e),
+                "icon": ""
             }
 
         result = {
             "name": self.profile.account_name,
             "success": False,
             "status": "",
-            "rewards": ""
+            "rewards": "",
+            "icon": ""
         }
 
         code = data.get("code")
@@ -203,15 +207,18 @@ class EndfieldClient:
             result["status"] = "Check-in Successful"
 
             rewards = []
+            icon = ""
             for award in data.get("data", {}).get("awardIds", []):
                 reward_id = award.get("id")
                 resource = data["data"].get("resourceInfoMap", {}).get(reward_id)
                 if resource:
                     rewards.append(f"{resource['name']} x{resource['count']}")
+                    icon = resource['icon']
                 else:
                     rewards.append(reward_id)
 
             result["rewards"] = "\n".join(rewards) or "No reward info"
+            result["icon"] = icon
 
         elif data.get("code") == 10001:
             self.logger.info("Already checked in.")
@@ -244,38 +251,60 @@ class DiscordNotifier:
         
         self.logger.info("Sending webhook notification...")
 
-        all_success = all(r["success"] for r in results)
-        embed_color = 5763719 if all_success else 15548997
-
-        fields = [
-            {
-                "name": f"👤 {r['name']}",
-                "value": f"**Status:** {r['status']}\n**Rewards:**\n{r['rewards']}",
-                "inline": True
-            }
-            for r in results
-        ]
-
         now_est = datetime.now(ZoneInfo("America/New_York"))
 
-        payload = {
-            "username": "Endfield Assistant",
-            "embeds": [{
-                "title": "Endfield Daily Check-in Report",
+        embeds = []
+        any_failure = False
+
+        for r in results:
+            success = r.get("success", False)
+            if not success:
+                any_failure = True
+
+            embed_color = 5763719 if success else 15548997
+
+            embed = {
+                "title": f"{r.get('name', 'Unknown Account')}",
                 "color": embed_color,
-                "fields": fields,
+                "fields": [
+                    {
+                        "name": "Status",
+                        "value": r.get("status") or "-",
+                        "inline": False
+                    },
+                    {
+                        "name": "Rewards",
+                        "value": r.get("rewards") or "-",
+                        "inline": False
+                    }
+                ],
                 "footer": {
                     "text": f"Time: {now_est.strftime('%m/%d/%Y, %I:%M:%S %p')} (ET)",
                     "icon_url": "https://assets.skport.com/assets/favicon.ico"
                 }
-            }]
+            }
+
+            # add thumbnail if icon url exists
+            icon_url = r.get("icon")
+            if icon_url:
+                embed["thumbnail"] = {
+                    "url": icon_url
+                }
+
+            embeds.append(embed)
+
+        payload = {
+            "username": "Chen Qianyu - Dijiang Control Nexus Assistant",
+            "embeds": embeds
         }
 
-        if not all_success and self.config.discord_id:
+        # Ping user only if at least one failure occurred
+        if any_failure and self.config.discord_id:
             payload["content"] = f"<@{self.config.discord_id}> Error occurred!"
 
         try:
-            requests.post(self.config.webhook, json=payload)
+            response = requests.post(self.config.webhook, json=payload, timeout=10)
+            response.raise_for_status()
             self.logger.info("Webhook sent successfully.")
         except Exception as e:
             self.logger.error(f"Failed to send webhook: {e}", exc_info=True)
