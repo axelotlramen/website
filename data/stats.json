@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-02-25T16:07:25.893397",
+  "last_updated": "2026-02-26T04:43:24.963874",
   "genshin": {
     "nickname": "axelle",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 894,
+    "achievements": 900,
     "active_days": 311,
     "avatar_count": 55,
     "oculus": 1061,
-    "chest_count": 3570,
+    "chest_count": 3575,
     "five_star_characters": [
       "Columbina",
       "Durin",
@@ -28,7 +28,7 @@
       "Diluc",
       "Jean"
     ],
-    "resin": 16,
+    "resin": 111,
     "daily_task": 4
   },
   "hsr": {
@@ -70,7 +70,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 60,
+    "stamina": 186,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Breached Nest",
