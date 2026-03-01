@@ -1,4 +1,4 @@
-genshin
+genshin==1.7.23
 ramael
 requests
 cookies
