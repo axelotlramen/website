@@ -46,8 +46,7 @@ class EndfieldClient:
             hashlib.sha256
         ).hexdigest()
 
-        md5_digest = hashlib.md5(hmac_digest.encode()).hexdigest()
-        return md5_digest
+        return hashlib.md5(hmac_digest.encode()).hexdigest()
     
     def _refresh_token(self) -> None:
         self.logger.info("Refreshing token...")
@@ -100,7 +99,7 @@ class EndfieldClient:
             method=method,
             url=path,
             headers=headers,
-            json=body if body else None
+            content=body if body else None
         )
 
         data = response.json()
@@ -245,28 +244,37 @@ class EndfieldClient:
     # Data retrieval
     # ------------------------
     def fetch_endfield_data(self):
+        self.logger.info("Starting to fetch endfield cards...")
+
         data = self._request(
             "GET",
             CARD_URL
         )
 
-        detail = data.get("data", {}).get("detail", {})
+        code = data.get("code")
 
-        six_stars = [
-            char.get("charData").get("name") for char in detail.get("chars") if char.get("charData").get("rarity").get("value") == "6"
-        ]
+        if code == 0:
+            detail = data.get("data", {}).get("detail", {})
 
-        return {
-            "nickname": detail.get("base").get("name"),
-            "level": detail.get("base").get("level"),
-            "avatar_url": detail.get("base").get("avatarUrl"),
+            six_stars = [
+                char.get("charData").get("name") for char in detail.get("chars") if char.get("charData").get("rarity").get("value") == "6"
+            ]
 
-            "achievements": detail.get("achieve").get("count"),
-            "avatar_count": detail.get("base").get("charNum"),
-            "six_star_characters": six_stars,
+            return {
+                "nickname": detail.get("base").get("name"),
+                "level": detail.get("base").get("level"),
+                "avatar_url": detail.get("base").get("avatarUrl"),
 
-            "stamina": detail.get("dungeon").get("curStamina"),
-            "daily_mission": detail.get("dailyMission").get("dailyActivation")
-        }
+                "achievements": detail.get("achieve").get("count"),
+                "avatar_count": detail.get("base").get("charNum"),
+                "six_star_characters": six_stars,
+
+                "stamina": detail.get("dungeon").get("curStamina"),
+                "daily_mission": detail.get("dailyMission").get("dailyActivation")
+            }
+        
+        else:
+            self.logger.warning(f"Unexpected response code: {code}")
+            return {}
 
 
