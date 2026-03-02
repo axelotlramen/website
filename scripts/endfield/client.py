@@ -11,6 +11,10 @@ REFRESH_URL = "https://zonai.skport.com/web/v1/auth/refresh"
 CARD_URL = "https://zonai.skport.com/api/v1/game/endfield/card/detail"
 
 class EndfieldClient:
+    BASE_URL = "https://zonai.skport.com"
+    ATTENDANCE_EXT = "/web/v1/game/endfield/attendance"
+    CARD_EXT = "/api/v1/game/endfield/card/detail"
+
     def __init__(self, cred: str, sk_game_role: str, timeout: int = 15):
         self.cred = cred
         self.sk_game_role = sk_game_role
@@ -57,7 +61,10 @@ class EndfieldClient:
             "vName": "1.0.0"
         }
 
-        res = self._http.get(REFRESH_URL, headers=headers)
+        res = self._http.get(
+            f"{self.BASE_URL}/web/v1/auth/refresh",
+            headers=headers
+        )
 
         data = res.json()
 
@@ -96,8 +103,8 @@ class EndfieldClient:
             headers.update(extra_headers)
 
         response = self._http.request(
-            method=method,
-            url=path,
+            method,
+            f"{self.BASE_URL}{path}",
             headers=headers,
             content=body if body else None
         )
@@ -114,7 +121,7 @@ class EndfieldClient:
     def _check_attendance(self) -> Tuple[Dict[str, Any], bool]:
         data = self._request(
             "GET",
-            ATTENDANCE_URL
+            self.ATTENDANCE_EXT
         )
 
         if data.get("code") == 0:
@@ -133,7 +140,7 @@ class EndfieldClient:
     def _claim_attendance(self):
         data = self._request(
             "POST",
-            ATTENDANCE_URL
+            self.ATTENDANCE_EXT
         )
 
         if data.get("code") == 0:
@@ -144,7 +151,8 @@ class EndfieldClient:
             rewards = []
 
             for award in awards:
-                info = resourceMap[award.id]
+                reward_id = award.get("id")
+                info = resourceMap[reward_id]
                 if info:
                     self.logger.info(f"- {info['name']} x{info['count']}")
                     rewards.append({
@@ -163,9 +171,8 @@ class EndfieldClient:
         self.logger.info("Starting attendance claim...")
 
         result = {
-            "status": "error",
+            "status": "Error",
             "rewards": [],
-            "totalSignIns": 0,
             "attendance": {
                 "totalSignIns": 0,
             },
@@ -214,7 +221,7 @@ class EndfieldClient:
             success, rewards = self._claim_attendance()
 
             if success:
-                result["status"] = "claimed"
+                result["status"] = "Check-in Successful"
                 result["rewards"] = rewards
                 if result["attendance"]:
                     if result.get("attendance", {}).get("totalSignIns") is not None:
@@ -227,12 +234,12 @@ class EndfieldClient:
                     if firstNotDone:
                         firstNotDone["done"] = True
             else:
-                result["status"] = "error"
+                result["status"] = "Error"
                 result["error"] = "Failed to claim attendance"
         
         elif attendanceData.get("code") == 0:
             self.logger.info("Already signed in today. Nothing to claim.")
-            result["status"] = "already_claimed"
+            result["status"] = "Already Claimed"
         
         else:
             self.logger.warning("Could not determine attendance status.")
@@ -248,7 +255,7 @@ class EndfieldClient:
 
         data = self._request(
             "GET",
-            CARD_URL
+            self.CARD_EXT
         )
 
         code = data.get("code")

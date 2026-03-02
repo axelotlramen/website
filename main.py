@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import time
+from zoneinfo import ZoneInfo
 
 import genshin
 
@@ -11,7 +12,7 @@ from scripts.endfield.client import EndfieldClient
 from scripts.hoyolab.diary import GENSHIN_CONFIG, HSR_CONFIG, update_diary_csv
 from scripts.hoyolab.stats import fetch_genshin_data, fetch_hsr_data
 from scripts.logging_config import setup_logging
-from scripts.notifier import WebhookClient
+from scripts.notifier import WebhookClient, endfield_attendance_payload, endfield_payload, hoyolab_diary_payload, hoyolab_payload
 
 
 async def main():
@@ -20,6 +21,7 @@ async def main():
 
     notifier = WebhookClient(
         webhook=os.environ["HOYOLAB_WEBHOOK"],
+        discord_id=os.environ["DISCORD_ID"]
     )
 
     try:
@@ -50,7 +52,7 @@ async def main():
         endfield_data = endfield_client.fetch_endfield_data()
 
         data = {
-            "last_updated": datetime.utcnow().isoformat(),
+            "last_updated": datetime.now(ZoneInfo("America/New_York")).isoformat(),
             "hsr_data": hsr_data,
             "genshin_data": genshin_data,
             "hsr_diary": hsr_diary,
@@ -64,7 +66,16 @@ async def main():
         # ---------------------------
         # Save JSON
         # ---------------------------
-        with open("data/new_stats.json", "w") as f:
+        old_data = None
+
+        if os.path.exists("data/stats.json"):
+            try:
+                with open("data/stats.json", "r") as f:
+                    old_data = json.load(f)
+            except Exception:
+                old_data = None
+
+        with open("data/stats.json", "w") as f:
             json.dump(data, f, indent=2)
 
         # ---------------------------
@@ -73,8 +84,40 @@ async def main():
         elapsed = time.perf_counter() - start_time
         logger.info(f"Stats update completed in {elapsed:.2f}s")
 
+        notifier.send(
+            payload=hoyolab_payload(
+                old_data=old_data,
+                genshin_data=genshin_data,
+                hsr_data=hsr_data
+            )
+        )
+        notifier.send(
+            payload=hoyolab_diary_payload(
+                hsr_diary=hsr_diary,
+                genshin_diary=genshin_diary
+            )
+        )
+        notifier.send(
+            payload=endfield_attendance_payload(endfield_attendance),
+            webhook=os.environ["ENDFIELD_WEBHOOK"]
+        )
+        notifier.send(
+            payload=endfield_payload(
+                old_data=old_data,
+                endfield_data=endfield_data
+            ),
+            webhook=os.environ["ENDFIELD_WEBHOOK"]
+        )
 
     except Exception as e:
+        # ---------------------------
+        # FAILURE NOTIFICATION
+        # ---------------------------
+
+        notifier.send_failure(
+            task_name="main",
+            error_message=str(e)
+        )
         raise
 
 if __name__ == "__main__":

@@ -28,9 +28,11 @@ jobs:
       - name: Run main
         env:
           HOYOLAB_WEBHOOK: ${{ secrets.HOYOLAB_WEBHOOK }}
+          DISCORD_ID: ${{ secrets.DISCORD_ID }}
           HOYOLAB_USER_COOKIES: ${{ secrets.HOYOLAB_USER_COOKIES }}
           HOYOLAB_HSR_UID: ${{ secrets.HOYOLAB_HSR_UID }}
           HOYOLAB_GENSHIN_UID: ${{ secrets.HOYOLAB_GENSHIN_UID }}
+          ENDFIELD_WEBHOOK: ${{ secrets.ENDFIELD_WEBHOOK }}
           ENDFIELD_CRED: ${{ secrets.ENDFIELD_CRED }}
           ENDFIELD_GAME_ROLE: ${{ secrets.ENDFIELD_GAME_ROLE }}
         run: python main.py
