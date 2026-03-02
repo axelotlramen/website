@@ -33,7 +33,7 @@ jobs:
           HOYOLAB_GENSHIN_UID: ${{ secrets.HOYOLAB_GENSHIN_UID }}
           ENDFIELD_CRED: ${{ secrets.ENDFIELD_CRED }}
           ENDFIELD_GAME_ROLE: ${{ secrets.ENDFIELD_GAME_ROLE }}
-        run: python update_stats.py
+        run: python main.py
 
       # --------------------------
       # HOYOLAB SCRIPT
