@@ -110,7 +110,6 @@ class EndfieldClient:
         )
 
         data = response.json()
-        self.logger.debug(f"Response for {path}: {data}")
 
         return data
     
