@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-02T13:02:23.126178-05:00",
+  "last_updated": "2026-03-02T13:21:07.013021-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 80,
+    "stamina": 83,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -337,7 +337,7 @@
       "Laevatain",
       "Yvonne"
     ],
-    "stamina": "174",
+    "stamina": "176",
     "daily_mission": 20
   }
 }
