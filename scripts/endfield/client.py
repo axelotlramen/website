@@ -145,7 +145,7 @@ class EndfieldClient:
             for award in awards:
                 info = resourceMap[award.id]
                 if info:
-                    self.logger.info(f"- {info["name"]} x{info["count"]}")
+                    self.logger.info(f"- {info['name']} x{info['count']}")
                     rewards.append({
                         "name": info["name"],
                         "count": info["count"],
