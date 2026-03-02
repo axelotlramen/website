@@ -154,7 +154,7 @@ class EndfieldClient:
             
             return (True, rewards)
         
-        self.logger.error(f"Error: {data.get("message", "Unknown error")}")
+        self.logger.error(f"Error: {data.get('message', 'Unknown error')}")
         return (False, [])
 
         
