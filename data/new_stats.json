@@ -1,0 +1,276 @@
+{
+  "last_updated": "2026-03-02T14:52:19.472844",
+  "hsr_data": {
+    "nickname": "Caelus",
+    "level": 70,
+    "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u65dyd/7e9849ac9d413a95905ee983d110e43c.png",
+    "achievements": 1562,
+    "active_days": 826,
+    "avatar_count": 51,
+    "chest_count": 1723,
+    "five_star_characters": [
+      "Trailblazer",
+      "Dan Heng \u2022 Permansor Terrae",
+      "Hysilens",
+      "Phainon",
+      "Cipher",
+      "Anaxa",
+      "Mydei",
+      "Aglaea",
+      "The Herta",
+      "Sunday",
+      "Firefly",
+      "Robin",
+      "Dr. Ratio",
+      "Aventurine",
+      "Ruan Mei",
+      "Argenti",
+      "Feixiao",
+      "Huohuo",
+      "Dan Heng \u2022 Imbibitor Lunae",
+      "Seele",
+      "Bronya",
+      "Archer",
+      "Saber",
+      "Kafka",
+      "Himeko",
+      "Gepard",
+      "Welt",
+      "Bailu",
+      "Yanqing"
+    ],
+    "stamina": 48,
+    "current_train_score": 500,
+    "memory_of_chaos": {}
+  },
+  "genshin_data": {
+    "nickname": "axelle",
+    "level": 57,
+    "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
+    "achievements": 940,
+    "active_days": 315,
+    "avatar_count": 55,
+    "oculus": 1164,
+    "chest_count": 3683,
+    "five_star_characters": [
+      "Columbina",
+      "Durin",
+      "Flins",
+      "Ineffa",
+      "Kinich",
+      "Mona",
+      "Zhongli",
+      "Venti",
+      "Albedo",
+      "Klee",
+      "Traveler",
+      "Manekina",
+      "Manekin",
+      "Tighnari",
+      "Qiqi",
+      "Diluc",
+      "Jean"
+    ],
+    "resin": 200,
+    "daily_task": 0
+  },
+  "hsr_diary": {
+    "Date": "2026-03-02",
+    "Net Currency Gain": 150,
+    "Pulls Net Gain": 0,
+    "Stellar Jades": 386,
+    "Pulls": 230.0,
+    "Total Pulls": 232.41,
+    "Currency Needed for 5 Star": 0,
+    "3-Week Avg Gain": "",
+    "Estimated Days Til 5 Star": ""
+  },
+  "genshin_diary": {
+    "Date": "2026-03-02",
+    "Net Currency Gain": 0,
+    "Pulls Net Gain": 0,
+    "Primogems": 1322,
+    "Pulls": 0.0,
+    "Total Pulls": 8.26,
+    "Currency Needed for 5 Star": 11478.0,
+    "3-Week Avg Gain": "",
+    "Estimated Days Til 5 Star": ""
+  },
+  "endfield_attendance": {
+    "status": "already_claimed",
+    "rewards": [
+      {
+        "name": "Arms INSP Kit",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      }
+    ],
+    "totalSignIns": 0,
+    "attendance": {
+      "totalSignIns": 2,
+      "calendar": [
+        {
+          "awardId": "endfield_attendance_1_2",
+          "available": false,
+          "done": true
+        },
+        {
+          "awardId": "endfield_attendance_4_2",
+          "available": false,
+          "done": true
+        },
+        {
+          "awardId": "endfield_attendance_7_2000",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_8_80",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_4_2",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_6_2",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_1_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_3000",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_4_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_1_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_2000",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_8_80",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_6_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_1_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_4_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_3000",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_3_2",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_5_2",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_2_5",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_8_100",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_6_5",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_3_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_5_3",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_3000",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_1_5",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_4_5",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_3_5",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_5_5",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_2000",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_2000",
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_2000",
+          "available": false,
+          "done": false
+        }
+      ]
+    },
+    "error": null,
+    "nextAward": {
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 2000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+    }
+  }
+}
