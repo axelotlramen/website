@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-02T14:52:19.472844",
+  "last_updated": "2026-03-02T15:48:03.708864",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u65dyd/7e9849ac9d413a95905ee983d110e43c.png",
-    "achievements": 1562,
+    "achievements": 1564,
     "active_days": 826,
     "avatar_count": 51,
     "chest_count": 1723,
@@ -39,9 +39,60 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 48,
+    "stamina": 57,
     "current_train_score": 500,
-    "memory_of_chaos": {}
+    "memory_of_chaos": {
+      "season": "Cyber Mystery",
+      "total_stars": 33,
+      "floor_data": {
+        "floor": "Cyber Mystery (XI)",
+        "cycles": 4,
+        "first_half": [
+          {
+            "id": 1005,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1410,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1309,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 1217,
+            "level": 80,
+            "eidolon": 0
+          }
+        ],
+        "second_half": [
+          {
+            "id": 1405,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1313,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 8007,
+            "level": 80,
+            "eidolon": 6
+          },
+          {
+            "id": 1414,
+            "level": 80,
+            "eidolon": 2
+          }
+        ]
+      }
+    }
   },
   "genshin_data": {
     "nickname": "axelle",
@@ -272,5 +323,6 @@
       "count": 2000,
       "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
-  }
+  },
+  "endfield_data": {}
 }
