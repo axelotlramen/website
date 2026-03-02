@@ -1,3 +1,4 @@
+httpx[brotli]
 genshin==1.7.23
 ramael
 requests

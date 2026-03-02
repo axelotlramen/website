@@ -4,6 +4,7 @@ import logging
 import time
 from typing import Any, Dict, Optional, Tuple
 
+import httpx
 import requests
 
 ATTENDANCE_URL = "https://zonai.skport.com/web/v1/game/endfield/attendance"
@@ -15,6 +16,7 @@ class EndfieldClient:
         self.sk_game_role = sk_game_role
         self.logger = logging.getLogger("EndfieldClient")
         self._token: Optional[str] = None
+        self._http = httpx.Client(timeout=15)
 
     # ------------------------
     # Internal helpers
@@ -56,7 +58,7 @@ class EndfieldClient:
             "vName": "1.0.0"
         }
 
-        res = requests.get(REFRESH_URL, headers=headers)
+        res = self._http.get(REFRESH_URL, headers=headers)
 
         data = res.json()
 
@@ -94,7 +96,7 @@ class EndfieldClient:
         if extra_headers:
             headers.update(extra_headers)
 
-        response = requests.request(
+        response = self._http.request(
             method=method,
             url=path,
             headers=headers,
