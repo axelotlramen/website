@@ -5,18 +5,18 @@ import time
 from typing import Any, Dict, Optional, Tuple
 
 import httpx
-import requests
 
 ATTENDANCE_URL = "https://zonai.skport.com/web/v1/game/endfield/attendance"
 REFRESH_URL = "https://zonai.skport.com/web/v1/auth/refresh"
+CARD_URL = "https://zonai.skport.com/api/v1/game/endfield/card/detail"
 
 class EndfieldClient:
-    def __init__(self, cred: str, sk_game_role: str):
+    def __init__(self, cred: str, sk_game_role: str, timeout: int = 15):
         self.cred = cred
         self.sk_game_role = sk_game_role
         self.logger = logging.getLogger("EndfieldClient")
         self._token: Optional[str] = None
-        self._http = httpx.Client(timeout=15)
+        self._http = httpx.Client(timeout=timeout)
 
     # ------------------------
     # Internal helpers
@@ -240,5 +240,33 @@ class EndfieldClient:
             result["error"] = "Could not determine attendance status"
         
         return result
+    
+    # ------------------------
+    # Data retrieval
+    # ------------------------
+    def fetch_endfield_data(self):
+        data = self._request(
+            "GET",
+            CARD_URL
+        )
+
+        detail = data.get("data", {}).get("detail", {})
+
+        six_stars = [
+            char.get("charData").get("name") for char in detail.get("chars") if char.get("charData").get("rarity").get("value") == "6"
+        ]
+
+        return {
+            "nickname": detail.get("base").get("name"),
+            "level": detail.get("base").get("level"),
+            "avatar_url": detail.get("base").get("avatarUrl"),
+
+            "achievements": detail.get("achieve").get("count"),
+            "avatar_count": detail.get("base").get("charNum"),
+            "six_star_characters": six_stars,
+
+            "stamina": detail.get("dungeon").get("curStamina"),
+            "daily_mission": detail.get("dailyMission").get("dailyActivation")
+        }
 
 

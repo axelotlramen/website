@@ -47,6 +47,7 @@ async def main():
         genshin_diary = await update_diary_csv(hoyolab_client, genshin_uid, GENSHIN_CONFIG)
 
         endfield_attendance = endfield_client.claim_attendance()
+        endfield_data = endfield_client.fetch_endfield_data()
 
         data = {
             "last_updated": datetime.utcnow().isoformat(),
@@ -54,7 +55,8 @@ async def main():
             "genshin_data": genshin_data,
             "hsr_diary": hsr_diary,
             "genshin_diary": genshin_diary,
-            "endfield_attendance": endfield_attendance
+            "endfield_attendance": endfield_attendance,
+            "endfield_data": endfield_data
         }
 
         os.makedirs("data", exist_ok=True)
