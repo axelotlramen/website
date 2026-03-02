@@ -1,3 +1,4 @@
+import calendar
 from datetime import datetime
 from typing import Any, Dict, Optional
 from zoneinfo import ZoneInfo
@@ -16,6 +17,12 @@ class WebhookClient:
         url = webhook or self.webhook
         response = requests.post(url, json=payload, timeout=10)
         response.raise_for_status()
+
+    def send_duration(self, elapsed: float, webhook: Optional[str] = None):
+        payload = {
+            "content": f"✅ Task completed in `{elapsed:.2f}s`"
+        }
+        self.send(payload, webhook)
 
     def send_failure(self, task_name: str, error_message: str):
         now_est = datetime.now(ZoneInfo("America/New_York"))
@@ -149,6 +156,11 @@ def endfield_attendance_payload(results: Dict[str, Any]):
     rewards_text = ", ".join(f"{r['name']} x {r['count']}" for r in results.get("rewards", []))
     rewards_icon_url = results.get("rewards", [])[0].get("icon", "") if results.get("rewards", []) else ""
 
+    currentSignIns = int(results.get("attendance", {}).get("totalSignIns", 0))
+    total_days = calendar.monthrange(datetime.now(ZoneInfo("America/New_York")).year, datetime.now(ZoneInfo("America/New_York")).month)[1]
+
+    next_rewards_text = f"{results.get('nextAward', {}).get('name')} x{results.get('nextAward', {}).get('count')}"
+
     embed = {
         "title": ":date: Daily Sign-In",
         "color": embed_color,
@@ -160,6 +172,14 @@ def endfield_attendance_payload(results: Dict[str, Any]):
             {
                 "name": "Claimed Rewards" if results.get("status") == "Already Claimed" else "Rewards",
                 "value": rewards_text
+            },
+            {
+                "name": "Progress",
+                "value": f"{currentSignIns}/{total_days}"
+            },
+            {
+                "name": "Next Rewards",
+                "value": next_rewards_text
             }
         ],
         "footer": {

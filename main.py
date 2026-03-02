@@ -84,6 +84,7 @@ async def main():
         elapsed = time.perf_counter() - start_time
         logger.info(f"Stats update completed in {elapsed:.2f}s")
 
+        notifier.send_duration(elapsed)
         notifier.send(
             payload=hoyolab_payload(
                 old_data=old_data,
@@ -97,6 +98,8 @@ async def main():
                 genshin_diary=genshin_diary
             )
         )
+
+        notifier.send_duration(elapsed, webhook=os.environ["ENDFIELD_WEBHOOK"])
         notifier.send(
             payload=endfield_attendance_payload(endfield_attendance),
             webhook=os.environ["ENDFIELD_WEBHOOK"]
