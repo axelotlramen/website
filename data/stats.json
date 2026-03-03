@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-03-02T13:21:07.013021-05:00",
+  "last_updated": "2026-03-02T23:37:48.988343-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
-    "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u65dyd/7e9849ac9d413a95905ee983d110e43c.png",
+    "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/cc4e152b0462bf17beadd7bd2c4e597f.png",
     "achievements": 1564,
     "active_days": 826,
     "avatar_count": 51,
@@ -39,37 +39,15 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 83,
+    "stamina": 185,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
-      "total_stars": 33,
+      "total_stars": 36,
       "floor_data": {
-        "floor": "Cyber Mystery (XI)",
-        "cycles": 4,
+        "floor": "Cyber Mystery (XII)",
+        "cycles": 7,
         "first_half": [
-          {
-            "id": 1005,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1410,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1217,
-            "level": 80,
-            "eidolon": 0
-          }
-        ],
-        "second_half": [
           {
             "id": 1405,
             "level": 80,
@@ -90,6 +68,28 @@
             "level": 80,
             "eidolon": 2
           }
+        ],
+        "second_half": [
+          {
+            "id": 1220,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1304,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1309,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 1406,
+            "level": 80,
+            "eidolon": 1
+          }
         ]
       }
     }
@@ -99,7 +99,7 @@
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 940,
-    "active_days": 315,
+    "active_days": 316,
     "avatar_count": 55,
     "oculus": 1164,
     "chest_count": 3683,
@@ -122,16 +122,16 @@
       "Diluc",
       "Jean"
     ],
-    "resin": 200,
+    "resin": 131,
     "daily_task": 0
   },
   "hsr_diary": {
     "Date": "2026-03-02",
-    "Net Currency Gain": 870,
+    "Net Currency Gain": 950,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 1106,
+    "Stellar Jades": 1186,
     "Pulls": 230.0,
-    "Total Pulls": 236.91,
+    "Total Pulls": 237.41,
     "Currency Needed for 5 Star": 0,
     "3-Week Avg Gain": "",
     "Estimated Days Til 5 Star": ""
@@ -332,12 +332,12 @@
     "six_star_characters": [
       "Lifeng",
       "Endministrator",
-      "Pogranichnik",
       "Ardelia",
+      "Pogranichnik",
       "Laevatain",
       "Yvonne"
     ],
-    "stamina": "176",
-    "daily_mission": 20
+    "stamina": "62",
+    "daily_mission": 100
   }
 }
