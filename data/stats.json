@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-03T00:15:57.977812-05:00",
+  "last_updated": "2026-03-03T13:03:14.644869-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/cc4e152b0462bf17beadd7bd2c4e597f.png",
     "achievements": 1564,
-    "active_days": 826,
+    "active_days": 827,
     "avatar_count": 51,
     "chest_count": 1723,
     "five_star_characters": [
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 192,
+    "stamina": 80,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -122,16 +122,16 @@
       "Diluc",
       "Jean"
     ],
-    "resin": 135,
+    "resin": 200,
     "daily_task": 0
   },
   "hsr_diary": {
     "Date": "2026-03-03",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 200,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 1186,
+    "Stellar Jades": 1386,
     "Pulls": 230.0,
-    "Total Pulls": 237.41,
+    "Total Pulls": 238.66,
     "Currency Needed for 5 Star": 0,
     "3-Week Avg Gain": "",
     "Estimated Days Til 5 Star": ""
@@ -148,16 +148,16 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 2000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Oroberyl",
+        "count": 80,
+        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 3,
+      "totalSignIns": 4,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -176,8 +176,8 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_2",
@@ -316,18 +316,13 @@
         }
       ]
     },
-    "error": null,
-    "nextAward": {
-      "name": "Oroberyl",
-      "count": 80,
-      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
-    }
+    "error": null
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 54,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 38,
+    "achievements": 40,
     "avatar_count": 20,
     "six_star_characters": [
       "Lifeng",
@@ -337,7 +332,7 @@
       "Laevatain",
       "Yvonne"
     ],
-    "stamina": "67",
+    "stamina": "173",
     "daily_mission": 100
   }
 }
