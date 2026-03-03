@@ -6,10 +6,6 @@ from typing import Any, Dict, Optional, Tuple
 
 import httpx
 
-ATTENDANCE_URL = "https://zonai.skport.com/web/v1/game/endfield/attendance"
-REFRESH_URL = "https://zonai.skport.com/web/v1/auth/refresh"
-CARD_URL = "https://zonai.skport.com/api/v1/game/endfield/card/detail"
-
 class EndfieldClient:
     BASE_URL = "https://zonai.skport.com"
     ATTENDANCE_EXT = "/web/v1/game/endfield/attendance"

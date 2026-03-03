@@ -37,29 +37,6 @@ jobs:
           ENDFIELD_GAME_ROLE: ${{ secrets.ENDFIELD_GAME_ROLE }}
         run: python main.py
 
-      # --------------------------
-      # HOYOLAB SCRIPT
-      # --------------------------
-      # - name: Run update_stats
-      #   env:
-      #     HOYOLAB_USER_COOKIES: ${{ secrets.HOYOLAB_USER_COOKIES }}
-      #     HOYOLAB_HSR_UID: ${{ secrets.HOYOLAB_HSR_UID }}
-      #     HOYOLAB_GENSHIN_UID: ${{ secrets.HOYOLAB_GENSHIN_UID }}
-      #     HOYOLAB_WEBHOOK: ${{ secrets.HOYOLAB_WEBHOOK }}
-      #     DISCORD_ID: ${{ secrets.DISCORD_ID }}
-      #   run: python update_stats.py
-
-      # --------------------------
-      # ENDFIELD SCRIPT
-      # --------------------------
-      # - name: Run endfield
-      #   env:
-      #     ENDFIELD_CRED: ${{ secrets.ENDFIELD_CRED }}
-      #     ENDFIELD_GAME_ROLE: ${{ secrets.ENDFIELD_GAME_ROLE }}
-      #     ENDFIELD_WEBHOOK: ${{ secrets.ENDFIELD_WEBHOOK }}
-      #     DISCORD_ID: ${{ secrets.DISCORD_ID }}
-      #   run: python endfield.py
-
       - name: Commit & push
         run: |
           git config --global user.name "github-actions[bot]"

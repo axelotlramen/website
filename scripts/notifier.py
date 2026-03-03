@@ -48,7 +48,7 @@ def hoyolab_payload(old_data: dict | None, genshin_data: dict, hsr_data: dict):
 
     if old_data:
         old_genshin = old_data.get("genshin_data", {})
-        old_hsr = old_data.get("hsr", {})
+        old_hsr = old_data.get("hsr_data", {})
     else:
         old_genshin = {}
         old_hsr = {}

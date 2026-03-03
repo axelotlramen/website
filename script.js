@@ -89,7 +89,7 @@ function createNode(title, characters) {
 ========================= */
 
 function renderHSR(data) {
-  const sr = data.hsr;
+  const sr = data.hsr_data;
   if (!sr) return;
 
   const container = document.getElementById("hsr-profile");
@@ -128,7 +128,7 @@ function renderHSR(data) {
 ========================= */
 
 function renderGenshin(data) {
-  const gi = data.genshin;
+  const gi = data.genshin_data;
   if (!gi) return;
 
   const container = document.getElementById("genshin-profile");
@@ -224,8 +224,8 @@ async function loadTimeline() {
 ========================= */
 
 function renderHome(data) {
-  const sr = data.hsr;
-  const gi = data.genshin;
+  const sr = data.hsr_data;
+  const gi = data.genshin_data;
 
   const homeHSR = document.getElementById("home-hsr");
   const homeGI = document.getElementById("home-genshin");
