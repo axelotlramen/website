@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-03T13:03:14.644869-05:00",
+  "last_updated": "2026-03-03T23:19:06.610822-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 80,
+    "stamina": 182,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -148,7 +148,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Oroberyl",
@@ -176,7 +176,7 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -316,23 +316,28 @@
         }
       ]
     },
-    "error": null
+    "error": null,
+    "nextAward": {
+      "name": "Arms INSP Kit",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+    }
   },
   "endfield_data": {
     "nickname": "Axelle",
-    "level": 54,
+    "level": 55,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 40,
+    "achievements": 43,
     "avatar_count": 20,
     "six_star_characters": [
       "Lifeng",
       "Endministrator",
-      "Ardelia",
       "Pogranichnik",
+      "Ardelia",
       "Laevatain",
       "Yvonne"
     ],
-    "stamina": "173",
+    "stamina": "221",
     "daily_mission": 100
   }
 }
