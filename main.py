@@ -12,7 +12,7 @@ from scripts.endfield.client import EndfieldClient
 from scripts.hoyolab.diary import GENSHIN_CONFIG, HSR_CONFIG, update_diary_csv
 from scripts.hoyolab.stats import fetch_genshin_data, fetch_hsr_data
 from scripts.logging_config import setup_logging
-from scripts.notifier import WebhookClient, endfield_attendance_payload, endfield_payload, hoyolab_diary_payload, hoyolab_payload
+from scripts.notifier import WebhookClient, endfield_attendance_embed, endfield_embed, hoyolab_diary_embed, hoyolab_embed
 
 
 async def main():
@@ -20,7 +20,8 @@ async def main():
     logger = logging.getLogger("main")
 
     notifier = WebhookClient(
-        webhook=os.environ["HOYOLAB_WEBHOOK"],
+        hoyolab_webhook=os.environ["HOYOLAB_WEBHOOK"],
+        endfield_webhook=os.environ["ENDFIELD_WEBHOOK"],
         discord_id=os.environ["DISCORD_ID"]
     )
 
@@ -84,32 +85,30 @@ async def main():
         elapsed = time.perf_counter() - start_time
         logger.info(f"Stats update completed in {elapsed:.2f}s")
 
-        notifier.send_duration(elapsed)
-        notifier.send(
-            payload=hoyolab_payload(
-                old_data=old_data,
-                genshin_data=genshin_data,
-                hsr_data=hsr_data
-            )
-        )
-        notifier.send(
-            payload=hoyolab_diary_payload(
-                hsr_diary=hsr_diary,
-                genshin_diary=genshin_diary
-            )
+        notifier.send_hoyolab(
+            elapsed=elapsed,
+            embeds=[
+                hoyolab_embed(
+                    old_data=old_data,
+                    genshin_data=genshin_data,
+                    hsr_data=hsr_data
+                ),
+                hoyolab_diary_embed(
+                    hsr_diary=hsr_diary,
+                    genshin_diary=genshin_diary
+                )
+            ]
         )
 
-        notifier.send_duration(elapsed, webhook=os.environ["ENDFIELD_WEBHOOK"])
-        notifier.send(
-            payload=endfield_attendance_payload(endfield_attendance),
-            webhook=os.environ["ENDFIELD_WEBHOOK"]
-        )
-        notifier.send(
-            payload=endfield_payload(
-                old_data=old_data,
-                endfield_data=endfield_data
-            ),
-            webhook=os.environ["ENDFIELD_WEBHOOK"]
+        notifier.send_endfield(
+            elapsed=elapsed,
+            embeds=[
+                endfield_attendance_embed(endfield_attendance),
+                endfield_embed(
+                    old_data=old_data,
+                    endfield_data=endfield_data
+                ),
+            ]
         )
 
     except Exception as e:

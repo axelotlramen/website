@@ -9,20 +9,30 @@ GREEN_EMBED = 5763719
 RED_EMBED = 15548997
 
 class WebhookClient:
-    def __init__(self, webhook: str, discord_id: str | None = None):
-        self.webhook = webhook
+    def __init__(self, hoyolab_webhook: str, endfield_webhook: str, discord_id: str | None = None):
+        self.hoyolab_webhook = hoyolab_webhook
+        self.endfield_webhook = endfield_webhook
         self.discord_id = discord_id
 
-    def send(self, payload: dict, webhook: Optional[str] = None):
-        url = webhook or self.webhook
-        response = requests.post(url, json=payload, timeout=10)
+    def send_hoyolab(self, elapsed: float, embeds):
+        payload = {
+            "username": "Hoyolab Stats Bot",
+            "content": f"✅ Task completed in `{elapsed:.2f}s`",
+            "embeds": embeds
+        }
+
+        response = requests.post(self.hoyolab_webhook, json=payload, timeout=10)
         response.raise_for_status()
 
-    def send_duration(self, elapsed: float, webhook: Optional[str] = None):
+    def send_endfield(self, elapsed: float, embeds):
         payload = {
-            "content": f"✅ Task completed in `{elapsed:.2f}s`"
+            "username": "Chen Qianyu - Dijiang Control Nexus Assistant",
+            "content": f"✅ Task completed in `{elapsed:.2f}s`",
+            "embeds": embeds
         }
-        self.send(payload, webhook)
+
+        response = requests.post(self.endfield_webhook, json=payload, timeout=10)
+        response.raise_for_status()
 
     def send_failure(self, task_name: str, error_message: str):
         now_est = datetime.now(ZoneInfo("America/New_York"))
@@ -41,9 +51,10 @@ class WebhookClient:
             "embeds": [embed]
         }
 
-        self.send(payload)
+        response = requests.post(self.hoyolab_webhook, json=payload, timeout=10)
+        response.raise_for_status()
 
-def hoyolab_payload(old_data: dict | None, genshin_data: dict, hsr_data: dict):
+def hoyolab_embed(old_data: dict | None, genshin_data: dict, hsr_data: dict):
     embed_color = GREEN_EMBED
 
     if old_data:
@@ -96,12 +107,9 @@ def hoyolab_payload(old_data: dict | None, genshin_data: dict, hsr_data: dict):
         }
     }
 
-    return {
-        "username": "Hoyolab Stats Bot",
-        "embeds": [embed]
-    }
+    return embed
 
-def hoyolab_diary_payload(hsr_diary: dict | None, genshin_diary: dict | None):
+def hoyolab_diary_embed(hsr_diary: dict | None, genshin_diary: dict | None):
     embed_color = GREEN_EMBED
 
     now_est = datetime.now(ZoneInfo("America/New_York"))
@@ -141,14 +149,9 @@ def hoyolab_diary_payload(hsr_diary: dict | None, genshin_diary: dict | None):
         }
     }
 
-    payload = {
-        "username": "Hoyolab Stats Bot",
-        "embeds": [embed]
-    }
+    return embed
 
-    return payload
-
-def endfield_attendance_payload(results: Dict[str, Any]):
+def endfield_attendance_embed(results: Dict[str, Any]):
     embed_color = GREEN_EMBED
 
     now_est = datetime.now(ZoneInfo("America/New_York"))
@@ -193,14 +196,9 @@ def endfield_attendance_payload(results: Dict[str, Any]):
             "url": rewards_icon_url
         }
     
-    payload = {
-        "username": "Chen Qianyu - Dijiang Control Nexus Assistant",
-        "embeds": [embed]
-    }
+    return embed
 
-    return payload
-
-def endfield_payload(old_data: dict | None, endfield_data: dict):
+def endfield_embed(old_data: dict | None, endfield_data: dict):
     embed_color = GREEN_EMBED
 
     if old_data:
@@ -234,10 +232,7 @@ def endfield_payload(old_data: dict | None, endfield_data: dict):
         }
     }
 
-    return {
-        "username": "Chen Qianyu - Dijiang Control Nexus Assistant",
-        "embeds": [embed]
-    }
+    return embed
 
 def calculate_delta(old_value, new_value):
     try:
