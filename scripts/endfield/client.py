@@ -228,6 +228,21 @@ class EndfieldClient:
                     )
                     if firstNotDone:
                         firstNotDone["done"] = True
+
+                    # after marking the claimed day as done, find the new next award
+                    data = attendanceData.get("data", {})
+                    nextNotDone = next(
+                        (r for r in result["attendance"]["calendar"] if not r.get("done")),
+                        None
+                    )
+                    if nextNotDone:
+                        info = data.get("resourceInfoMap", {}).get(nextNotDone.get("awardId"))
+                        if info:
+                            result["nextAward"] = {
+                                "name": info["name"],
+                                "count": info["count"],
+                                "icon": info["icon"]
+                            }
             else:
                 result["status"] = "Error"
                 result["error"] = "Failed to claim attendance"
