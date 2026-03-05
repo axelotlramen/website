@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-04T13:01:03.036597-05:00",
+  "last_updated": "2026-03-04T23:18:39.218309-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 79,
+    "stamina": 182,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -148,7 +148,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Arms INSP Kit",
@@ -181,7 +181,7 @@
         },
         {
           "awardId": "endfield_attendance_4_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -327,17 +327,17 @@
     "nickname": "Axelle",
     "level": 55,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 45,
+    "achievements": 47,
     "avatar_count": 20,
     "six_star_characters": [
       "Lifeng",
       "Endministrator",
       "Ardelia",
       "Pogranichnik",
-      "Laevatain",
-      "Yvonne"
+      "Yvonne",
+      "Laevatain"
     ],
-    "stamina": "55",
+    "stamina": "121",
     "daily_mission": 100
   }
 }
