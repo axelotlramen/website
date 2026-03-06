@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-05T23:03:48.704477-05:00",
+  "last_updated": "2026-03-05T23:22:17.826416-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 180,
+    "stamina": 183,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -329,15 +329,209 @@
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 48,
     "avatar_count": 20,
-    "six_star_characters": [
-      "Lifeng",
-      "Endministrator",
-      "Pogranichnik",
-      "Yvonne",
-      "Ardelia",
-      "Laevatain"
-    ],
-    "stamina": "119",
+    "six_star_characters": {
+      "Lifeng": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Chen Qianyu": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/a9166c16be2bd4de3a768f55f9521cd9.png",
+        "rarity": "5",
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Endministrator": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/a1d3ed03165785526b442aee65f0ef52.png",
+        "rarity": "6",
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Yvonne": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Ardelia": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Laevatain": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Xaihi": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Alesh": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cd332677f9e7fb1f297a7c85c34d8c42.png",
+        "rarity": "5",
+        "profession": "Vanguard",
+        "property": "Cryo",
+        "weaponType": "Sword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Perlica": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Akekuri": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e230eb3f6a0fb635f8efaae2dae05c31.png",
+        "rarity": "4",
+        "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Snowshine": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Da Pan": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Arclight": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Avywenna": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Antal": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Fluorite": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Catcher": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
+        "rarity": "4",
+        "profession": "Defender",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      },
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": null,
+        "potentialLevel": null,
+        "weapon": null
+      }
+    },
+    "stamina": "121",
     "daily_mission": 100
   }
 }
