@@ -273,9 +273,25 @@ class EndfieldClient:
         if code == 0:
             detail = data.get("data", {}).get("detail", {})
 
-            six_stars = [
-                char.get("charData").get("name") for char in detail.get("chars") if char.get("charData").get("rarity").get("value") == "6"
-            ]
+            six_stars = {
+                char.get("charData").get("name"): {
+                    "avatarSqUrl": char.get("charData").get("avatarSqUrl"),
+                    "rarity": char.get("charData").get("rarity").get("value"),
+                    "profession": char.get("charData").get("profession").get("value"),
+                    "property": char.get("charData").get("property").get("value"),
+                    "weaponType": char.get("charData").get("weaponType").get("value"),
+                    "level": char.get("charData").get("level"),
+                    "potentialLevel": char.get("charData").get("potentialLevel"),
+                    "weapon": {
+                        "name": char.get("charData").get("weapon").get("weaponData").get("name"),
+                        "iconUrl": char.get("charData").get("weapon").get("weaponData").get("iconUrl"),
+                        "rarity": char.get("charData").get("weapon").get("weaponData").get("rarity").get("value"),
+                        "level": char.get("charData").get("weapon").get("weaponData").get("level"),
+                        "refineLevel": char.get("charData").get("weapon").get("weaponData").get("refineLevel")
+                    } if char.get("charData").get("weapon") else None
+                } 
+                for char in detail.get("chars")
+            }
 
             return {
                 "nickname": detail.get("base").get("name"),
