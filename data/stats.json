@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-06T00:11:36.347238-05:00",
+  "last_updated": "2026-03-06T12:56:49.658544-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/cc4e152b0462bf17beadd7bd2c4e597f.png",
     "achievements": 1566,
-    "active_days": 829,
+    "active_days": 830,
     "avatar_count": 51,
     "chest_count": 1723,
     "five_star_characters": [
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 191,
+    "stamina": 79,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -127,11 +127,11 @@
   },
   "hsr_diary": {
     "Date": "2026-03-06",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 1786,
+    "Stellar Jades": 1936,
     "Pulls": 230.0,
-    "Total Pulls": 241.16,
+    "Total Pulls": 242.1,
     "Currency Needed for 5 Star": 0,
     "3-Week Avg Gain": "",
     "Estimated Days Til 5 Star": ""
@@ -148,16 +148,16 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Protoprism",
-        "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+        "name": "Intermediate Combat Record",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 6,
+      "totalSignIns": 7,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -191,8 +191,8 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
@@ -318,9 +318,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Intermediate Combat Record",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 3000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
@@ -394,22 +394,6 @@
           "refineLevel": 0
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
-        "rarity": "6",
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Wedge",
-          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 60,
-          "refineLevel": 0
-        }
-      },
       "Ardelia": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -422,6 +406,22 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
           "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Yvonne": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Wedge",
+          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
+          "rarity": "6",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
         }
@@ -586,22 +586,6 @@
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Antal": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
@@ -614,6 +598,22 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
           "type": "Arts Unit",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -651,7 +651,7 @@
         }
       }
     },
-    "stamina": "128",
+    "stamina": "115",
     "daily_mission": 100
   }
 }
