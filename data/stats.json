@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-05T23:26:52.775125-05:00",
+  "last_updated": "2026-03-06T00:11:36.347238-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 184,
+    "stamina": 191,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -126,8 +126,8 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-05",
-    "Net Currency Gain": 170,
+    "Date": "2026-03-06",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Stellar Jades": 1786,
     "Pulls": 230.0,
@@ -137,7 +137,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "genshin_diary": {
-    "Date": "2026-03-05",
+    "Date": "2026-03-06",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
@@ -522,38 +522,6 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Da Pan": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "https://static.skport.com/image/common/20251129/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Arclight": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
@@ -575,6 +543,54 @@
         "rarity": "5",
         "profession": "Striker",
         "property": "Electric",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Da Pan": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "https://static.skport.com/image/common/20251129/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "profession": "Guard",
+        "property": "Cryo",
         "weaponType": "Polearm",
         "level": 1,
         "weapon": {
@@ -633,25 +649,9 @@
           "level": 1,
           "refineLevel": 0
         }
-      },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
       }
     },
-    "stamina": "122",
+    "stamina": "128",
     "daily_mission": 100
   }
 }
