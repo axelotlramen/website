@@ -280,16 +280,16 @@ class EndfieldClient:
                     "profession": char.get("charData").get("profession").get("value"),
                     "property": char.get("charData").get("property").get("value"),
                     "weaponType": char.get("charData").get("weaponType").get("value"),
-                    "level": char.get("charData").get("level"),
-                    "potentialLevel": char.get("charData").get("potentialLevel"),
+                    "level": char.get("level"),
                     "weapon": {
-                        "name": char.get("charData").get("weapon").get("weaponData").get("name"),
-                        "iconUrl": char.get("charData").get("weapon").get("weaponData").get("iconUrl"),
-                        "rarity": char.get("charData").get("weapon").get("weaponData").get("rarity").get("value"),
-                        "level": char.get("charData").get("weapon").get("weaponData").get("level"),
-                        "refineLevel": char.get("charData").get("weapon").get("weaponData").get("refineLevel")
-                    } if char.get("charData").get("weapon") else None
-                } 
+                        "name": char.get("weapon").get("weaponData").get("name"),
+                        "iconUrl": char.get("weapon").get("weaponData").get("iconUrl"),
+                        "rarity": char.get("weapon").get("weaponData").get("rarity").get("value"),
+                        "type": char.get("weapon").get("weaponData").get("type").get("value"),
+                        "level": char.get("weapon").get("level"),
+                        "refineLevel": char.get("weapon").get("refineLevel"),
+                    } if char.get("weapon") else None
+                }
                 for char in detail.get("chars")
             }
 
