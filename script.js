@@ -6,7 +6,6 @@ function showPage(pageId) {
   document.querySelectorAll(".page").forEach((p) => {
     p.classList.remove("active");
   });
-
   document.getElementById(pageId).classList.add("active");
 }
 
@@ -15,7 +14,7 @@ function showPage(pageId) {
 ========================= */
 
 function renderMoC(data) {
-  const moc = data?.hsr?.memory_of_chaos;
+  const moc = data?.hsr_data?.memory_of_chaos;
   if (!moc || !moc.floor_data) return;
 
   const container = document.getElementById("moc-content");
@@ -35,7 +34,7 @@ function renderMoC(data) {
 
   const cycles = document.createElement("div");
   cycles.classList.add("moc-cycles");
-  cycles.textContent = `Cycles: ${floor.cycles} | ⭐ ${moc.total_stars}`;
+  cycles.textContent = `${floor.cycles} cycles · ⭐ ${moc.total_stars}`;
 
   header.appendChild(floorTitle);
   header.appendChild(cycles);
@@ -68,6 +67,7 @@ function createNode(title, characters) {
 
     const img = document.createElement("img");
     img.src = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${char.id}.webp`;
+    img.alt = `Character ${char.id}`;
 
     const badge = document.createElement("div");
     badge.classList.add("eidolon-badge");
@@ -97,10 +97,10 @@ function renderHSR(data) {
   container.innerHTML = `
     <div class="card">
       <div class="avatar">
-        <img src="${sr.avatar_url}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        <img src="${sr.avatar_url}" alt="${sr.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
       </div>
       <div class="nickname">${sr.nickname}</div>
-      <div class="server-level">NA | Level ${sr.level}</div>
+      <div class="server-level">NA · Level ${sr.level}</div>
       <div class="stats">
         <div class="stat">Active Days<br><strong>${sr.active_days}</strong></div>
         <div class="stat">Achievements<br><strong>${sr.achievements}</strong></div>
@@ -110,15 +110,15 @@ function renderHSR(data) {
     </div>
   `;
 
-  // Trailblaze card
   const trail = document.getElementById("trailblaze-card");
+  const loggedIn = (sr.current_train_score ?? 0) !== 0;
 
   trail.innerHTML = `
     <div class="mini-card">
       <h3>Today's Status</h3>
-      <div class="line">Trailblaze Power: <strong>${sr.stamina ?? 0}/300</strong></div>
-      <div class="line">Daily Training: <strong>${sr.current_train_score ?? 0}/500</strong></div>
-      <div class="line">Logged In Today: <strong>${(sr.current_train_score ?? 0) != 0 ? "Yes" : "No"}</strong></div>
+      <div class="line">Trailblaze Power <strong>${sr.stamina ?? 0}/300</strong></div>
+      <div class="line">Daily Training <strong>${sr.current_train_score ?? 0}/500</strong></div>
+      <div class="line">Logged In Today <strong>${loggedIn ? "Yes" : "No"}</strong></div>
     </div>
   `;
 }
@@ -136,7 +136,7 @@ function renderGenshin(data) {
   container.innerHTML = `
     <div class="card">
       <div class="avatar">
-        <img src="${gi.avatar_url}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        <img src="${gi.avatar_url}" alt="${gi.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
       </div>
       <div class="nickname">${gi.nickname}</div>
       <div class="server-level">AR ${gi.level}</div>
@@ -150,77 +150,21 @@ function renderGenshin(data) {
     </div>
   `;
 
-  // Notes card
   const notes = document.getElementById("genshin-notes");
+  const loggedIn = (gi.daily_task ?? 0) !== 0;
 
   notes.innerHTML = `
     <div class="mini-card">
       <h3>Today's Status</h3>
-      <div class="line">Resin: <strong>${gi.resin ?? 0}/200</strong></div>
-      <div class="line">Daily Tasks: <strong>${gi.daily_task ?? 0}/4</strong></div>
-      <div class="line">Logged In Today: <strong>${(gi.daily_task ?? 0) != 0 ? "Yes" : "No"}</strong></div>
+      <div class="line">Resin <strong>${gi.resin ?? 0}/200</strong></div>
+      <div class="line">Daily Tasks <strong>${gi.daily_task ?? 0}/4</strong></div>
+      <div class="line">Logged In Today <strong>${loggedIn ? "Yes" : "No"}</strong></div>
     </div>
   `;
 }
 
 /* =========================
-   Pull Timeline
-========================= */
-
-async function loadTimeline() {
-  try {
-    const response = await fetch("data/sheet.csv");
-    const text = await response.text();
-
-    const rows = text.trim().split("\n").slice(1);
-    const entries = rows.map((row) => {
-      const [date, banner, id, character, glw, pity] = row.split(",");
-      return {
-        date: date.trim(),
-        banner: banner.trim(),
-        id: parseInt(id.trim()),
-        character: character.trim(),
-        result: glw.trim(),
-        pity: parseInt(pity.trim()),
-      };
-    });
-
-    entries.reverse();
-
-    const latestFiveStar = entries[0];
-
-    if (latestFiveStar) {
-      const latestContainer = document.getElementById("home-latest-pull");
-
-      let img_src;
-
-      if (latestFiveStar.id >= 20000) {
-        img_src = `https://stardb.gg/api/static/StarRailResWebp/icon/light_cone/${latestFiveStar.id}.webp`;
-      } else {
-        img_src = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${latestFiveStar.id}.webp`;
-      }
-
-      latestContainer.innerHTML = `
-            <div class="card">
-            <div class="avatar">
-                <img src="${img_src}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
-            </div>
-            <h2>Latest HSR 5★ Pull</h2>
-            <p class="latest-name">${latestFiveStar.character}</p>
-                <div class="latest-meta">
-                    <p>Pity: ${latestFiveStar.pity}</p>
-                    <p>Date: ${latestFiveStar.date}</p>
-                </div>
-            </div>
-        `;
-    }
-  } catch (err) {
-    console.error("Failed to load timeline:", err);
-  }
-}
-
-/* =========================
-   Load Everything
+   Home
 ========================= */
 
 function renderHome(data) {
@@ -234,10 +178,15 @@ function renderHome(data) {
     homeHSR.innerHTML = `
       <div class="card">
         <h2>Honkai: Star Rail</h2>
+        <div class="avatar">
+          <img src="${sr.avatar_url}" alt="${sr.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        </div>
         <div class="nickname">${sr.nickname}</div>
-        <div>Level ${sr.level}</div>
-        <div>⭐ MoC Stars: ${sr.memory_of_chaos?.total_stars ?? 0}</div>
-        <div>Trailblaze Power: ${sr.stamina ?? 0}/300</div>
+        <div class="server-level">Level ${sr.level}</div>
+        <div class="stats">
+          <div class="stat">MoC Stars<br><strong>${sr.memory_of_chaos?.total_stars ?? 0}</strong></div>
+          <div class="stat">TB Power<br><strong>${sr.stamina ?? 0}/300</strong></div>
+        </div>
       </div>
     `;
   }
@@ -246,13 +195,23 @@ function renderHome(data) {
     homeGI.innerHTML = `
       <div class="card">
         <h2>Genshin Impact</h2>
+        <div class="avatar">
+          <img src="${gi.avatar_url}" alt="${gi.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        </div>
         <div class="nickname">${gi.nickname}</div>
-        <div>AR ${gi.level}</div>
-        <div>Achievements: ${gi.achievements}</div>
+        <div class="server-level">AR ${gi.level}</div>
+        <div class="stats">
+          <div class="stat">Achievements<br><strong>${gi.achievements}</strong></div>
+          <div class="stat">Resin<br><strong>${gi.resin ?? 0}/200</strong></div>
+        </div>
       </div>
     `;
   }
 }
+
+/* =========================
+   Load Everything
+========================= */
 
 async function loadStats() {
   try {
@@ -266,9 +225,8 @@ async function loadStats() {
     renderMoC(data);
     renderGenshin(data);
   } catch (err) {
-    console.error(err);
+    console.error("Stats load error:", err);
   }
 }
 
 loadStats();
-loadTimeline();
