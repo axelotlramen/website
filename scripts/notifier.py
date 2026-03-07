@@ -1,4 +1,5 @@
 import calendar
+from datetime import timedelta
 from typing import Any, Dict
 
 import requests
@@ -160,7 +161,9 @@ def endfield_attendance_embed(results: Dict[str, Any]):
     rewards_icon_url = results.get("rewards", [])[0].get("icon", "") if results.get("rewards", []) else ""
 
     currentSignIns = int(results.get("attendance", {}).get("totalSignIns", 0))
-    total_days = calendar.monthrange(now().year, now().month)[1]
+
+    tomorrow = now() + timedelta(days=1)
+    total_days = calendar.monthrange(tomorrow.year, tomorrow.month)[1]
 
     # Current reward embed
     current_embed = {

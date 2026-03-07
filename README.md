@@ -27,6 +27,12 @@ The backend data is collected using Python.
 
 The script `main.py` runs automatically every 24 hours via GitHub Actions.
 
+## Bug Fixes
+
+- Fix the website as right now it doesn't showcase much
+- Add Endfield data
+- Add specific characters owned for each game if not too much clutter
+
 ## Future Improvements
 
 - Cycle performance color indicator
