@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-07T00:20:27.135849-05:00",
+  "last_updated": "2026-03-07T00:23:17.369242-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -453,7 +453,275 @@
       }
     }
   },
-  "genshin_data": {},
+  "genshin_data": {
+    "nickname": "axelle",
+    "level": 57,
+    "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
+    "achievements": 940,
+    "active_days": 316,
+    "avatar_count": 55,
+    "oculus": 1164,
+    "chest_count": 3683,
+    "five_star_characters": {
+      "Columbina": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
+        "constellation": 0,
+        "element": "Hydro",
+        "weaponType": 10,
+        "level": 90,
+        "friendship": 7,
+        "weapon": {
+          "name": "Nocturne's Curtain Call",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/045d1721aca8d78c25b640867cdb4171.png",
+          "rarity": 5,
+          "level": 90,
+          "refinement": 1
+        }
+      },
+      "Durin": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Durin.png",
+        "constellation": 1,
+        "element": "Pyro",
+        "weaponType": 1,
+        "level": 90,
+        "friendship": 10,
+        "weapon": {
+          "name": "Athame Artis",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/9708b5d495021c4c5472f1615be537e0.png",
+          "rarity": 5,
+          "level": 90,
+          "refinement": 1
+        }
+      },
+      "Flins": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Flins.png",
+        "constellation": 2,
+        "element": "Electro",
+        "weaponType": 13,
+        "level": 90,
+        "friendship": 10,
+        "weapon": {
+          "name": "Deathmatch",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e28812a4dbe5207d8d88c68a53212692.png",
+          "rarity": 4,
+          "level": 90,
+          "refinement": 1
+        }
+      },
+      "Ineffa": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Ineffa.png",
+        "constellation": 0,
+        "element": "Electro",
+        "weaponType": 13,
+        "level": 90,
+        "friendship": 10,
+        "weapon": {
+          "name": "Prospector's Shovel",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/5bd3fed061ae6bae4c084353c48df759.png",
+          "rarity": 4,
+          "level": 90,
+          "refinement": 3
+        }
+      },
+      "Kinich": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Kinich.png",
+        "constellation": 0,
+        "element": "Dendro",
+        "weaponType": 11,
+        "level": 90,
+        "friendship": 10,
+        "weapon": {
+          "name": "Fang of the Mountain King",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a9184535c8743e8da52fa2debd54f7d8.png",
+          "rarity": 5,
+          "level": 90,
+          "refinement": 1
+        }
+      },
+      "Mona": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Mona.png",
+        "constellation": 2,
+        "element": "Hydro",
+        "weaponType": 10,
+        "level": 80,
+        "friendship": 4,
+        "weapon": {
+          "name": "Etherlight Spindlelute",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/c46b6bec8f810d6406ed662e2235ab7e.png",
+          "rarity": 4,
+          "level": 70,
+          "refinement": 5
+        }
+      },
+      "Zhongli": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Zhongli.png",
+        "constellation": 0,
+        "element": "Geo",
+        "weaponType": 13,
+        "level": 80,
+        "friendship": 10,
+        "weapon": {
+          "name": "Black Tassel",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/badaa063427a6e3f39d9c031b3dddc24.png",
+          "rarity": 3,
+          "level": 60,
+          "refinement": 5
+        }
+      },
+      "Venti": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Venti.png",
+        "constellation": 0,
+        "element": "Anemo",
+        "weaponType": 12,
+        "level": 80,
+        "friendship": 10,
+        "weapon": {
+          "name": "The Daybreak Chronicles",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/1112f5bf9c69ad6a989b8cb259497f6c.png",
+          "rarity": 5,
+          "level": 90,
+          "refinement": 1
+        }
+      },
+      "Albedo": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Albedo.png",
+        "constellation": 0,
+        "element": "Geo",
+        "weaponType": 1,
+        "level": 70,
+        "friendship": 3,
+        "weapon": {
+          "name": "Festering Desire",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/685c320aa78fc0c2e29f2e445393949a.png",
+          "rarity": 4,
+          "level": 90,
+          "refinement": 3
+        }
+      },
+      "Klee": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Klee.png",
+        "constellation": 0,
+        "element": "Pyro",
+        "weaponType": 10,
+        "level": 70,
+        "friendship": 9,
+        "weapon": {
+          "name": "Thrilling Tales of Dragon Slayers",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/aff08755a2149ffb6c0fa7d1d189a222.png",
+          "rarity": 3,
+          "level": 1,
+          "refinement": 5
+        }
+      },
+      "Traveler": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_PlayerBoy.png",
+        "constellation": 6,
+        "element": "Dendro",
+        "weaponType": 1,
+        "level": 60,
+        "friendship": 0,
+        "weapon": {
+          "name": "Sword of Narzissenkreuz",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7ef90872b3553d9c0f4e3452737cec2d.png",
+          "rarity": 4,
+          "level": 1,
+          "refinement": 3
+        }
+      },
+      "Manekina": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_MannequinGirl.png",
+        "constellation": 0,
+        "element": "Dendro",
+        "weaponType": 1,
+        "level": 20,
+        "friendship": 0,
+        "weapon": {
+          "name": "Dull Blade",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+          "rarity": 1,
+          "level": 1,
+          "refinement": 1
+        }
+      },
+      "Manekin": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_MannequinBoy.png",
+        "constellation": 0,
+        "element": "Dendro",
+        "weaponType": 1,
+        "level": 20,
+        "friendship": 0,
+        "weapon": {
+          "name": "Dull Blade",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+          "rarity": 1,
+          "level": 1,
+          "refinement": 1
+        }
+      },
+      "Tighnari": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Tighnari.png",
+        "constellation": 1,
+        "element": "Dendro",
+        "weaponType": 12,
+        "level": 20,
+        "friendship": 1,
+        "weapon": {
+          "name": "Hunter's Bow",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c75ade4a5acb5eb9aaefbed318bf75ff.png",
+          "rarity": 1,
+          "level": 1,
+          "refinement": 1
+        }
+      },
+      "Qiqi": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Qiqi.png",
+        "constellation": 0,
+        "element": "Cryo",
+        "weaponType": 1,
+        "level": 1,
+        "friendship": 1,
+        "weapon": {
+          "name": "Dull Blade",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+          "rarity": 1,
+          "level": 1,
+          "refinement": 1
+        }
+      },
+      "Diluc": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Diluc.png",
+        "constellation": 0,
+        "element": "Pyro",
+        "weaponType": 11,
+        "level": 1,
+        "friendship": 1,
+        "weapon": {
+          "name": "Waster Greatsword",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/b1e284917f1ca8330ba929ef8f116aba.png",
+          "rarity": 1,
+          "level": 1,
+          "refinement": 1
+        }
+      },
+      "Jean": {
+        "icon": "https://enka.network/ui/UI_AvatarIcon_Qin.png",
+        "constellation": 0,
+        "element": "Anemo",
+        "weaponType": 1,
+        "level": 1,
+        "friendship": 1,
+        "weapon": {
+          "name": "Dull Blade",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+          "rarity": 1,
+          "level": 1,
+          "refinement": 1
+        }
+      }
+    },
+    "resin": 200,
+    "daily_task": 0
+  },
   "hsr_diary": {
     "Date": "2026-03-07",
     "Net Currency Gain": 0,
@@ -1000,7 +1268,7 @@
         }
       }
     },
-    "stamina": "51",
+    "stamina": "52",
     "daily_mission": 100
   }
 }
