@@ -112,7 +112,7 @@ async def fetch_genshin_data(client, uid):
                     "icon": char.weapon.icon,
                     "rarity": char.weapon.rarity,
                     "level": char.weapon.level,
-                    "refinement": char.weapon.rank
+                    "refinement": char.weapon.refinement
                 } if char.weapon else None
             } for char in characters if char.rarity == 5
         }
