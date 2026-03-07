@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-06T12:56:49.658544-05:00",
+  "last_updated": "2026-03-06T23:08:16.484085-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 79,
+    "stamina": 181,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -148,7 +148,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Intermediate Combat Record",
@@ -191,7 +191,7 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -325,7 +325,7 @@
   },
   "endfield_data": {
     "nickname": "Axelle",
-    "level": 55,
+    "level": 56,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 48,
     "avatar_count": 20,
@@ -378,19 +378,19 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
+      "Yvonne": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Thermite Cutter",
-          "iconUrl": "https://static.skport.com/image/common/20251129/c938f2a07f6fbd4af04c04fabf2001e0.png",
+          "name": "Wedge",
+          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
           "rarity": "6",
-          "type": "Sword",
-          "level": 60,
+          "type": "Handcannon",
+          "level": 80,
           "refineLevel": 0
         }
       },
@@ -410,19 +410,19 @@
           "refineLevel": 0
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 80,
         "weapon": {
-          "name": "Wedge",
-          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
+          "name": "Thermite Cutter",
+          "iconUrl": "https://static.skport.com/image/common/20251129/c938f2a07f6fbd4af04c04fabf2001e0.png",
           "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
+          "type": "Sword",
+          "level": 60,
           "refineLevel": 0
         }
       },
@@ -442,6 +442,22 @@
           "refineLevel": 0
         }
       },
+      "Xaihi": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 60,
+          "refineLevel": 0
+        }
+      },
       "Laevatain": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
@@ -455,22 +471,6 @@
           "rarity": "6",
           "type": "Sword",
           "level": 20,
-          "refineLevel": 0
-        }
-      },
-      "Xaihi": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 60,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 60,
           "refineLevel": 0
         }
       },
@@ -586,38 +586,6 @@
           "refineLevel": 0
         }
       },
-      "Antal": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Fluorite": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
         "rarity": "4",
@@ -649,9 +617,41 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Antal": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 1,
+        "weapon": {
+          "name": "Jiminy 12",
+          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
+          "rarity": "3",
+          "type": "Arts Unit",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "115",
+    "stamina": "41",
     "daily_mission": 100
   }
 }
