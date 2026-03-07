@@ -1,9 +1,9 @@
 import csv
 from dataclasses import dataclass
-from datetime import datetime
 import logging
 import os
-from zoneinfo import ZoneInfo
+
+from scripts.constants import now
 
 THREE_WEEKS = 21
 
@@ -61,7 +61,7 @@ async def update_diary_csv(client, uid, config: GameConfig):
     diary = await config.diary_fetcher(client, uid)
     day_data = diary.day_data
 
-    today = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+    today = now().strftime("%Y-%m-%d")
 
     currency_gain = getattr(day_data, config.currency_attr)
 

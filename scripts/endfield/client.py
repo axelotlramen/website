@@ -277,6 +277,7 @@ class EndfieldClient:
                 char.get("charData").get("name"): {
                     "avatarSqUrl": char.get("charData").get("avatarSqUrl"),
                     "rarity": char.get("charData").get("rarity").get("value"),
+                    "potential": char.get("potentialLevel"),
                     "profession": char.get("charData").get("profession").get("value"),
                     "property": char.get("charData").get("property").get("value"),
                     "weaponType": char.get("charData").get("weaponType").get("value"),

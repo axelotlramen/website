@@ -1,9 +1,9 @@
 import calendar
-from datetime import datetime
 from typing import Any, Dict
-from zoneinfo import ZoneInfo
 
 import requests
+
+from scripts.constants import now
 
 GREEN_EMBED = 5763719
 RED_EMBED = 15548997
@@ -35,7 +35,7 @@ class WebhookClient:
         response.raise_for_status()
 
     def send_failure(self, task_name: str, error_message: str):
-        now_est = datetime.now(ZoneInfo("America/New_York"))
+        now_est = now()
 
         embed = {
             "title": "Task Failure",
@@ -94,7 +94,7 @@ def hoyolab_embed(old_data: dict | None, genshin_data: dict, hsr_data: dict):
         }
     ]
 
-    now_est = datetime.now(ZoneInfo("America/New_York"))
+    now_est = now()
 
     embed = {
         "title": "Hoyolab Stats Updated",
@@ -112,7 +112,7 @@ def hoyolab_embed(old_data: dict | None, genshin_data: dict, hsr_data: dict):
 def hoyolab_diary_embed(hsr_diary: dict | None, genshin_diary: dict | None):
     embed_color = GREEN_EMBED
 
-    now_est = datetime.now(ZoneInfo("America/New_York"))
+    now_est = now()
 
     fields = []
 
@@ -154,13 +154,13 @@ def hoyolab_diary_embed(hsr_diary: dict | None, genshin_diary: dict | None):
 def endfield_attendance_embed(results: Dict[str, Any]):
     embed_color = GREEN_EMBED
 
-    now_est = datetime.now(ZoneInfo("America/New_York"))
+    now_est = now()
 
     rewards_text = ", ".join(f"{r['name']} x {r['count']}" for r in results.get("rewards", []))
     rewards_icon_url = results.get("rewards", [])[0].get("icon", "") if results.get("rewards", []) else ""
 
     currentSignIns = int(results.get("attendance", {}).get("totalSignIns", 0))
-    total_days = calendar.monthrange(datetime.now(ZoneInfo("America/New_York")).year, datetime.now(ZoneInfo("America/New_York")).month)[1]
+    total_days = calendar.monthrange(now().year, now().month)[1]
 
     next_rewards_text = f"{results.get('nextAward', {}).get('name')} x{results.get('nextAward', {}).get('count')}"
 
@@ -219,7 +219,7 @@ def endfield_embed(old_data: dict | None, endfield_data: dict):
         }
     ]
 
-    now_est = datetime.now(ZoneInfo("America/New_York"))
+    now_est = now()
 
     embed = {
         "title": "Arknights: Endfield Stats Updated",

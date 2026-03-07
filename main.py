@@ -1,13 +1,12 @@
 import asyncio
-from datetime import datetime
 import json
 import logging
 import os
 import time
-from zoneinfo import ZoneInfo
 
 import genshin
 
+from scripts.constants import now
 from scripts.endfield.client import EndfieldClient
 from scripts.hoyolab.diary import GENSHIN_CONFIG, HSR_CONFIG, update_diary_csv
 from scripts.hoyolab.stats import fetch_genshin_data, fetch_hsr_data
@@ -53,7 +52,7 @@ async def main():
         endfield_data = endfield_client.fetch_endfield_data()
 
         data = {
-            "last_updated": datetime.now(ZoneInfo("America/New_York")).isoformat(),
+            "last_updated": now().isoformat(),
             "hsr_data": hsr_data,
             "genshin_data": genshin_data,
             "hsr_diary": hsr_diary,

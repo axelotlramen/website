@@ -12,9 +12,22 @@ async def fetch_hsr_data(client, uid):
         characters = character_response.avatar_list
 
         # Filter 5-star characters
-        five_stars = [
-            char.name for char in characters if char.rarity == 5
-        ]
+        five_stars = {
+            char.name: {
+                "icon": char.icon,
+                "eidolon": char.rank,
+                "element": char.element,
+                "path": char.path,
+                "level": char.level,
+                "lc": {
+                    "name": char.equip.name,
+                    "icon": char.equip.icon,
+                    "rarity": char.equip.rarity,
+                    "level": char.equip.level,
+                    "superimposition": char.equip.rank
+                } if char.equip else None
+            } for char in characters if char.rarity == 5
+        }
 
         hsr_notes = await client.get_starrail_notes(uid=uid)
         moc_data = await fetch_memory_of_chaos(client, uid)
@@ -86,9 +99,23 @@ async def fetch_genshin_data(client, uid):
         user = await client.get_genshin_user(uid)
         characters = await client.get_genshin_characters(uid)
 
-        five_stars = [
-            char.name for char in characters if char.rarity == 5
-        ]
+        five_stars = {
+            char.name: {
+                "icon": char.icon,
+                "constellation": char.constellation,
+                "element": char.element,
+                "weaponType": char.weapon_type,
+                "level": char.level,
+                "friendship": char.friendship,
+                "weapon": {
+                    "name": char.weapon.name,
+                    "icon": char.weapon.icon,
+                    "rarity": char.weapon.rarity,
+                    "level": char.weapon.level,
+                    "refinement": char.weapon.rank
+                } if char.weapon else None
+            } for char in characters if char.rarity == 5
+        }
 
         notes = await client.get_genshin_notes(uid)
 
