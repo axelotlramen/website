@@ -1,3 +1,4 @@
+from datetime import datetime
 import hashlib
 import hmac
 import logging
@@ -317,25 +318,25 @@ class EndfieldClient:
         
 def get_last_updated(old_endfield, daily_mission):
     """Update last_updated timestamp only if we're counting a new active day."""
-    last_updated = old_endfield.get("last_updated")
-    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
+    last_updated_raw = old_endfield.get("last_updated")
+    last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
 
+    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
     already_updated_today = last_updated is not None and last_updated >= daily_reset
 
     if not already_updated_today and daily_mission == 100:
-        return now()  # Record the time we incremented
-
-    return last_updated  # Keep the old value
+        return now().isoformat()
+    return last_updated_raw 
 
 
 def get_total_days_login(old_endfield, daily_mission):
     active_days = old_endfield.get("active_days", 0)
-    last_updated = old_endfield.get("last_updated")
-    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
+    last_updated_raw = old_endfield.get("last_updated")
+    last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
 
+    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
     already_updated_today = last_updated is not None and last_updated >= daily_reset
 
     if not already_updated_today and daily_mission == 100:
         return active_days + 1
-
     return active_days
