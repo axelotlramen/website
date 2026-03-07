@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-06T23:08:16.484085-05:00",
+  "last_updated": "2026-03-07T00:02:01.207810-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -39,7 +39,7 @@
       "Bailu",
       "Yanqing"
     ],
-    "stamina": 181,
+    "stamina": 190,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -126,8 +126,8 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-06",
-    "Net Currency Gain": 150,
+    "Date": "2026-03-07",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Stellar Jades": 1936,
     "Pulls": 230.0,
@@ -137,7 +137,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "genshin_diary": {
-    "Date": "2026-03-06",
+    "Date": "2026-03-07",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
@@ -651,7 +651,7 @@
         }
       }
     },
-    "stamina": "41",
+    "stamina": "49",
     "daily_mission": 100
   }
 }
