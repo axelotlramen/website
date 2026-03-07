@@ -156,21 +156,20 @@ def endfield_attendance_embed(results: Dict[str, Any]):
 
     now_est = now()
 
-    rewards_text = ", ".join(f"{r['name']} x {r['count']}" for r in results.get("rewards", []))
+    rewards_text = ", ".join(f"{r['name']} x{r['count']}" for r in results.get("rewards", []))
     rewards_icon_url = results.get("rewards", [])[0].get("icon", "") if results.get("rewards", []) else ""
 
     currentSignIns = int(results.get("attendance", {}).get("totalSignIns", 0))
     total_days = calendar.monthrange(now().year, now().month)[1]
 
-    next_rewards_text = f"{results.get('nextAward', {}).get('name')} x{results.get('nextAward', {}).get('count')}"
-
-    embed = {
+    # Current reward embed
+    current_embed = {
         "title": ":date: Daily Sign-In",
         "color": embed_color,
         "fields": [
             {
                 "name": "Status",
-                "value": results.get("status") or "-",
+                "value": results.get("status") or "-"
             },
             {
                 "name": "Claimed Rewards" if results.get("status") == "Already Claimed" else "Rewards",
@@ -179,10 +178,6 @@ def endfield_attendance_embed(results: Dict[str, Any]):
             {
                 "name": "Progress",
                 "value": f"{currentSignIns}/{total_days}"
-            },
-            {
-                "name": "Next Rewards",
-                "value": next_rewards_text
             }
         ],
         "footer": {
@@ -192,11 +187,33 @@ def endfield_attendance_embed(results: Dict[str, Any]):
     }
 
     if rewards_icon_url:
-        embed["thumbnail"] = {
-            "url": rewards_icon_url
-        }
+        current_embed["thumbnail"] = {"url": rewards_icon_url}
     
-    return embed
+    embeds = [current_embed]
+
+    # Next reward embed (only if nextAward exists)
+    next_award = results.get("nextAward")
+    if next_award and next_award.get("name"):
+        next_rewards_text = f"{next_award.get('name')} x{next_award.get('count')}"
+        next_icon_url = next_award.get("icon", "")
+
+        next_embed = {
+            "title": ":next_track_button: Next Reward",
+            "color": embed_color,
+            "fields": [
+                {
+                    "name": "Next Reward",
+                    "value": next_rewards_text
+                }
+            ]
+        }
+
+        if next_icon_url:
+            next_embed["thumbnail"] = {"url": next_icon_url}
+
+        embeds.append(next_embed)
+    
+    return embeds
 
 def endfield_embed(old_data: dict | None, endfield_data: dict):
     embed_color = GREEN_EMBED

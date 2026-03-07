@@ -102,7 +102,7 @@ async def main():
         notifier.send_endfield(
             elapsed=elapsed,
             embeds=[
-                endfield_attendance_embed(endfield_attendance),
+                *endfield_attendance_embed(endfield_attendance), # spread the list
                 endfield_embed(
                     old_data=old_data,
                     endfield_data=endfield_data
