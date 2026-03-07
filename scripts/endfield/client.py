@@ -6,6 +6,8 @@ from typing import Any, Dict, Optional, Tuple
 
 import httpx
 
+from scripts.constants import now
+
 class EndfieldClient:
     BASE_URL = "https://zonai.skport.com"
     ATTENDANCE_EXT = "/web/v1/game/endfield/attendance"
@@ -300,21 +302,40 @@ class EndfieldClient:
                 "avatar_url": detail.get("base").get("avatarUrl"),
 
                 "achievements": detail.get("achieve").get("count"),
-                "active_days": get_total_days_login(old_endfield),
+                "active_days": get_total_days_login(old_endfield, detail.get("dailyMission").get("dailyActivation")),
                 "avatar_count": detail.get("base").get("charNum"),
                 "six_star_characters": six_stars,
 
                 "stamina": detail.get("dungeon").get("curStamina"),
-                "daily_mission": detail.get("dailyMission").get("dailyActivation")
+                "daily_mission": detail.get("dailyMission").get("dailyActivation"),
+                "last_updated": get_last_updated(old_endfield, detail.get("dailyMission").get("dailyActivation"))
             }
         
         else:
             self.logger.warning(f"Unexpected response code: {code}")
             return {}
         
-def get_total_days_login(old_endfield):
-    active_days = old_endfield.get("active_days", 0)
+def get_last_updated(old_endfield, daily_mission):
+    """Update last_updated timestamp only if we're counting a new active day."""
+    last_updated = old_endfield.get("last_updated")
+    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
 
-    if old_endfield.get("daily_mission", 0) == 100:
+    already_updated_today = last_updated is not None and last_updated >= daily_reset
+
+    if not already_updated_today and daily_mission == 100:
+        return now()  # Record the time we incremented
+
+    return last_updated  # Keep the old value
+
+
+def get_total_days_login(old_endfield, daily_mission):
+    active_days = old_endfield.get("active_days", 0)
+    last_updated = old_endfield.get("last_updated")
+    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
+
+    already_updated_today = last_updated is not None and last_updated >= daily_reset
+
+    if not already_updated_today and daily_mission == 100:
         return active_days + 1
+
     return active_days
