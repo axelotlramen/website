@@ -260,7 +260,7 @@ class EndfieldClient:
     # ------------------------
     # Data retrieval
     # ------------------------
-    def fetch_endfield_data(self):
+    def fetch_endfield_data(self, old_endfield):
         self.logger.info("Starting to fetch endfield cards...")
 
         data = self._request(
@@ -300,6 +300,7 @@ class EndfieldClient:
                 "avatar_url": detail.get("base").get("avatarUrl"),
 
                 "achievements": detail.get("achieve").get("count"),
+                "active_days": get_total_days_login(old_endfield),
                 "avatar_count": detail.get("base").get("charNum"),
                 "six_star_characters": six_stars,
 
@@ -310,5 +311,10 @@ class EndfieldClient:
         else:
             self.logger.warning(f"Unexpected response code: {code}")
             return {}
+        
+def get_total_days_login(old_endfield):
+    active_days = old_endfield.get("active_days", 0)
 
-
+    if old_endfield.get("daily_mission", 0) == 100:
+        return active_days + 1
+    return active_days

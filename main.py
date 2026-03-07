@@ -26,6 +26,18 @@ async def main():
 
     try:
         # ---------------------------
+        # Save JSON
+        # ---------------------------
+        old_data = None
+
+        if os.path.exists("data/stats.json"):
+            try:
+                with open("data/stats.json", "r") as f:
+                    old_data = json.load(f)
+            except Exception:
+                old_data = {}
+
+        # ---------------------------
         # Setup + Client
         # ---------------------------
 
@@ -49,7 +61,7 @@ async def main():
         genshin_diary = await update_diary_csv(hoyolab_client, genshin_uid, GENSHIN_CONFIG)
 
         endfield_attendance = endfield_client.claim_attendance()
-        endfield_data = endfield_client.fetch_endfield_data()
+        endfield_data = endfield_client.fetch_endfield_data(old_data.get("endfield_data", {}) if old_data else {})
 
         data = {
             "last_updated": now().isoformat(),
@@ -62,18 +74,6 @@ async def main():
         }
 
         os.makedirs("data", exist_ok=True)
-
-        # ---------------------------
-        # Save JSON
-        # ---------------------------
-        old_data = None
-
-        if os.path.exists("data/stats.json"):
-            try:
-                with open("data/stats.json", "r") as f:
-                    old_data = json.load(f)
-            except Exception:
-                old_data = None
 
         with open("data/stats.json", "w") as f:
             json.dump(data, f, indent=2)
