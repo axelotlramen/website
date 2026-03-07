@@ -201,7 +201,7 @@ def endfield_attendance_embed(results: Dict[str, Any]):
         next_icon_url = next_award.get("icon", "")
 
         next_embed = {
-            "title": ":next_track_button: Next Reward",
+            "title": ":track_next: Next Reward",
             "color": embed_color,
             "fields": [
                 {
