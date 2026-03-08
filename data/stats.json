@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-08T00:11:29.692985-05:00",
+  "last_updated": "2026-03-08T13:45:00.264923-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/cc4e152b0462bf17beadd7bd2c4e597f.png",
     "achievements": 1566,
-    "active_days": 831,
+    "active_days": 832,
     "avatar_count": 51,
     "chest_count": 1723,
     "five_star_characters": {
@@ -156,9 +156,9 @@
         "path": 1,
         "level": 80,
         "lc": {
-          "name": "On the Fall of an Aeon",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/18a7d13a06f32b17c9331be5fc31ed65.png",
-          "rarity": 5,
+          "name": "Under the Blue Sky",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/9ce779df54d4e7b913db99b8aad45297.png",
+          "rarity": 4,
           "level": 80,
           "superimposition": 5
         }
@@ -174,7 +174,7 @@
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/031113ebeb4bae8761f6cbf3c5c8c0a5.png",
           "rarity": 5,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 2
         }
       },
       "Dr. Ratio": {
@@ -398,7 +398,7 @@
         "lc": null
       }
     },
-    "stamina": 191,
+    "stamina": 77,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -724,11 +724,11 @@
   },
   "hsr_diary": {
     "Date": "2026-03-08",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 2086,
+    "Stellar Jades": 2236,
     "Pulls": 230.0,
-    "Total Pulls": 243.04,
+    "Total Pulls": 243.97,
     "Currency Needed for 5 Star": 0,
     "3-Week Avg Gain": "",
     "Estimated Days Til 5 Star": ""
@@ -745,16 +745,16 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 3000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Arms INSP Kit",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 8,
+      "totalSignIns": 9,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -798,8 +798,8 @@
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
@@ -915,9 +915,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Kit",
+      "name": "Intermediate Combat Record",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
     }
   },
   "endfield_data": {
@@ -979,23 +979,6 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 80,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Ardelia": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -1009,6 +992,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
           "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
           "level": 80,
           "refineLevel": 0
         }
@@ -1200,40 +1200,6 @@
           "refineLevel": 0
         }
       },
-      "Antal": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Catcher": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Fluorite": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
         "rarity": "4",
@@ -1247,6 +1213,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/a774ee68210d6c5c2091e8249b093ba0.png",
           "rarity": "3",
           "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Antal": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 1,
+        "weapon": {
+          "name": "Jiminy 12",
+          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
+          "rarity": "3",
+          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1267,10 +1250,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Catcher": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "130",
-    "daily_mission": 100,
+    "stamina": "235",
+    "daily_mission": 20,
     "last_updated": "2026-03-08T00:11:29.692875-05:00"
   }
 }
