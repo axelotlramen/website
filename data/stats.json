@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-07T13:39:14.972551-05:00",
+  "last_updated": "2026-03-07T23:39:32.052720-05:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -398,7 +398,7 @@
         "lc": null
       }
     },
-    "stamina": 86,
+    "stamina": 186,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -979,23 +979,6 @@
           "refineLevel": 0
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Wedge",
-          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Pogranichnik": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1030,20 +1013,20 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
+      "Yvonne": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
         "property": "Cryo",
-        "weaponType": "Arts Unit",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "name": "Wedge",
+          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
           "rarity": "6",
-          "type": "Arts Unit",
-          "level": 60,
+          "type": "Handcannon",
+          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1061,6 +1044,23 @@
           "rarity": "5",
           "type": "Handcannon",
           "level": 40,
+          "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 60,
           "refineLevel": 0
         }
       },
@@ -1088,13 +1088,13 @@
         "profession": "Caster",
         "property": "Electric",
         "weaponType": "Arts Unit",
-        "level": 20,
+        "level": 40,
         "weapon": {
-          "name": "Wild Wanderer",
-          "iconUrl": "https://static.skport.com/image/common/20251129/6f0b60866522811225bdd0545e56c0ea.png",
+          "name": "Stanza of Memorials",
+          "iconUrl": "https://static.skport.com/image/common/20251129/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
-          "level": 20,
+          "level": 1,
           "refineLevel": 0
         }
       },
@@ -1123,6 +1123,40 @@
         "property": "Heat",
         "weaponType": "Sword",
         "level": 20,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "https://static.skport.com/image/common/20251129/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Avywenna": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "potential": 2,
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
         "weapon": {
           "name": "Tarr 11",
           "iconUrl": "https://static.skport.com/image/common/20251129/397d215b08df02e77309f693971a25bf.png",
@@ -1166,70 +1200,19 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "https://static.skport.com/image/common/20251129/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Avywenna": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 2,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+      "Antal": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Jiminy 12",
+          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Fluorite": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "https://static.skport.com/image/common/20251129/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
+          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1251,25 +1234,42 @@
           "refineLevel": 0
         }
       },
-      "Antal": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
+      "Fluorite": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
         "level": 1,
         "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
+          "name": "Peco 5",
+          "iconUrl": "https://static.skport.com/image/common/20251129/a774ee68210d6c5c2091e8249b093ba0.png",
           "rarity": "3",
-          "type": "Arts Unit",
+          "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
       }
     },
-    "stamina": "42",
+    "stamina": "125",
     "daily_mission": 100,
     "last_updated": "2026-03-07T13:39:14.972449-05:00"
   }
