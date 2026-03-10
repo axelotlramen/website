@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T23:35:05.283080-04:00",
+  "last_updated": "2026-03-10T01:12:10.579086-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -398,7 +398,7 @@
         "lc": null
       }
     },
-    "stamina": 175,
+    "stamina": 191,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -723,8 +723,8 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-09",
-    "Net Currency Gain": 375,
+    "Date": "2026-03-10",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Stellar Jades": 2956,
     "Pulls": 230.0,
@@ -734,7 +734,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "genshin_diary": {
-    "Date": "2026-03-09",
+    "Date": "2026-03-10",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
@@ -925,7 +925,7 @@
     "level": 56,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 55,
-    "active_days": 4,
+    "active_days": 5,
     "avatar_count": 20,
     "six_star_characters": {
       "Lifeng": {
@@ -979,23 +979,6 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 80,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Ardelia": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -1030,20 +1013,20 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
+      "Pogranichnik": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 80,
         "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "name": "Never Rest",
+          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
-          "type": "Arts Unit",
-          "level": 60,
+          "type": "Sword",
+          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1064,6 +1047,23 @@
           "refineLevel": 0
         }
       },
+      "Xaihi": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 60,
+          "refineLevel": 0
+        }
+      },
       "Perlica": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1071,13 +1071,13 @@
         "profession": "Caster",
         "property": "Electric",
         "weaponType": "Arts Unit",
-        "level": 65,
+        "level": 79,
         "weapon": {
           "name": "Stanza of Memorials",
           "iconUrl": "https://static.skport.com/image/common/20251129/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
-          "level": 1,
+          "level": 20,
           "refineLevel": 0
         }
       },
@@ -1200,40 +1200,6 @@
           "refineLevel": 0
         }
       },
-      "Fluorite": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "https://static.skport.com/image/common/20251129/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Antal": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Estella": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
@@ -1267,10 +1233,44 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "https://static.skport.com/image/common/20251129/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Antal": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 1,
+        "weapon": {
+          "name": "Jiminy 12",
+          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
+          "rarity": "3",
+          "type": "Arts Unit",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "196",
-    "daily_mission": 80,
-    "last_updated": "2026-03-09T01:21:10.174683-04:00"
+    "stamina": "130",
+    "daily_mission": 100,
+    "last_updated": "2026-03-10T01:12:10.578984-04:00"
   }
 }
