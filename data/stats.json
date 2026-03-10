@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T14:05:21.812082-04:00",
+  "last_updated": "2026-03-09T23:35:05.283080-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -398,7 +398,7 @@
         "lc": null
       }
     },
-    "stamina": 80,
+    "stamina": 175,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -745,7 +745,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Intermediate Combat Record",
@@ -803,7 +803,7 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -924,7 +924,7 @@
     "nickname": "Axelle",
     "level": 56,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 48,
+    "achievements": 55,
     "active_days": 4,
     "avatar_count": 20,
     "six_star_characters": {
@@ -979,19 +979,19 @@
           "refineLevel": 0
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 80,
         "weapon": {
-          "name": "Wedge",
-          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
+          "name": "Never Rest",
+          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
-          "type": "Handcannon",
+          "type": "Sword",
           "level": 80,
           "refineLevel": 0
         }
@@ -1013,19 +1013,19 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
+      "Yvonne": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Wedge",
+          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
           "rarity": "6",
-          "type": "Sword",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
         }
@@ -1149,23 +1149,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 3,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "https://static.skport.com/image/common/20251129/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1200,36 +1183,36 @@
           "refineLevel": 0
         }
       },
-      "Catcher": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Defender",
+      "Da Pan": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 3,
+        "profession": "Striker",
         "property": "Physical",
         "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
+          "name": "Finishing Call",
+          "iconUrl": "https://static.skport.com/image/common/20251129/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
           "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+      "Fluorite": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Peco 5",
+          "iconUrl": "https://static.skport.com/image/common/20251129/a774ee68210d6c5c2091e8249b093ba0.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -1251,26 +1234,43 @@
           "refineLevel": 0
         }
       },
-      "Fluorite": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "https://static.skport.com/image/common/20251129/a774ee68210d6c5c2091e8249b093ba0.png",
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Handcannon",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Catcher": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
       }
     },
-    "stamina": "117",
-    "daily_mission": 60,
+    "stamina": "196",
+    "daily_mission": 80,
     "last_updated": "2026-03-09T01:21:10.174683-04:00"
   }
 }
