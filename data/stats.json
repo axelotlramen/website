@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-10T23:19:53.867993-04:00",
+  "last_updated": "2026-03-11T01:13:47.108494-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -398,7 +398,7 @@
         "lc": null
       }
     },
-    "stamina": 173,
+    "stamina": 191,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -723,8 +723,8 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-10",
-    "Net Currency Gain": 170,
+    "Date": "2026-03-11",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Stellar Jades": 3126,
     "Pulls": 230.0,
@@ -734,7 +734,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "genshin_diary": {
-    "Date": "2026-03-10",
+    "Date": "2026-03-11",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
@@ -925,7 +925,7 @@
     "level": 57,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 55,
-    "active_days": 6,
+    "active_days": 7,
     "avatar_count": 20,
     "six_star_characters": {
       "Lifeng": {
@@ -1269,8 +1269,8 @@
         }
       }
     },
-    "stamina": "36",
+    "stamina": "52",
     "daily_mission": 100,
-    "last_updated": "2026-03-10T23:19:53.867895-04:00"
+    "last_updated": "2026-03-11T01:13:47.108391-04:00"
   }
 }
