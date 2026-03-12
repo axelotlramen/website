@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-11T14:07:51.010912-04:00",
+  "last_updated": "2026-03-11T22:28:12.357399-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -398,7 +398,7 @@
         "lc": null
       }
     },
-    "stamina": 120,
+    "stamina": 204,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -745,7 +745,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Oroberyl",
@@ -813,7 +813,7 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -925,7 +925,7 @@
     "level": 57,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 55,
-    "active_days": 7,
+    "active_days": 8,
     "avatar_count": 20,
     "six_star_characters": {
       "Lifeng": {
@@ -979,23 +979,6 @@
           "refineLevel": 0
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "https://static.skport.com/image/common/20251129/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Pogranichnik": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1009,6 +992,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Ardelia": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "https://static.skport.com/image/common/20251129/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1030,20 +1030,20 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
+      "Wulfgard": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
+        "potential": 4,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
+          "name": "Rational Farewell",
+          "iconUrl": "https://static.skport.com/image/common/20251129/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 40,
           "refineLevel": 0
         }
       },
@@ -1060,24 +1060,24 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
-          "level": 20,
+          "level": 76,
           "refineLevel": 0
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/7ddb3b88ce6f0029e143000cfece7b65.png",
+      "Xaihi": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
-        "potential": 4,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "https://static.skport.com/image/common/20251129/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 40,
+          "name": "Detonation Unit",
+          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1132,23 +1132,6 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 2,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1162,23 +1145,6 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/19f31f1c6464ea63c4012f70c813ab8e.png",
           "rarity": "5",
           "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Arclight": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "https://static.skport.com/image/common/20251129/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1200,6 +1166,40 @@
           "refineLevel": 0
         }
       },
+      "Avywenna": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "potential": 2,
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "https://static.skport.com/image/common/20251129/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Antal": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
@@ -1213,23 +1213,6 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
           "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Catcher": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1267,10 +1250,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Catcher": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "160",
-    "daily_mission": 20,
-    "last_updated": "2026-03-11T01:13:47.108391-04:00"
+    "stamina": "110",
+    "daily_mission": 100,
+    "last_updated": "2026-03-11T22:28:12.357299-04:00"
   }
 }
