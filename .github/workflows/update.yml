@@ -3,7 +3,6 @@ name: Update And Run Tasks
 on:
   schedule:
     - cron: "30 17 * * *" # 12:30 PM EST
-    - cron: "0 4 * * *" # 11:00 PM EST
   workflow_dispatch: # allows manual runs too
 
 jobs:
