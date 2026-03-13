@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-12T23:09:30.162159-04:00",
+  "last_updated": "2026-03-13T13:56:14.684912-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
-    "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/32f9392b1498bb595a5d7a1e9f8d9a99.png",
+    "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/685d99ece93ad87595ebb5bd1a0657a4.png",
     "achievements": 1566,
-    "active_days": 836,
+    "active_days": 837,
     "avatar_count": 51,
     "chest_count": 1723,
     "five_star_characters": {
@@ -150,7 +150,7 @@
         }
       },
       "Firefly": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/f966161b6d1158577b1cb80f91bfc33c.png",
+        "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2025/05/29/a3487cdc8e4ab08a6780b3e1b18ac03a_7123059584676820199.png",
         "eidolon": 0,
         "element": "fire",
         "path": 1,
@@ -398,7 +398,7 @@
         "lc": null
       }
     },
-    "stamina": 211,
+    "stamina": 119,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -723,18 +723,18 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-12",
+    "Date": "2026-03-13",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 3426,
+    "Stellar Jades": 3576,
     "Pulls": 230.0,
-    "Total Pulls": 251.41,
+    "Total Pulls": 252.35,
     "Currency Needed for 5 Star": 0,
-    "3-Week Avg Gain": "",
+    "3-Week Avg Gain": 314.76,
     "Estimated Days Til 5 Star": ""
   },
   "genshin_diary": {
-    "Date": "2026-03-12",
+    "Date": "2026-03-13",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
@@ -745,16 +745,16 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Protoprism",
+        "name": "Intermediate Combat Record",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 13,
+      "totalSignIns": 14,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -823,8 +823,8 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
@@ -915,16 +915,16 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Intermediate Combat Record",
+      "name": "Arms INSP Kit",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 57,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 57,
+    "achievements": 58,
     "active_days": 9,
     "avatar_count": 20,
     "six_star_characters": {
@@ -1030,6 +1030,23 @@
           "refineLevel": 0
         }
       },
+      "Xaihi": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Perlica": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1061,23 +1078,6 @@
           "rarity": "5",
           "type": "Handcannon",
           "level": 40,
-          "refineLevel": 0
-        }
-      },
-      "Xaihi": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "https://static.skport.com/image/common/20251129/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1132,40 +1132,6 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 2,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Snowshine": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 3,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1200,12 +1166,12 @@
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
+      "Avywenna": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "potential": 2,
+        "profession": "Striker",
+        "property": "Electric",
         "weaponType": "Polearm",
         "level": 1,
         "weapon": {
@@ -1213,6 +1179,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 3,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1234,19 +1217,19 @@
           "refineLevel": 0
         }
       },
-      "Catcher": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Defender",
-        "property": "Physical",
-        "weaponType": "Greatsword",
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Greatsword",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1267,10 +1250,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Catcher": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "156",
-    "daily_mission": 100,
+    "stamina": "279",
+    "daily_mission": 20,
     "last_updated": "2026-03-12T14:07:06.663162-04:00"
   }
 }
