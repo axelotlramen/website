@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-14T13:49:17.338700-04:00",
+  "last_updated": "2026-03-14T23:48:16.559028-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 87,
+    "stamina": 187,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -738,13 +738,13 @@
   },
   "hsr_diary": {
     "Date": "2026-03-14",
-    "Net Currency Gain": 150,
+    "Net Currency Gain": 160,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 4046,
+    "Stellar Jades": 4056,
     "Pulls": 230.0,
-    "Total Pulls": 255.29,
+    "Total Pulls": 255.35,
     "Currency Needed for 5 Star": 0,
-    "3-Week Avg Gain": 330.0,
+    "3-Week Avg Gain": 330.48,
     "Estimated Days Til 5 Star": ""
   },
   "genshin_diary": {
@@ -759,7 +759,7 @@
     "Estimated Days Til 5 Star": ""
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Arms INSP Kit",
@@ -842,7 +842,7 @@
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -939,7 +939,7 @@
     "level": 57,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 60,
-    "active_days": 10,
+    "active_days": 11,
     "avatar_count": 21,
     "six_star_characters": {
       "Lifeng": {
@@ -993,6 +993,23 @@
           "refineLevel": 0
         }
       },
+      "Pogranichnik": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Yvonne": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1027,20 +1044,37 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
+      "Perlica": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 4,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
+          "name": "Stanza of Memorials",
+          "iconUrl": "https://static.skport.com/image/common/20251129/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
           "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Rational Farewell",
+          "iconUrl": "https://static.skport.com/image/common/20251129/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 40,
           "refineLevel": 0
         }
       },
@@ -1061,37 +1095,20 @@
           "refineLevel": 0
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 4,
+      "Tangtang": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20260311/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 0,
         "profession": "Caster",
-        "property": "Heat",
+        "property": "Cryo",
         "weaponType": "Handcannon",
-        "level": 80,
+        "level": 60,
         "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "https://static.skport.com/image/common/20251129/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
+          "name": "Brigand's Calling",
+          "iconUrl": "https://static.skport.com/image/common/20260310/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
           "type": "Handcannon",
           "level": 40,
-          "refineLevel": 0
-        }
-      },
-      "Perlica": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "https://static.skport.com/image/common/20251129/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1109,23 +1126,6 @@
           "rarity": "6",
           "type": "Sword",
           "level": 20,
-          "refineLevel": 0
-        }
-      },
-      "Tangtang": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20260311/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 40,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "https://static.skport.com/image/common/20260310/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 1,
           "refineLevel": 0
         }
       },
@@ -1163,19 +1163,19 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
+      "Snowshine": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
-        "potential": 2,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
+        "potential": 3,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1197,19 +1197,19 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
+      "Avywenna": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
-        "potential": 3,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
+        "potential": 4,
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Greatsword",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1231,40 +1231,6 @@
           "refineLevel": 0
         }
       },
-      "Antal": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Catcher": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
         "rarity": "4",
@@ -1278,6 +1244,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Antal": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 1,
+        "weapon": {
+          "name": "Jiminy 12",
+          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
+          "rarity": "3",
+          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1298,10 +1281,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "158",
-    "daily_mission": 50,
-    "last_updated": "2026-03-13T22:22:28.777424-04:00"
+    "stamina": "81",
+    "daily_mission": 100,
+    "last_updated": "2026-03-14T23:48:16.558812-04:00"
   }
 }
