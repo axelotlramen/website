@@ -120,8 +120,8 @@ async def update_diary_csv(client, uid, config: GameConfig):
         "Pulls": new_pulls_total,
         "Total Pulls": round(total_pulls, 2),
         "Currency Needed for 5 Star": round(currency_needed, 2),
-        "3-Week Avg Gain": round(avg_gain, 2) if avg_gain else "",
-        "Estimated Days Til 5 Star": round(estimated_days, 2) if estimated_days else ""
+        "3-Week Avg Gain": round(avg_gain, 2) if avg_gain else 0,
+        "Estimated Days Til 5 Star": round(estimated_days, 2) if estimated_days else 0
     }
 
     rows.append(new_row)
