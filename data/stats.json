@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-14T23:48:16.559028-04:00",
+  "last_updated": "2026-03-15T13:51:31.793257-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/685d99ece93ad87595ebb5bd1a0657a4.png",
     "achievements": 1566,
-    "active_days": 838,
+    "active_days": 839,
     "avatar_count": 52,
     "chest_count": 1723,
     "five_star_characters": {
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 187,
+    "stamina": 68,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -737,38 +737,38 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-14",
-    "Net Currency Gain": 160,
+    "Date": "2026-03-15",
+    "Net Currency Gain": 155,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 4056,
-    "Pulls": 230.0,
-    "Total Pulls": 255.35,
+    "Stellar Jades": 211,
+    "Pulls": 200.0,
+    "Total Pulls": 201.32,
     "Currency Needed for 5 Star": 0,
-    "3-Week Avg Gain": 330.48,
-    "Estimated Days Til 5 Star": ""
+    "3-Week Avg Gain": 330.71,
+    "Estimated Days Til 5 Star": 0
   },
   "genshin_diary": {
-    "Date": "2026-03-14",
+    "Date": "2026-03-15",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
     "Pulls": 0.0,
     "Total Pulls": 8.26,
     "Currency Needed for 5 Star": 11478.0,
-    "3-Week Avg Gain": "",
-    "Estimated Days Til 5 Star": ""
+    "3-Week Avg Gain": 0,
+    "Estimated Days Til 5 Star": 0
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 15,
+      "totalSignIns": 16,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -847,8 +847,8 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_3_2",
@@ -929,17 +929,17 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Advanced Combat Record",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 57,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 60,
-    "active_days": 11,
+    "achievements": 61,
+    "active_days": 12,
     "avatar_count": 21,
     "six_star_characters": {
       "Lifeng": {
@@ -993,23 +993,6 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 80,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Yvonne": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1044,19 +1027,36 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
+      "Pogranichnik": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 80,
         "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "https://static.skport.com/image/common/20251129/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
+          "name": "Never Rest",
+          "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20260311/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "https://static.skport.com/image/common/20260310/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
         }
@@ -1095,20 +1095,20 @@
           "refineLevel": 0
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20260311/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 0,
+      "Perlica": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 4,
         "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 60,
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
         "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "https://static.skport.com/image/common/20260310/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 40,
+          "name": "Stanza of Memorials",
+          "iconUrl": "https://static.skport.com/image/common/20251129/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1163,40 +1163,6 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 3,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Da Pan": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 3,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "https://static.skport.com/image/common/20251129/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1210,6 +1176,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 4,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1231,18 +1214,18 @@
           "refineLevel": 0
         }
       },
-      "Catcher": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Defender",
+      "Da Pan": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 3,
+        "profession": "Striker",
         "property": "Physical",
         "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
+          "name": "Finishing Call",
+          "iconUrl": "https://static.skport.com/image/common/20251129/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
           "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
@@ -1298,10 +1281,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Catcher": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/3b87a2f7f90dd9e6aee2d351df43e409.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "81",
+    "stamina": "38",
     "daily_mission": 100,
-    "last_updated": "2026-03-14T23:48:16.558812-04:00"
+    "last_updated": "2026-03-15T13:51:31.793078-04:00"
   }
 }
