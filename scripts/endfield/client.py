@@ -297,6 +297,16 @@ class EndfieldClient:
                 for char in detail.get("chars")
             }
 
+            domains = detail.get("domain")
+            aurylenes = 0
+            crates = 0
+
+            for domain in domains:
+                levels = domain.get("levels", {})
+                for level in levels:
+                    aurylenes += level.get("puzzleCount", {}).get("count", 0)
+                    crates += level.get("trchestCount", {}).get("count", 0)
+
             return {
                 "nickname": detail.get("base").get("name"),
                 "level": detail.get("base").get("level"),
@@ -305,6 +315,8 @@ class EndfieldClient:
                 "achievements": detail.get("achieve").get("count"),
                 "active_days": get_total_days_login(old_endfield, detail.get("dailyMission").get("dailyActivation")),
                 "avatar_count": detail.get("base").get("charNum"),
+                "aurylenes": aurylenes,
+                "chest_count": crates,
                 "six_star_characters": six_stars,
 
                 "stamina": detail.get("dungeon").get("curStamina"),
