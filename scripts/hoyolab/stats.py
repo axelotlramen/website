@@ -48,7 +48,7 @@ async def fetch_hsr_data(client, uid):
             "memory_of_chaos": moc_data,
         }
     
-    except Exception as e:
+    except Exception:
         logger.error("Failed to fetch HSR data", exc_info=True)
         return {}
     
@@ -89,7 +89,7 @@ async def fetch_memory_of_chaos(client, uid):
             "floor_data": floor_data
         }
     
-    except Exception as e:
+    except Exception:
         logger.error("Failed to fetch Memory of Chaos", exc_info=True)
         return {}
     
@@ -138,6 +138,6 @@ async def fetch_genshin_data(client, uid):
             "daily_task": notes.daily_task.completed_tasks
         }
     
-    except Exception as e:
+    except Exception:
         logger.error("Failed to fetch Genshin data", exc_info=True)
         return {}

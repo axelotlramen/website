@@ -234,6 +234,8 @@ def endfield_embed(old_data: dict | None, endfield_data: dict):
                 f"**Achievements:** {calculate_delta(old_endfield.get('achievements', 0), endfield_data.get('achievements', '0'))}\n"
                 f"**Active Days:** {calculate_delta(old_endfield.get('active_days', '0'), endfield_data.get('active_days', '0'))}\n"
                 f"**Character Count:** {calculate_delta(old_endfield.get('avatar_count', '0'), endfield_data.get('avatar_count', '0'))}\n"
+                f"**Aurylenes:** {calculate_delta(old_endfield.get('aurylenes', '0'), endfield_data.get('aurylenes', '0'))}\n"
+                f"**Chest Count:** {calculate_delta(old_endfield.get('chest_count', '0'), endfield_data.get('chest_count', '0'))}\n"
                 f"**Stamina:** {calculate_delta(old_endfield.get('stamina', '0'), endfield_data.get('stamina', '0'))}\n"
                 f"**Daily Mission:** {calculate_delta(old_endfield.get('daily_mission', '0'), endfield_data.get('daily_mission', '0'))}\n"
             )
