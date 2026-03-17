@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-16T14:13:28.686135-04:00",
+  "last_updated": "2026-03-16T23:12:37.605647-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 81,
+    "stamina": 171,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -1012,23 +1012,6 @@
           "refineLevel": 0
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20260311/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "https://static.skport.com/image/common/20260310/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Pogranichnik": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1042,6 +1025,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20260311/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "https://static.skport.com/image/common/20260310/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
         }
@@ -1080,23 +1080,6 @@
           "refineLevel": 0
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "https://static.skport.com/image/common/20251129/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 40,
-          "refineLevel": 0
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1111,6 +1094,23 @@
           "rarity": "6",
           "type": "Arts Unit",
           "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Rational Farewell",
+          "iconUrl": "https://static.skport.com/image/common/20251129/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 40,
           "refineLevel": 0
         }
       },
@@ -1199,23 +1199,6 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "https://static.skport.com/image/common/20251129/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Snowshine": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
@@ -1229,6 +1212,23 @@
           "iconUrl": "https://static.skport.com/image/common/20251129/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "https://static.skport.com/image/common/20251129/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1302,7 +1302,7 @@
         }
       }
     },
-    "stamina": "81",
+    "stamina": "76",
     "daily_mission": 100,
     "last_updated": "2026-03-16T13:56:05.203006-04:00"
   }
