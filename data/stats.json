@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-16T23:12:37.605647-04:00",
+  "last_updated": "2026-03-17T14:11:38.845508-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/685d99ece93ad87595ebb5bd1a0657a4.png",
     "achievements": 1566,
-    "active_days": 840,
+    "active_days": 841,
     "avatar_count": 52,
     "chest_count": 1723,
     "five_star_characters": {
@@ -353,6 +353,20 @@
           "superimposition": 5
         }
       },
+      "Welt": {
+        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/603378387f8dcb6d6965d3dca7f3a406.png",
+        "eidolon": 1,
+        "element": "imaginary",
+        "path": 5,
+        "level": 80,
+        "lc": {
+          "name": "In the Name of the World",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/8512422c89c9090ea672038d6c3495c6.png",
+          "rarity": 5,
+          "level": 1,
+          "superimposition": 2
+        }
+      },
       "Himeko": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/c2a3303fc8024cc5679a6b75161d54e9.png",
         "eidolon": 3,
@@ -381,20 +395,6 @@
           "superimposition": 5
         }
       },
-      "Welt": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/603378387f8dcb6d6965d3dca7f3a406.png",
-        "eidolon": 1,
-        "element": "imaginary",
-        "path": 5,
-        "level": 70,
-        "lc": {
-          "name": "In the Name of the World",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/8512422c89c9090ea672038d6c3495c6.png",
-          "rarity": 5,
-          "level": 1,
-          "superimposition": 2
-        }
-      },
       "Bailu": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/d07f98ba9c19fc79860f5a9d0db3c3b2.png",
         "eidolon": 0,
@@ -412,8 +412,8 @@
         "lc": null
       }
     },
-    "stamina": 171,
-    "current_train_score": 500,
+    "stamina": 300,
+    "current_train_score": 100,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
       "total_stars": 36,
@@ -737,38 +737,38 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-16",
-    "Net Currency Gain": 1320,
+    "Date": "2026-03-17",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Stellar Jades": 1531,
     "Pulls": 200.0,
     "Total Pulls": 209.57,
     "Currency Needed for 5 Star": 0,
-    "3-Week Avg Gain": 386.43,
+    "3-Week Avg Gain": 379.29,
     "Estimated Days Til 5 Star": 0
   },
   "genshin_diary": {
-    "Date": "2026-03-16",
+    "Date": "2026-03-17",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
     "Pulls": 0.0,
     "Total Pulls": 8.26,
     "Currency Needed for 5 Star": 11478.0,
-    "3-Week Avg Gain": 0,
-    "Estimated Days Til 5 Star": 0
+    "3-Week Avg Gain": 39.19,
+    "Estimated Days Til 5 Star": 292.88
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Advanced Combat Record",
+        "name": "Arms INSP Set",
         "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 17,
+      "totalSignIns": 18,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -857,8 +857,8 @@
         },
         {
           "awardId": "endfield_attendance_5_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_2_5",
@@ -929,9 +929,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Set",
-      "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+      "name": "Elementary Cognitive Carrier",
+      "count": 5,
+      "icon": "https://static.skport.com/asset/endfield_attendance/ed34d5a121dbc81da6f6991792ff97f6.png"
     }
   },
   "endfield_data": {
@@ -1302,8 +1302,8 @@
         }
       }
     },
-    "stamina": "76",
-    "daily_mission": 100,
+    "stamina": "201",
+    "daily_mission": 0,
     "last_updated": "2026-03-16T13:56:05.203006-04:00"
   }
 }
