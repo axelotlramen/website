@@ -7,7 +7,33 @@ from typing import Any, Dict, Optional, Tuple
 
 import httpx
 
-from scripts.constants import now
+from scripts.constants import IMAGE_DIR, now
+
+def download_image(url: str, http: httpx.Client, logger: logging.Logger) -> str:
+    """Download an image from a URL into data/images/, return the local relative path.
+    If the image already exists locally, skip the download. Returns the original URL on failure."""
+    if not url:
+        return url
+
+    filename = url.split("/")[-1]
+    local_path = IMAGE_DIR / filename
+    relative_path = f"data/images/{filename}"
+
+    if local_path.exists():
+        logger.debug(f"Image already cached: {filename}")
+        return relative_path
+
+    try:
+        IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+        response = http.get(url, follow_redirects=True)
+        response.raise_for_status()
+        local_path.write_bytes(response.content)
+        logger.info(f"Downloaded image: {filename}")
+        return relative_path
+    except Exception as e:
+        logger.warning(f"Failed to download image {url}: {e}")
+        return url  # fall back to remote URL
+
 
 class EndfieldClient:
     BASE_URL = "https://zonai.skport.com"
@@ -276,9 +302,12 @@ class EndfieldClient:
         if code == 0:
             detail = data.get("data", {}).get("detail", {})
 
+            def dl(url):
+                return download_image(url, self._http, self.logger)
+
             six_stars = {
                 char.get("charData").get("name"): {
-                    "avatarSqUrl": char.get("charData").get("avatarSqUrl"),
+                    "avatarSqUrl": dl(char.get("charData").get("avatarSqUrl")),
                     "rarity": char.get("charData").get("rarity").get("value"),
                     "potential": char.get("potentialLevel"),
                     "profession": char.get("charData").get("profession").get("value"),
@@ -287,7 +316,7 @@ class EndfieldClient:
                     "level": char.get("level"),
                     "weapon": {
                         "name": char.get("weapon").get("weaponData").get("name"),
-                        "iconUrl": char.get("weapon").get("weaponData").get("iconUrl"),
+                        "iconUrl": dl(char.get("weapon").get("weaponData").get("iconUrl")),
                         "rarity": char.get("weapon").get("weaponData").get("rarity").get("value"),
                         "type": char.get("weapon").get("weaponData").get("type").get("value"),
                         "level": char.get("weapon").get("level"),
@@ -310,7 +339,7 @@ class EndfieldClient:
             return {
                 "nickname": detail.get("base").get("name"),
                 "level": detail.get("base").get("level"),
-                "avatar_url": detail.get("base").get("avatarUrl"),
+                "avatar_url": dl(detail.get("base").get("avatarUrl")),
 
                 "achievements": detail.get("achieve").get("count"),
                 "active_days": get_total_days_login(old_endfield, detail.get("dailyMission").get("dailyActivation")),
