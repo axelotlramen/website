@@ -164,15 +164,96 @@ function renderGenshin(data) {
 }
 
 /* =========================
+   Endfield Render
+========================= */
+
+function renderEndfield(data) {
+  const ef = data.endfield_data;
+  if (!ef) return;
+
+  // Profile card
+  const container = document.getElementById("endfield-profile");
+  container.innerHTML = `
+    <div class="card">
+      <div class="avatar">
+        <img src="${ef.avatar_url}" alt="${ef.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+      </div>
+      <div class="nickname">${ef.nickname}</div>
+      <div class="server-level">Level ${ef.level}</div>
+      <div class="stats">
+        <div class="stat">Active Days<br><strong>${ef.active_days}</strong></div>
+        <div class="stat">Achievements<br><strong>${ef.achievements}</strong></div>
+        <div class="stat">Characters<br><strong>${ef.avatar_count}</strong></div>
+        <div class="stat">Chests<br><strong>${ef.chest_count}</strong></div>
+      </div>
+    </div>
+  `;
+
+  // Daily status card
+  const status = document.getElementById("endfield-status");
+  const loggedIn = ef.daily_mission > 0;
+
+  status.innerHTML = `
+    <div class="mini-card">
+      <h3>Today's Status</h3>
+      <div class="line">Sanity <strong>${ef.stamina ?? 0}/240</strong></div>
+      <div class="line">Daily Missions <strong>${ef.daily_mission ?? 0}/100</strong></div>
+      <div class="line">Logged In Today <strong>${loggedIn ? "Yes" : "No"}</strong></div>
+    </div>
+  `;
+
+  // 6★ roster
+  const roster = document.getElementById("endfield-roster");
+  roster.innerHTML = "";
+
+  const chars = ef.six_star_characters;
+  if (!chars) return;
+
+  // Only show rarity 6 characters, sorted by level desc
+  const sixStars = Object.entries(chars)
+    .filter(([, c]) => c.rarity === "6")
+    .sort(([, a], [, b]) => b.level - a.level);
+
+  sixStars.forEach(([name, char]) => {
+    const card = document.createElement("div");
+    card.classList.add("endfield-char-card");
+
+    card.innerHTML = `
+      <div class="endfield-char-avatar">
+        <img src="${char.avatarSqUrl}" alt="${name}">
+        <div class="endfield-potential-badge">P${char.potential}</div>
+      </div>
+      <div class="endfield-char-info">
+        <div class="endfield-char-name">${name}</div>
+        <div class="endfield-char-meta">${char.profession} · ${char.property}</div>
+        <div class="endfield-char-level">Lv. ${char.level}</div>
+        ${
+          char.weapon
+            ? `<div class="endfield-char-weapon">
+          <img src="${char.weapon.iconUrl}" alt="${char.weapon.name}">
+          <span>${char.weapon.name}</span>
+        </div>`
+            : ""
+        }
+      </div>
+    `;
+
+    roster.appendChild(card);
+  });
+}
+
+/* =========================
    Home
 ========================= */
 
 function renderHome(data) {
   const sr = data.hsr_data;
   const gi = data.genshin_data;
+  const ef = data.endfield_data;
 
   const homeHSR = document.getElementById("home-hsr");
   const homeGI = document.getElementById("home-genshin");
+  const homeEF = document.getElementById("home-endfield");
 
   if (sr) {
     homeHSR.innerHTML = `
@@ -207,6 +288,23 @@ function renderHome(data) {
       </div>
     `;
   }
+
+  if (ef) {
+    homeEF.innerHTML = `
+      <div class="card">
+        <h2>Arknights: Endfield</h2>
+        <div class="avatar">
+          <img src="${ef.avatar_url}" alt="${ef.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+        </div>
+        <div class="nickname">${ef.nickname}</div>
+        <div class="server-level">Level ${ef.level}</div>
+        <div class="stats">
+          <div class="stat">Achievements<br><strong>${ef.achievements}</strong></div>
+          <div class="stat">Sanity<br><strong>${ef.stamina ?? 0}/240</strong></div>
+        </div>
+      </div>
+    `;
+  }
 }
 
 /* =========================
@@ -224,6 +322,7 @@ async function loadStats() {
     renderHSR(data);
     renderMoC(data);
     renderGenshin(data);
+    renderEndfield(data);
   } catch (err) {
     console.error("Stats load error:", err);
   }

@@ -339,22 +339,6 @@ p {
   white-space: nowrap;
 }
 
-/* Latest pull card */
-.latest-name {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--gold);
-  letter-spacing: 0.05em;
-}
-
-.latest-meta {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-
 /* =========================
    Mini Card (Today's Status)
 ========================= */
@@ -627,4 +611,157 @@ p {
   white-space: pre-line;
   z-index: 9999;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   Endfield Roster
+========================= */
+.endfield-roster-container {
+  width: 100%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.endfield-roster-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-glow),
+    transparent
+  );
+}
+
+.endfield-roster-container h2 {
+  color: var(--gold);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+#endfield-roster {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.endfield-char-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--raise);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.endfield-char-card:hover {
+  border-color: rgba(232, 201, 122, 0.2);
+  background: #25253480;
+}
+
+.endfield-char-avatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.endfield-char-avatar img {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  display: block;
+  transition: transform 0.2s;
+}
+
+.endfield-char-card:hover .endfield-char-avatar img {
+  transform: scale(1.05);
+}
+
+.endfield-potential-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background: var(--gold);
+  color: #0d0d12;
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  padding: 1px 5px;
+  border-radius: 6px;
+  line-height: 1.4;
+}
+
+.endfield-char-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.endfield-char-name {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.endfield-char-meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.endfield-char-level {
+  font-size: 0.8rem;
+  color: var(--text);
+  font-weight: 600;
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.endfield-char-weapon {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.15rem;
+}
+
+.endfield-char-weapon img {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  flex-shrink: 0;
+}
+
+.endfield-char-weapon span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

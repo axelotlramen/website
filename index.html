@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>axelotlramen's Gacha Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,6 +14,7 @@
         <button onclick="showPage('home')">Home</button>
         <button onclick="showPage('hsr')">Honkai: Star Rail</button>
         <button onclick="showPage('genshin')">Genshin Impact</button>
+        <button onclick="showPage('endfield')">Arknights: Endfield</button>
       </nav>
     </div>
 
@@ -24,6 +26,7 @@
         <div class="home-grid">
           <div id="home-hsr"></div>
           <div id="home-genshin"></div>
+          <div id="home-endfield"></div>
         </div>
       </section>
 
@@ -44,6 +47,17 @@
         <h1>Genshin Impact</h1>
         <div id="genshin-profile"></div>
         <div id="genshin-notes"></div>
+      </section>
+
+      <!-- ENDFIELD PAGE -->
+      <section id="endfield" class="page">
+        <h1>Arknights: Endfield</h1>
+        <div id="endfield-profile"></div>
+        <div id="endfield-status"></div>
+        <div class="endfield-roster-container">
+          <h2>6★ Characters</h2>
+          <div id="endfield-roster"></div>
+        </div>
       </section>
     </div>
 
