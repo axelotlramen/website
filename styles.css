@@ -650,19 +650,21 @@ p {
 }
 
 #endfield-roster {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
 }
 
 .endfield-char-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.6rem;
   background: var(--raise);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 0.75rem 1rem;
+  padding: 1rem 0.75rem 0.75rem;
+  text-align: center;
   transition:
     border-color 0.2s,
     background 0.2s;
@@ -679,8 +681,8 @@ p {
 }
 
 .endfield-char-avatar img {
-  width: 52px;
-  height: 52px;
+  width: 72px;
+  height: 72px;
   border-radius: 10px;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -711,13 +713,13 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  flex: 1;
+  width: 100%;
   min-width: 0;
 }
 
 .endfield-char-name {
   font-family: "Rajdhani", sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--gold);
   letter-spacing: 0.04em;
@@ -727,10 +729,13 @@ p {
 }
 
 .endfield-char-meta {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .endfield-char-level {
@@ -744,14 +749,15 @@ p {
 .endfield-char-weapon {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   margin-top: 0.15rem;
 }
 
 .endfield-char-weapon img {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
   object-fit: cover;
   border: 1px solid var(--border);
   background: var(--panel);
@@ -759,7 +765,7 @@ p {
 }
 
 .endfield-char-weapon span {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
