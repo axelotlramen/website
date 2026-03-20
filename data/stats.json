@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T14:07:50.178575-04:00",
+  "last_updated": "2026-03-19T22:55:34.149022-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -58,8 +58,8 @@
         "path": 1,
         "level": 80,
         "lc": {
-          "name": "A Thankless Coronation",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/3126cbac48613eb21a7c4b14467c97c4.png",
+          "name": "Something Irreplaceable",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/8b2f6e743bd3d0387b25202d21af0ad8.png",
           "rarity": 5,
           "level": 80,
           "superimposition": 1
@@ -332,8 +332,8 @@
         "path": 1,
         "level": 80,
         "lc": {
-          "name": "Something Irreplaceable",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/8b2f6e743bd3d0387b25202d21af0ad8.png",
+          "name": "A Thankless Coronation",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/3126cbac48613eb21a7c4b14467c97c4.png",
           "rarity": 5,
           "level": 80,
           "superimposition": 1
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 93,
+    "stamina": 181,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -738,13 +738,13 @@
   },
   "hsr_diary": {
     "Date": "2026-03-19",
-    "Net Currency Gain": 150,
+    "Net Currency Gain": 170,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 2046,
+    "Stellar Jades": 2066,
     "Pulls": 200.0,
-    "Total Pulls": 212.79,
+    "Total Pulls": 212.91,
     "Currency Needed for 5 Star": 0,
-    "3-Week Avg Gain": 389.52,
+    "3-Week Avg Gain": 390.48,
     "Estimated Days Til 5 Star": 0
   },
   "genshin_diary": {
@@ -759,7 +759,7 @@
     "Estimated Days Til 5 Star": 374.86
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Oroberyl",
@@ -867,7 +867,7 @@
         },
         {
           "awardId": "endfield_attendance_8_100",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -995,19 +995,19 @@
           "refineLevel": 0
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
+      "Yvonne": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "https://static.skport.com/image/common/20251129/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "name": "Wedge",
+          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
           "rarity": "6",
-          "type": "Arts Unit",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
         }
@@ -1046,19 +1046,19 @@
           "refineLevel": 0
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/bacd477f99daf106e4995acef6c85456.png",
+      "Ardelia": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Wedge",
-          "iconUrl": "https://static.skport.com/image/common/20251129/599bc5ee4e3021f311259985c844107d.png",
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "https://static.skport.com/image/common/20251129/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
-          "type": "Handcannon",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1182,23 +1182,6 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "https://static.skport.com/image/common/20251112/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1250,29 +1233,12 @@
           "refineLevel": 0
         }
       },
-      "Antal": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
+      "Avywenna": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "potential": 4,
+        "profession": "Striker",
         "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Estella": {
-        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
         "weaponType": "Polearm",
         "level": 1,
         "weapon": {
@@ -1300,9 +1266,43 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Estella": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "https://static.skport.com/image/common/20251129/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Antal": {
+        "avatarSqUrl": "https://static.skport.com/image/common/20251112/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 1,
+        "weapon": {
+          "name": "Jiminy 12",
+          "iconUrl": "https://static.skport.com/image/common/20251129/74de5c6676451d5c7126ba84f87b0718.png",
+          "rarity": "3",
+          "type": "Arts Unit",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "42",
+    "stamina": "115",
     "daily_mission": 100,
     "last_updated": "2026-03-19T14:07:50.178419-04:00"
   }
