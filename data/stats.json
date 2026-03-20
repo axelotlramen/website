@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-20T07:11:10.994359-04:00",
+  "last_updated": "2026-03-20T07:16:00.493161-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 24,
+    "stamina": 25,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -1302,7 +1302,7 @@
         }
       }
     },
-    "stamina": "184",
+    "stamina": "185",
     "daily_mission": 0,
     "last_updated": "2026-03-19T14:07:50.178419-04:00"
   }
