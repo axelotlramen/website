@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-03-20T13:57:37.140336-04:00",
+  "last_updated": "2026-03-21T13:48:03.197852-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/685d99ece93ad87595ebb5bd1a0657a4.png",
     "achievements": 1566,
-    "active_days": 844,
+    "active_days": 845,
     "avatar_count": 52,
     "chest_count": 1723,
     "five_star_characters": {
       "Trailblazer": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/271e4bd6730bbc1e22ae8ab74fc4ca4c.png",
+        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/2686b718435e7ca1da748ac6756b0a5f.png",
         "eidolon": 6,
-        "element": "ice",
-        "path": 8,
+        "element": "imaginary",
+        "path": 4,
         "level": 80,
         "lc": {
-          "name": "Memory's Curtain Never Falls",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/00dbbe69c43e907b617cd2fcddb3e99c.png",
-          "rarity": 5,
+          "name": "Dance! Dance! Dance!",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/1e7028425dbebbadd11dbdaf2b4f9027.png",
+          "rarity": 4,
           "level": 80,
           "superimposition": 5
         }
@@ -156,9 +156,9 @@
         "path": 1,
         "level": 80,
         "lc": {
-          "name": "Under the Blue Sky",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/9ce779df54d4e7b913db99b8aad45297.png",
-          "rarity": 4,
+          "name": "On the Fall of an Aeon",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/18a7d13a06f32b17c9331be5fc31ed65.png",
+          "rarity": 5,
           "level": 80,
           "superimposition": 5
         }
@@ -184,8 +184,8 @@
         "path": 4,
         "level": 80,
         "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/1e7028425dbebbadd11dbdaf2b4f9027.png",
+          "name": "Memories of the Past",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/d04c4e64509a36d2115ec058d32cc7ee.png",
           "rarity": 4,
           "level": 80,
           "superimposition": 5
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 92,
+    "stamina": 90,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -737,38 +737,38 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-20",
+    "Date": "2026-03-21",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0,
-    "Stellar Jades": 2216,
+    "Stellar Jades": 2366,
     "Pulls": 200.0,
-    "Total Pulls": 213.85,
+    "Total Pulls": 214.79,
     "Currency Needed for 5 Star": 0,
     "3-Week Avg Gain": 375.24,
     "Estimated Days Til 5 Star": 0
   },
   "genshin_diary": {
-    "Date": "2026-03-20",
+    "Date": "2026-03-21",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0,
     "Primogems": 1322,
     "Pulls": 0.0,
     "Total Pulls": 8.26,
     "Currency Needed for 5 Star": 11478.0,
-    "3-Week Avg Gain": 4.76,
-    "Estimated Days Til 5 Star": 2410.38
+    "3-Week Avg Gain": 1.43,
+    "Estimated Days Til 5 Star": 8034.6
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Protoprism",
-        "count": 5,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+        "name": "Advanced Combat Record",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 21,
+      "totalSignIns": 22,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -872,13 +872,13 @@
         },
         {
           "awardId": "endfield_attendance_6_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_3_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_5_3",
@@ -929,9 +929,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Advanced Combat Record",
+      "name": "Arms INSP Set",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
     }
   },
   "endfield_data": {
@@ -995,40 +995,6 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 80,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
-      "Yvonne": {
-        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Wedge",
-          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Ardelia": {
         "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -1063,6 +1029,40 @@
           "refineLevel": 0
         }
       },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Yvonne": {
+        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Wedge",
+          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1075,6 +1075,23 @@
           "name": "Detonation Unit",
           "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
           "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 4,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
@@ -1094,23 +1111,6 @@
           "rarity": "5",
           "type": "Handcannon",
           "level": 40,
-          "refineLevel": 0
-        }
-      },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1182,23 +1182,6 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1246,6 +1229,23 @@
           "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
           "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 4,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1302,8 +1302,8 @@
         }
       }
     },
-    "stamina": "81",
-    "daily_mission": 100,
+    "stamina": "119",
+    "daily_mission": 90,
     "last_updated": "2026-03-20T13:57:37.140115-04:00"
   }
 }
