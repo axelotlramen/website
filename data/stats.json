@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-22T00:08:57.071421-04:00",
+  "last_updated": "2026-03-22T13:48:18.168126-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0250d/685d99ece93ad87595ebb5bd1a0657a4.png",
     "achievements": 1566,
-    "active_days": 845,
+    "active_days": 846,
     "avatar_count": 52,
     "chest_count": 1723,
     "five_star_characters": {
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 194,
+    "stamina": 90,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -747,16 +747,16 @@
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Advanced Combat Record",
+        "name": "Arms INSP Set",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 22,
+      "totalSignIns": 23,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -870,8 +870,8 @@
         },
         {
           "awardId": "endfield_attendance_5_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
@@ -917,9 +917,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Set",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 3000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
@@ -983,19 +983,19 @@
           "refineLevel": 0
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
+        "potential": 0,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
-          "type": "Arts Unit",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
         }
@@ -1034,34 +1034,17 @@
           "refineLevel": 0
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
+        "potential": 1,
         "profession": "Supporter",
-        "property": "Cryo",
+        "property": "Nature",
         "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
           "type": "Arts Unit",
           "level": 80,
@@ -1099,6 +1082,23 @@
           "rarity": "5",
           "type": "Handcannon",
           "level": 40,
+          "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1170,36 +1170,19 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
         "potential": 4,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Greatsword",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1221,36 +1204,53 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
         "potential": 4,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
         "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -1272,26 +1272,26 @@
           "refineLevel": 0
         }
       },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+      "Estella": {
+        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Handcannon",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
       }
     },
-    "stamina": "46",
-    "daily_mission": 100,
+    "stamina": "79",
+    "daily_mission": 70,
     "last_updated": "2026-03-22T00:08:57.071087-04:00"
   }
 }
