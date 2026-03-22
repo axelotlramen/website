@@ -8,7 +8,7 @@ import genshin
 
 from scripts.constants import now
 from scripts.endfield.client import EndfieldClient
-from scripts.hoyolab.diary import GENSHIN_CONFIG, HSR_CONFIG, update_diary_csv
+from scripts.hoyolab.diary import GENSHIN_CONFIG, HSR_CONFIG, update_diary_xlsx
 from scripts.hoyolab.stats import fetch_genshin_data, fetch_hsr_data
 from scripts.logging_config import setup_logging
 from scripts.notifier import WebhookClient, endfield_attendance_embed, endfield_embed, hoyolab_diary_embed, hoyolab_embed
@@ -57,8 +57,8 @@ async def main():
         # ---------------------------
         hsr_data = await fetch_hsr_data(hoyolab_client, hsr_uid)
         genshin_data = await fetch_genshin_data(hoyolab_client, genshin_uid)
-        hsr_diary = await update_diary_csv(hoyolab_client, hsr_uid, HSR_CONFIG)
-        genshin_diary = await update_diary_csv(hoyolab_client, genshin_uid, GENSHIN_CONFIG)
+        hsr_diary = await update_diary_xlsx(hoyolab_client, hsr_uid, HSR_CONFIG)
+        genshin_diary = await update_diary_xlsx(hoyolab_client, genshin_uid, GENSHIN_CONFIG)
 
         endfield_attendance = endfield_client.claim_attendance()
         endfield_data = endfield_client.fetch_endfield_data(old_data.get("endfield_data", {}) if old_data else {})

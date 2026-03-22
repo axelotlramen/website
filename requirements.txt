@@ -4,3 +4,4 @@ ramael
 requests
 cookies
 rsa
+openpyxl

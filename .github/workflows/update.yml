@@ -42,6 +42,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stats.json data/hsr_diary_log.csv data/genshin_diary_log.csv data/images/
+          git add data/stats.json data/hsr_diary_log.xlsx data/genshin_diary_log.xlsx data/images/
           git commit -m "Update stats & diary"
           git push
