@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T13:48:18.168126-04:00",
+  "last_updated": "2026-03-22T23:25:41.647260-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -412,7 +412,7 @@
         "lc": null
       }
     },
-    "stamina": 90,
+    "stamina": 186,
     "current_train_score": 500,
     "memory_of_chaos": {
       "season": "Cyber Mystery",
@@ -747,7 +747,7 @@
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Arms INSP Set",
@@ -870,7 +870,7 @@
         },
         {
           "awardId": "endfield_attendance_5_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -927,7 +927,7 @@
     "level": 58,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 63,
-    "active_days": 20,
+    "active_days": 21,
     "avatar_count": 21,
     "aurylenes": 254,
     "chest_count": 551,
@@ -1051,6 +1051,23 @@
           "refineLevel": 0
         }
       },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1081,24 +1098,7 @@
           "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
           "rarity": "5",
           "type": "Handcannon",
-          "level": 40,
-          "refineLevel": 0
-        }
-      },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
+          "level": 41,
           "refineLevel": 0
         }
       },
@@ -1170,23 +1170,6 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1200,6 +1183,23 @@
           "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
           "rarity": "5",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1221,19 +1221,19 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
+        "potential": 4,
+        "profession": "Striker",
         "property": "Electric",
-        "weaponType": "Sword",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Sword",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1290,8 +1290,8 @@
         }
       }
     },
-    "stamina": "79",
-    "daily_mission": 70,
-    "last_updated": "2026-03-22T00:08:57.071087-04:00"
+    "stamina": "39",
+    "daily_mission": 100,
+    "last_updated": "2026-03-22T23:25:41.647069-04:00"
   }
 }
