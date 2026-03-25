@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-24T23:29:08.316707-04:00",
+  "last_updated": "2026-03-24T23:50:06.073611-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -412,8 +412,112 @@
         "lc": null
       }
     },
-    "stamina": 187,
+    "stamina": 190,
     "current_train_score": 500,
+    "anomaly_arbitration": {},
+    "apocalyptic_shadow": {
+      "total_stars": 12,
+      "floor_data": {
+        "floor": "Militant Lupine: Difficulty 4",
+        "score": 7144,
+        "first_half": [
+          {
+            "id": 1015,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1306,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1406,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 1301,
+            "level": 80,
+            "eidolon": 6
+          }
+        ],
+        "second_half": [
+          {
+            "id": 1005,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1410,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1313,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1414,
+            "level": 80,
+            "eidolon": 2
+          }
+        ]
+      }
+    },
+    "pure_fiction": {
+      "season": "Wordless Novel",
+      "total_stars": 12,
+      "floor_data": {
+        "floor": "Wordless Novel (IV)",
+        "score": 64680,
+        "first_half": [
+          {
+            "id": 1410,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1005,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1309,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 1217,
+            "level": 80,
+            "eidolon": 0
+          }
+        ],
+        "second_half": [
+          {
+            "id": 1405,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1313,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1406,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 1414,
+            "level": 80,
+            "eidolon": 2
+          }
+        ]
+      }
+    },
     "memory_of_chaos": {
       "season": "Cyber Mystery",
       "total_stars": 36,
@@ -1290,7 +1394,7 @@
         }
       }
     },
-    "stamina": "120",
+    "stamina": "123",
     "daily_mission": 100,
     "last_updated": "2026-03-24T14:12:47.912619-04:00"
   }
