@@ -123,7 +123,6 @@ def hoyolab_diary_embed(hsr_diary: dict | None, genshin_diary: dict | None):
             "value": (
                 f"**Net Currency Gain:** {genshin_diary.get('Net Currency Gain', '0')}\n"
                 f"**Pulls Net Gain:** {genshin_diary.get('Pulls Net Gain', '0')}\n"
-                f"**Total Pulls:** {genshin_diary.get('Total Pulls', '0')}\n"
             ),
             "inline": True
         })
@@ -134,7 +133,6 @@ def hoyolab_diary_embed(hsr_diary: dict | None, genshin_diary: dict | None):
             "value": (
                 f"**Net Currency Gain:** {hsr_diary.get('Net Currency Gain', '0')}\n"
                 f"**Pulls Net Gain:** {hsr_diary.get('Pulls Net Gain', '0')}\n"
-                f"**Total Pulls:** {hsr_diary.get('Total Pulls', '0')}\n"
             ),
             "inline": True
         })
