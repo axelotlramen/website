@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T14:14:12.752343-04:00",
+  "last_updated": "2026-03-26T23:13:21.186470-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 74,
+    "stamina": 163,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
@@ -933,7 +933,7 @@
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Advanced Combat Record",
@@ -1076,7 +1076,7 @@
         },
         {
           "awardId": "endfield_attendance_3_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -1112,8 +1112,8 @@
     "nickname": "Axelle",
     "level": 58,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 63,
-    "active_days": 23,
+    "achievements": 64,
+    "active_days": 24,
     "avatar_count": 21,
     "aurylenes": 254,
     "chest_count": 551,
@@ -1169,6 +1169,23 @@
           "refineLevel": 1
         }
       },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Yvonne": {
         "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1220,19 +1237,36 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 4,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 1
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
           "rarity": "6",
-          "type": "Sword",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1254,40 +1288,6 @@
           "refineLevel": 1
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 1
-        }
-      },
       "Laevatain": {
         "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
@@ -1295,7 +1295,7 @@
         "profession": "Striker",
         "property": "Heat",
         "weaponType": "Sword",
-        "level": 60,
+        "level": 61,
         "weapon": {
           "name": "Umbral Torch",
           "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
@@ -1318,7 +1318,7 @@
           "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
           "rarity": "6",
           "type": "Sword",
-          "level": 60,
+          "level": 61,
           "refineLevel": 0
         }
       },
@@ -1373,6 +1373,23 @@
           "refineLevel": 3
         }
       },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 4,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Arclight": {
         "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
@@ -1407,19 +1424,19 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 4,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
+      "Antal": {
+        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "name": "Jiminy 12",
+          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
-          "type": "Greatsword",
+          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1437,23 +1454,6 @@
           "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Antal": {
-        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1477,7 +1477,7 @@
       }
     },
     "stamina": "356",
-    "daily_mission": 0,
-    "last_updated": "2026-03-24T14:12:47.912619-04:00"
+    "daily_mission": 100,
+    "last_updated": "2026-03-26T23:13:21.186249-04:00"
   }
 }
