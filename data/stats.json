@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-29T13:54:26.291895-04:00",
+  "last_updated": "2026-03-30T14:11:09.564090-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/90b144bd27a60c68bb90fcdd488aea68.png",
     "achievements": 1593,
-    "active_days": 853,
+    "active_days": 854,
     "avatar_count": 54,
     "chest_count": 1761,
     "five_star_characters": {
@@ -100,11 +100,11 @@
         "path": 3,
         "level": 80,
         "lc": {
-          "name": "Into the Unreachable Veil",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/e07f94c1a86b3f7003667eca67250187.png",
-          "rarity": 5,
+          "name": "The Great Cosmic Enterprise",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/8828a10947e765a40983e7f6c3d9b552.png",
+          "rarity": 4,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 5
         }
       },
       "Mydei": {
@@ -142,11 +142,11 @@
         "path": 3,
         "level": 80,
         "lc": {
-          "name": "The Great Cosmic Enterprise",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/8828a10947e765a40983e7f6c3d9b552.png",
-          "rarity": 4,
+          "name": "Into the Unreachable Veil",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/e07f94c1a86b3f7003667eca67250187.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 1
         }
       },
       "Sunday": {
@@ -202,7 +202,7 @@
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
           "rarity": 4,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 2
         }
       },
       "Dr. Ratio": {
@@ -244,7 +244,7 @@
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
           "rarity": 4,
           "level": 80,
-          "superimposition": 2
+          "superimposition": 5
         }
       },
       "Argenti": {
@@ -434,8 +434,8 @@
         "lc": null
       }
     },
-    "stamina": 300,
-    "current_train_score": 200,
+    "stamina": 50,
+    "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
       "boss_stars": 3,
@@ -601,11 +601,11 @@
       }
     },
     "pure_fiction": {
-      "season": "Wordless Novel",
+      "season": "Virtual Made Manifest",
       "total_stars": 12,
       "floor_data": {
-        "floor": "Wordless Novel (IV)",
-        "score": 64680,
+        "floor": "Virtual Made Manifest (IV)",
+        "score": 65120,
         "first_half": [
           {
             "id": 1410,
@@ -630,9 +630,9 @@
         ],
         "second_half": [
           {
-            "id": 1405,
+            "id": 1504,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 1
           },
           {
             "id": 1313,
@@ -640,14 +640,14 @@
             "eidolon": 2
           },
           {
-            "id": 1406,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
             "id": 1414,
             "level": 80,
             "eidolon": 2
+          },
+          {
+            "id": 1406,
+            "level": 80,
+            "eidolon": 1
           }
         ]
       }
@@ -975,12 +975,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-03-29",
-    "Net Currency Gain": 110,
+    "Date": "2026-03-30",
+    "Net Currency Gain": 920,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-03-29",
+    "Date": "2026-03-30",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -994,7 +994,7 @@
       }
     ],
     "attendance": {
-      "totalSignIns": 30,
+      "totalSignIns": 31,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1143,29 +1143,24 @@
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         }
       ]
     },
-    "error": null,
-    "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 2000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
-    }
+    "error": null
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 58,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 64,
-    "active_days": 25,
+    "active_days": 26,
     "avatar_count": 21,
     "aurylenes": 254,
     "chest_count": 551,
@@ -1221,19 +1216,19 @@
           "refineLevel": 1
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
-          "type": "Handcannon",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1255,23 +1250,6 @@
           "refineLevel": 0
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Yvonne": {
         "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1285,6 +1263,40 @@
           "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
           "rarity": "6",
           "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1306,23 +1318,6 @@
           "refineLevel": 1
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Wulfgard": {
         "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
@@ -1336,7 +1331,7 @@
           "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
           "rarity": "5",
           "type": "Handcannon",
-          "level": 45,
+          "level": 80,
           "refineLevel": 1
         }
       },
@@ -1428,7 +1423,7 @@
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
-        "potential": 4,
+        "potential": 5,
         "profession": "Striker",
         "property": "Electric",
         "weaponType": "Polearm",
@@ -1476,23 +1471,6 @@
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Fluorite": {
         "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
         "rarity": "4",
@@ -1506,6 +1484,23 @@
           "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
           "rarity": "3",
           "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Estella": {
+        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1528,8 +1523,8 @@
         }
       }
     },
-    "stamina": "279",
-    "daily_mission": 20,
-    "last_updated": "2026-03-28T13:52:51.139220-04:00"
+    "stamina": "356",
+    "daily_mission": 100,
+    "last_updated": "2026-03-30T14:11:09.563840-04:00"
   }
 }
