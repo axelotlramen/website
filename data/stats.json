@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T14:11:09.564090-04:00",
+  "last_updated": "2026-03-30T23:18:56.718690-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 50,
+    "stamina": 142,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
@@ -459,9 +459,9 @@
             "eidolon": 2
           },
           {
-            "id": 1406,
+            "id": 8007,
             "level": 80,
-            "eidolon": 1
+            "eidolon": 6
           }
         ],
         "cycles_used": 1,
@@ -976,7 +976,7 @@
   },
   "hsr_diary": {
     "Date": "2026-03-30",
-    "Net Currency Gain": 920,
+    "Net Currency Gain": 960,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
@@ -985,7 +985,7 @@
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Talosian Credit Notes|T-Creds",
@@ -1148,7 +1148,7 @@
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": true,
+          "available": false,
           "done": true
         }
       ]
