@@ -58,7 +58,8 @@ async def main():
         hsr_data = await fetch_hsr_data(hoyolab_client, hsr_uid)
         genshin_data = await fetch_genshin_data(hoyolab_client, genshin_uid)
         hsr_diary = await update_diary_xlsx(hoyolab_client, hsr_uid, HSR_CONFIG)
-        genshin_diary = await update_diary_xlsx(hoyolab_client, genshin_uid, GENSHIN_CONFIG)
+        genshin_diary = None
+        # genshin_diary = await update_diary_xlsx(hoyolab_client, genshin_uid, GENSHIN_CONFIG)
 
         endfield_attendance = endfield_client.claim_attendance()
         endfield_data = endfield_client.fetch_endfield_data(old_data.get("endfield_data", {}) if old_data else {})
