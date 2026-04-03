@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-03T05:57:28.295625-04:00",
+  "last_updated": "2026-04-03T13:58:17.751242-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/90b144bd27a60c68bb90fcdd488aea68.png",
     "achievements": 1593,
-    "active_days": 857,
+    "active_days": 858,
     "avatar_count": 54,
     "chest_count": 1761,
     "five_star_characters": {
@@ -100,11 +100,11 @@
         "path": 3,
         "level": 80,
         "lc": {
-          "name": "The Great Cosmic Enterprise",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/8828a10947e765a40983e7f6c3d9b552.png",
-          "rarity": 4,
+          "name": "Into the Unreachable Veil",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/e07f94c1a86b3f7003667eca67250187.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 1
         }
       },
       "Mydei": {
@@ -142,11 +142,11 @@
         "path": 3,
         "level": 80,
         "lc": {
-          "name": "Into the Unreachable Veil",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/e07f94c1a86b3f7003667eca67250187.png",
-          "rarity": 5,
+          "name": "The Great Cosmic Enterprise",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/8828a10947e765a40983e7f6c3d9b552.png",
+          "rarity": 4,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 5
         }
       },
       "Sunday": {
@@ -240,8 +240,8 @@
         "path": 4,
         "level": 80,
         "lc": {
-          "name": "A Grounded Ascent",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/cbbb4b4b9907dd1958caedd4f5041684.png",
+          "name": "But the Battle Isn't Over",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/1202bc601f533513c4e04c64e5e9e200.png",
           "rarity": 5,
           "level": 80,
           "superimposition": 1
@@ -326,8 +326,8 @@
         "path": 4,
         "level": 80,
         "lc": {
-          "name": "But the Battle Isn't Over",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/1202bc601f533513c4e04c64e5e9e200.png",
+          "name": "A Grounded Ascent",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/cbbb4b4b9907dd1958caedd4f5041684.png",
           "rarity": 5,
           "level": 80,
           "superimposition": 1
@@ -434,8 +434,8 @@
         "lc": null
       }
     },
-    "stamina": 198,
-    "current_train_score": 0,
+    "stamina": 38,
+    "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
       "boss_stars": 3,
@@ -976,21 +976,21 @@
   },
   "hsr_diary": {
     "Date": "2026-04-03",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": null,
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 2000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Oroberyl",
+        "count": 80,
+        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 3,
+      "totalSignIns": 4,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1009,8 +1009,8 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_2",
@@ -1146,9 +1146,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Oroberyl",
-      "count": 80,
-      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+      "name": "Arms INSP Kit",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
@@ -1536,7 +1536,7 @@
         }
       }
     },
-    "stamina": "172",
+    "stamina": "239",
     "daily_mission": 0,
     "last_updated": null
   }
