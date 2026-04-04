@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-03T13:58:17.751242-04:00",
+  "last_updated": "2026-04-04T13:53:47.062452-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/90b144bd27a60c68bb90fcdd488aea68.png",
     "achievements": 1593,
-    "active_days": 858,
+    "active_days": 859,
     "avatar_count": 54,
     "chest_count": 1761,
     "five_star_characters": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 38,
+    "stamina": 78,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
@@ -605,15 +605,15 @@
       "total_stars": 12,
       "floor_data": {
         "floor": "Virtual Made Manifest (IV)",
-        "score": 65120,
+        "score": 69160,
         "first_half": [
           {
-            "id": 1410,
+            "id": 1220,
             "level": 80,
             "eidolon": 0
           },
           {
-            "id": 1005,
+            "id": 1304,
             "level": 80,
             "eidolon": 0
           },
@@ -623,16 +623,16 @@
             "eidolon": 1
           },
           {
-            "id": 1217,
+            "id": 1504,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 1
           }
         ],
         "second_half": [
           {
-            "id": 1504,
+            "id": 1405,
             "level": 80,
-            "eidolon": 1
+            "eidolon": 0
           },
           {
             "id": 1313,
@@ -640,14 +640,14 @@
             "eidolon": 2
           },
           {
+            "id": 1306,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
             "id": 1414,
             "level": 80,
             "eidolon": 2
-          },
-          {
-            "id": 1406,
-            "level": 80,
-            "eidolon": 1
           }
         ]
       }
@@ -975,7 +975,7 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-04-03",
+    "Date": "2026-04-04",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
@@ -984,13 +984,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Oroberyl",
-        "count": 80,
-        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+        "name": "Arms INSP Kit",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 4,
+      "totalSignIns": 5,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1009,13 +1009,13 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_6_2",
@@ -1146,9 +1146,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Kit",
+      "name": "Protoprism",
       "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
     }
   },
   "endfield_data": {
@@ -1229,6 +1229,23 @@
           "refineLevel": 1
         }
       },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1280,21 +1297,21 @@
           "refineLevel": 0
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 1,
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
         "profession": "Caster",
-        "property": "Cryo",
+        "property": "Heat",
         "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
           "type": "Handcannon",
           "level": 80,
-          "refineLevel": 0
+          "refineLevel": 1
         }
       },
       "Perlica": {
@@ -1310,23 +1327,6 @@
           "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 1
-        }
-      },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
           "level": 80,
           "refineLevel": 1
         }
@@ -1416,6 +1416,23 @@
           "refineLevel": 0
         }
       },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
+        }
+      },
       "Arclight": {
         "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
@@ -1465,23 +1482,6 @@
           "type": "Polearm",
           "level": 1,
           "refineLevel": 0
-        }
-      },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
         }
       },
       "Antal": {
@@ -1536,8 +1536,8 @@
         }
       }
     },
-    "stamina": "239",
-    "daily_mission": 0,
+    "stamina": "199",
+    "daily_mission": 20,
     "last_updated": null
   }
 }
