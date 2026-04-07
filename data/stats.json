@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-06T14:09:22.643249-04:00",
+  "last_updated": "2026-04-07T14:13:25.107384-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/90b144bd27a60c68bb90fcdd488aea68.png",
     "achievements": 1593,
-    "active_days": 861,
+    "active_days": 862,
     "avatar_count": 54,
     "chest_count": 1761,
     "five_star_characters": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 70,
+    "stamina": 111,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
@@ -710,7 +710,7 @@
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 940,
-    "active_days": 316,
+    "active_days": 317,
     "avatar_count": 55,
     "oculus": 1164,
     "chest_count": 3683,
@@ -975,7 +975,7 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-04-06",
+    "Date": "2026-04-07",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
@@ -984,13 +984,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 7,
+      "totalSignIns": 8,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1024,13 +1024,13 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
@@ -1146,9 +1146,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Arms INSP Kit",
+      "count": 3,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
@@ -1156,7 +1156,7 @@
     "level": 59,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 69,
-    "active_days": 0,
+    "active_days": 1,
     "avatar_count": 22,
     "aurylenes": 254,
     "chest_count": 551,
@@ -1416,21 +1416,21 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
         "level": 1,
         "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
           "level": 1,
-          "refineLevel": 3
+          "refineLevel": 0
         }
       },
       "Snowshine": {
@@ -1450,23 +1450,6 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1482,6 +1465,23 @@
           "type": "Polearm",
           "level": 1,
           "refineLevel": 0
+        }
+      },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
         }
       },
       "Estella": {
@@ -1536,8 +1536,8 @@
         }
       }
     },
-    "stamina": "318",
-    "daily_mission": 0,
-    "last_updated": null
+    "stamina": "55",
+    "daily_mission": 100,
+    "last_updated": "2026-04-07T14:13:25.107006-04:00"
   }
 }
