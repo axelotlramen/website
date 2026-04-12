@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-11T13:54:45.075078-04:00",
+  "last_updated": "2026-04-11T23:39:39.216864-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 25,
+    "stamina": 122,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
@@ -709,11 +709,11 @@
     "nickname": "axelle",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 941,
+    "achievements": 948,
     "active_days": 321,
     "avatar_count": 55,
     "oculus": 1164,
-    "chest_count": 3683,
+    "chest_count": 3727,
     "five_star_characters": {
       "Columbina": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
@@ -971,7 +971,7 @@
         }
       }
     },
-    "resin": 7,
+    "resin": 80,
     "daily_task": 4
   },
   "hsr_diary": {
@@ -981,7 +981,7 @@
   },
   "genshin_diary": null,
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Oroberyl",
@@ -1049,7 +1049,7 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -1536,7 +1536,7 @@
         }
       }
     },
-    "stamina": "49",
+    "stamina": "130",
     "daily_mission": 100,
     "last_updated": "2026-04-11T13:54:45.074612-04:00"
   }
