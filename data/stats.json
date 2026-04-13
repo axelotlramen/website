@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-12T13:57:47.679331-04:00",
+  "last_updated": "2026-04-13T14:43:42.527417-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/90b144bd27a60c68bb90fcdd488aea68.png",
     "achievements": 1595,
-    "active_days": 867,
+    "active_days": 868,
     "avatar_count": 54,
     "chest_count": 1761,
     "five_star_characters": {
@@ -160,7 +160,7 @@
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
           "rarity": 4,
           "level": 80,
-          "superimposition": 2
+          "superimposition": 5
         }
       },
       "Firefly": {
@@ -202,7 +202,7 @@
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
           "rarity": 4,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 2
         }
       },
       "Dr. Ratio": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 75,
+    "stamina": 83,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
@@ -653,11 +653,11 @@
       }
     },
     "memory_of_chaos": {
-      "season": "Cyber Mystery",
+      "season": "Grand Finale",
       "total_stars": 36,
       "floor_data": {
-        "floor": "Cyber Mystery (XII)",
-        "cycles": 2,
+        "floor": "Grand Finale (XII)",
+        "cycles": 4,
         "first_half": [
           {
             "id": 1015,
@@ -687,9 +687,9 @@
             "eidolon": 0
           },
           {
-            "id": 1504,
+            "id": 1304,
             "level": 80,
-            "eidolon": 1
+            "eidolon": 0
           },
           {
             "id": 1309,
@@ -697,9 +697,9 @@
             "eidolon": 1
           },
           {
-            "id": 1304,
+            "id": 1504,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 1
           }
         ]
       }
@@ -709,11 +709,11 @@
     "nickname": "axelle",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 955,
-    "active_days": 322,
+    "achievements": 960,
+    "active_days": 323,
     "avatar_count": 55,
     "oculus": 1164,
-    "chest_count": 3751,
+    "chest_count": 3813,
     "five_star_characters": {
       "Columbina": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
@@ -971,12 +971,12 @@
         }
       }
     },
-    "resin": 27,
+    "resin": 63,
     "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-04-12",
-    "Net Currency Gain": 150,
+    "Date": "2026-04-13",
+    "Net Currency Gain": 1315,
     "Pulls Net Gain": 0
   },
   "genshin_diary": null,
@@ -984,13 +984,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Protoprism",
+        "name": "Intermediate Combat Record",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 13,
+      "totalSignIns": 14,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1054,13 +1054,13 @@
         },
         {
           "awardId": "endfield_attendance_6_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
@@ -1146,9 +1146,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Intermediate Combat Record",
+      "name": "Arms INSP Kit",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
@@ -1156,7 +1156,7 @@
     "level": 59,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 69,
-    "active_days": 4,
+    "active_days": 5,
     "avatar_count": 22,
     "aurylenes": 254,
     "chest_count": 551,
@@ -1246,6 +1246,23 @@
           "refineLevel": 1
         }
       },
+      "Yvonne": {
+        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Wedge",
+          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Ardelia": {
         "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -1280,23 +1297,6 @@
           "refineLevel": 0
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Wedge",
-          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1310,23 +1310,6 @@
           "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 1
-        }
-      },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
           "level": 80,
           "refineLevel": 1
         }
@@ -1346,6 +1329,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 1
         }
       },
       "Laevatain": {
@@ -1416,6 +1416,40 @@
           "refineLevel": 0
         }
       },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1446,57 +1480,6 @@
           "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
           "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -1534,10 +1517,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "89",
+    "stamina": "136",
     "daily_mission": 100,
-    "last_updated": "2026-04-12T13:57:47.679109-04:00"
+    "last_updated": "2026-04-13T14:43:42.527192-04:00"
   }
 }
