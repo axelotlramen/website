@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-13T14:43:42.527417-04:00",
+  "last_updated": "2026-04-14T14:42:41.888363-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/90b144bd27a60c68bb90fcdd488aea68.png",
     "achievements": 1595,
-    "active_days": 868,
+    "active_days": 869,
     "avatar_count": 54,
     "chest_count": 1761,
     "five_star_characters": {
@@ -156,11 +156,11 @@
         "path": 4,
         "level": 80,
         "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
-          "rarity": 4,
+          "name": "A Grounded Ascent",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/cbbb4b4b9907dd1958caedd4f5041684.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 1
         }
       },
       "Firefly": {
@@ -202,7 +202,7 @@
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
           "rarity": 4,
           "level": 80,
-          "superimposition": 2
+          "superimposition": 5
         }
       },
       "Dr. Ratio": {
@@ -239,13 +239,7 @@
         "element": "ice",
         "path": 4,
         "level": 80,
-        "lc": {
-          "name": "But the Battle Isn't Over",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/1202bc601f533513c4e04c64e5e9e200.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
+        "lc": null
       },
       "Argenti": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/51ed7fb2a3f01b66fe672002e46f03a6.png",
@@ -326,11 +320,11 @@
         "path": 4,
         "level": 80,
         "lc": {
-          "name": "A Grounded Ascent",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/cbbb4b4b9907dd1958caedd4f5041684.png",
-          "rarity": 5,
+          "name": "Dance! Dance! Dance!",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
+          "rarity": 4,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 2
         }
       },
       "Archer": {
@@ -657,17 +651,12 @@
       "total_stars": 36,
       "floor_data": {
         "floor": "Grand Finale (XII)",
-        "cycles": 4,
+        "cycles": 3,
         "first_half": [
           {
-            "id": 1015,
+            "id": 1504,
             "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
+            "eidolon": 1
           },
           {
             "id": 8007,
@@ -675,31 +664,36 @@
             "eidolon": 6
           },
           {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ],
-        "second_half": [
-          {
-            "id": 1220,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1304,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
             "id": 1309,
             "level": 80,
             "eidolon": 1
           },
           {
-            "id": 1504,
+            "id": 1406,
             "level": 80,
             "eidolon": 1
+          }
+        ],
+        "second_half": [
+          {
+            "id": 1405,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1313,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1306,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1414,
+            "level": 80,
+            "eidolon": 2
           }
         ]
       }
@@ -710,7 +704,7 @@
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 960,
-    "active_days": 323,
+    "active_days": 324,
     "avatar_count": 55,
     "oculus": 1164,
     "chest_count": 3813,
@@ -721,7 +715,7 @@
         "element": "Hydro",
         "weaponType": 10,
         "level": 90,
-        "friendship": 7,
+        "friendship": 8,
         "weapon": {
           "name": "Nocturne's Curtain Call",
           "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/045d1721aca8d78c25b640867cdb4171.png",
@@ -971,12 +965,12 @@
         }
       }
     },
-    "resin": 63,
+    "resin": 0,
     "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-04-13",
-    "Net Currency Gain": 1315,
+    "Date": "2026-04-14",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": null,
@@ -984,13 +978,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
+        "name": "Arms INSP Kit",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 14,
+      "totalSignIns": 15,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1059,13 +1053,13 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
@@ -1146,9 +1140,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Kit",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 3000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
@@ -1156,24 +1150,24 @@
     "level": 59,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 69,
-    "active_days": 5,
+    "active_days": 6,
     "avatar_count": 22,
     "aurylenes": 254,
     "chest_count": 551,
     "six_star_characters": {
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
         "potential": 1,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
         "level": 90,
         "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
-          "type": "Polearm",
+          "type": "Handcannon",
           "level": 90,
           "refineLevel": 0
         }
@@ -1195,20 +1189,20 @@
           "refineLevel": 0
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
         "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
         "level": 90,
         "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
+          "type": "Polearm",
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1225,7 +1219,7 @@
           "iconUrl": "data/images/b78d6567010acaea597aa7cc75980909.png",
           "rarity": "5",
           "type": "Sword",
-          "level": 85,
+          "level": 90,
           "refineLevel": 5
         }
       },
@@ -1246,6 +1240,23 @@
           "refineLevel": 1
         }
       },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Yvonne": {
         "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1260,6 +1271,23 @@
           "rarity": "6",
           "type": "Handcannon",
           "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 60,
           "refineLevel": 0
         }
       },
@@ -1280,19 +1308,19 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
           "rarity": "6",
-          "type": "Sword",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1314,23 +1342,6 @@
           "refineLevel": 1
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Wulfgard": {
         "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
@@ -1346,23 +1357,6 @@
           "type": "Handcannon",
           "level": 80,
           "refineLevel": 1
-        }
-      },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 62,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 23,
-          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1416,40 +1410,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1480,6 +1440,57 @@
           "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
           "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
+        }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -1517,27 +1528,10 @@
           "level": 1,
           "refineLevel": 0
         }
-      },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
-          "level": 1,
-          "refineLevel": 0
-        }
       }
     },
-    "stamina": "136",
+    "stamina": "15",
     "daily_mission": 100,
-    "last_updated": "2026-04-13T14:43:42.527192-04:00"
+    "last_updated": "2026-04-14T14:42:41.887999-04:00"
   }
 }
