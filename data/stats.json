@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-15T08:59:38.850064-04:00",
+  "last_updated": "2026-04-15T14:39:15.847452-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/90b144bd27a60c68bb90fcdd488aea68.png",
     "achievements": 1595,
-    "active_days": 869,
+    "active_days": 870,
     "avatar_count": 54,
     "chest_count": 1761,
     "five_star_characters": {
@@ -428,8 +428,8 @@
         "lc": null
       }
     },
-    "stamina": 266,
-    "current_train_score": 0,
+    "stamina": 42,
+    "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
       "boss_stars": 3,
@@ -704,7 +704,7 @@
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 960,
-    "active_days": 324,
+    "active_days": 325,
     "avatar_count": 55,
     "oculus": 1164,
     "chest_count": 3813,
@@ -835,7 +835,7 @@
         "element": "Geo",
         "weaponType": 1,
         "level": 70,
-        "friendship": 4,
+        "friendship": 5,
         "weapon": {
           "name": "Festering Desire",
           "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/685c320aa78fc0c2e29f2e445393949a.png",
@@ -965,30 +965,30 @@
         }
       }
     },
-    "resin": 138,
-    "daily_task": 0
+    "resin": 20,
+    "daily_task": 4
   },
   "hsr_diary": {
     "Date": "2026-04-15",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 250,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
     "Date": "2026-04-15",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 581,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 15,
+      "totalSignIns": 16,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1067,8 +1067,8 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_3_2",
@@ -1144,21 +1144,38 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Advanced Combat Record",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 59,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 69,
-    "active_days": 6,
+    "achievements": 70,
+    "active_days": 7,
     "avatar_count": 22,
     "aurylenes": 254,
     "chest_count": 551,
     "six_star_characters": {
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Tangtang": {
         "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
@@ -1189,23 +1206,6 @@
           "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
           "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1261,6 +1261,23 @@
           "refineLevel": 0
         }
       },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Yvonne": {
         "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1275,23 +1292,6 @@
           "rarity": "6",
           "type": "Handcannon",
           "level": 80,
-          "refineLevel": 0
-        }
-      },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 80,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 60,
           "refineLevel": 0
         }
       },
@@ -1310,6 +1310,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 1
         }
       },
       "Xaihi": {
@@ -1342,23 +1359,6 @@
           "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 1
-        }
-      },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
           "level": 80,
           "refineLevel": 1
         }
@@ -1431,23 +1431,6 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Snowshine": {
         "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
@@ -1461,6 +1444,23 @@
           "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1499,23 +1499,6 @@
           "refineLevel": 0
         }
       },
-      "Antal": {
-        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Estella": {
         "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
@@ -1532,10 +1515,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Antal": {
+        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 1,
+        "weapon": {
+          "name": "Jiminy 12",
+          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
+          "rarity": "3",
+          "type": "Arts Unit",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "168",
-    "daily_mission": 0,
-    "last_updated": "2026-04-14T14:42:41.887999-04:00"
+    "stamina": "55",
+    "daily_mission": 100,
+    "last_updated": "2026-04-15T14:39:15.847225-04:00"
   }
 }
