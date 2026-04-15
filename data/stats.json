@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14T14:42:41.888363-04:00",
+  "last_updated": "2026-04-15T08:59:38.850064-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -428,8 +428,8 @@
         "lc": null
       }
     },
-    "stamina": 83,
-    "current_train_score": 500,
+    "stamina": 266,
+    "current_train_score": 0,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
       "boss_stars": 3,
@@ -965,17 +965,21 @@
         }
       }
     },
-    "resin": 0,
-    "daily_task": 4
+    "resin": 138,
+    "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-04-14",
-    "Net Currency Gain": 150,
+    "Date": "2026-04-15",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
-  "genshin_diary": null,
+  "genshin_diary": {
+    "Date": "2026-04-15",
+    "Net Currency Gain": 0,
+    "Pulls Net Gain": 0
+  },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Arms INSP Kit",
@@ -1058,7 +1062,7 @@
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -1530,8 +1534,8 @@
         }
       }
     },
-    "stamina": "15",
-    "daily_mission": 100,
+    "stamina": "168",
+    "daily_mission": 0,
     "last_updated": "2026-04-14T14:42:41.887999-04:00"
   }
 }
