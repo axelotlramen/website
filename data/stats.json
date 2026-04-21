@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-20T14:13:39.719511-04:00",
+  "last_updated": "2026-04-21T14:37:12.709582-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/7a8b628f78fb0e4de6210a53fc495809.png",
     "achievements": 1596,
-    "active_days": 875,
+    "active_days": 876,
     "avatar_count": 54,
     "chest_count": 1783,
     "five_star_characters": {
@@ -428,7 +428,7 @@
         "lc": null
       }
     },
-    "stamina": 55,
+    "stamina": 59,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Don't Mess With Pom-Pom",
@@ -703,11 +703,11 @@
     "nickname": "axelle",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 964,
-    "active_days": 329,
+    "achievements": 972,
+    "active_days": 331,
     "avatar_count": 55,
     "oculus": 1164,
-    "chest_count": 3824,
+    "chest_count": 3866,
     "five_star_characters": {
       "Columbina": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
@@ -965,35 +965,35 @@
         }
       }
     },
-    "resin": 153,
-    "daily_task": 0
+    "resin": 56,
+    "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-04-20",
-    "Net Currency Gain": 630,
+    "Date": "2026-04-21",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-04-20",
-    "Net Currency Gain": 0,
+    "Date": "2026-04-21",
+    "Net Currency Gain": 60,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 15000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      },
+      {
         "name": "Advanced Combat Record",
         "count": 3,
         "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
-      },
-      {
-        "name": "Protoprism",
-        "count": 5,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 21,
+      "totalSignIns": 22,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1097,13 +1097,13 @@
         },
         {
           "awardId": "endfield_attendance_6_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_3_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_5_3",
@@ -1149,9 +1149,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Advanced Combat Record",
+      "name": "Arms INSP Set",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
     }
   },
   "endfield_data": {
@@ -1159,24 +1159,24 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 81,
-    "active_days": 10,
+    "active_days": 11,
     "avatar_count": 22,
     "aurylenes": 289,
     "chest_count": 619,
     "six_star_characters": {
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
-        "potential": 0,
+        "potential": 2,
         "profession": "Guard",
         "property": "Physical",
-        "weaponType": "Sword",
+        "weaponType": "Polearm",
         "level": 90,
         "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
-          "type": "Sword",
+          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1215,19 +1215,19 @@
           "refineLevel": 0
         }
       },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
         "rarity": "6",
-        "potential": 2,
+        "potential": 0,
         "profession": "Guard",
         "property": "Physical",
-        "weaponType": "Polearm",
+        "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
-          "type": "Polearm",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1283,23 +1283,6 @@
           "refineLevel": 1
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Wedge",
-          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Ardelia": {
         "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -1313,6 +1296,23 @@
           "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
           "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Yvonne": {
+        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Wedge",
+          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "rarity": "6",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
         }
@@ -1334,23 +1334,6 @@
           "refineLevel": 1
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 1
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1366,6 +1349,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 1
         }
       },
       "Alesh": {
@@ -1487,19 +1487,19 @@
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
+      "Antal": {
+        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Jiminy 12",
+          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1521,26 +1521,26 @@
           "refineLevel": 0
         }
       },
-      "Antal": {
-        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
+      "Estella": {
+        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Arts Unit",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
       }
     },
-    "stamina": "214",
-    "daily_mission": 0,
-    "last_updated": "2026-04-19T13:58:29.083963-04:00"
+    "stamina": "56",
+    "daily_mission": 100,
+    "last_updated": "2026-04-21T14:37:12.709366-04:00"
   }
 }
