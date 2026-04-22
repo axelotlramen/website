@@ -1,704 +1,6 @@
 {
-  "last_updated": "2026-04-21T14:37:12.709582-04:00",
-  "hsr_data": {
-    "nickname": "Caelus",
-    "level": 70,
-    "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/7a8b628f78fb0e4de6210a53fc495809.png",
-    "achievements": 1596,
-    "active_days": 876,
-    "avatar_count": 54,
-    "chest_count": 1783,
-    "five_star_characters": {
-      "Trailblazer": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/c00a8bc4179b89503b92f80007bc7d96.png",
-        "eidolon": 6,
-        "element": "ice",
-        "path": 8,
-        "level": 80,
-        "lc": {
-          "name": "Memory's Curtain Never Falls",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/1e4d2e89c1744c8494fb2011214eefc0.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Ashveil": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/5fe657d4780648e9c9c9762a43e9ca50.png",
-        "eidolon": 1,
-        "element": "lightning",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "The Finale of a Lie",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/b37ea5d09e809bd2b574cdfd76888a3e.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Dan Heng \u2022 Permansor Terrae": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/18d94bf19a4efea2e4fe69ed5480479c.png",
-        "eidolon": 2,
-        "element": "physical",
-        "path": 6,
-        "level": 80,
-        "lc": {
-          "name": "Though Worlds Apart",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/f67e19831c7e6f6a7fed70af78ce6436.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Hysilens": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/fa595e641c7be26016db3bb0907a1d45.png",
-        "eidolon": 0,
-        "element": "physical",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "Eyes of the Prey",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/43ef67cd1cec259c2869d86210377d55.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 4
-        }
-      },
-      "Phainon": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/6c4f27d9d1f76cf9a2c25948af459faf.png",
-        "eidolon": 0,
-        "element": "physical",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "Something Irreplaceable",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/35cfa05de8f379d1ce8eac12b20d0c9e.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Cipher": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/5b8090563887792af345ff9b4bdd260f.png",
-        "eidolon": 1,
-        "element": "quantum",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "Lies Dance on the Breeze",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/d50eb8ea202d0c1259079c0dd5639a96.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Anaxa": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/0cd1895e1303487b4132d133b146ebae.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "Into the Unreachable Veil",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/e07f94c1a86b3f7003667eca67250187.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Mydei": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/91020c38e1d9757f84431104803ddb59.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "Flame of Blood, Blaze My Path",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/1f75e680e63f322bd261d068c69c431c.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Aglaea": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/c115a1b3b633b7426fb50394e6c7b458.png",
-        "eidolon": 0,
-        "element": "lightning",
-        "path": 8,
-        "level": 80,
-        "lc": {
-          "name": "Time Woven Into Gold",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/7d9cb64068910a4b4686f25170304846.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "The Herta": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/89f9a322c3d8ac29f7a6d3785cdef0a9.png",
-        "eidolon": 0,
-        "element": "ice",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "The Great Cosmic Enterprise",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/8828a10947e765a40983e7f6c3d9b552.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Sunday": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/c96d9b0738f77cf21c2c98bdaeb03482.png",
-        "eidolon": 2,
-        "element": "imaginary",
-        "path": 4,
-        "level": 80,
-        "lc": {
-          "name": "A Grounded Ascent",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/cbbb4b4b9907dd1958caedd4f5041684.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Firefly": {
-        "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2025/05/29/a3487cdc8e4ab08a6780b3e1b18ac03a_7123059584676820199.png",
-        "eidolon": 0,
-        "element": "fire",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "On the Fall of an Aeon",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/d5846a44c2630013e04171f5ba34223e.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Robin": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/acc9cb43bffc777364372174f712756a.png",
-        "eidolon": 1,
-        "element": "physical",
-        "path": 4,
-        "level": 80,
-        "lc": {
-          "name": "But the Battle Isn't Over",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/1202bc601f533513c4e04c64e5e9e200.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 2
-        }
-      },
-      "Sparkle": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/3e31d09ed55eadb46e7bda998f8d39c0.png",
-        "eidolon": 0,
-        "element": "quantum",
-        "path": 4,
-        "level": 80,
-        "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Dr. Ratio": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/ded6f02c7f0da36ed5eaee5a18e6aaf0.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "Swordplay",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/7ee1c1d1ef1071e402cb22593c64c307.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Aventurine": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/64ea5d7e1e63385ac250996c40fb0c2a.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 6,
-        "level": 80,
-        "lc": {
-          "name": "Inherently Unjust Destiny",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/b2e8427e6456a39812f5cda6569405db.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Ruan Mei": {
-        "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2026/01/22/051b502dfdf55fef9ae6a8923c659a81_7714960152695640741.png",
-        "eidolon": 0,
-        "element": "ice",
-        "path": 4,
-        "level": 80,
-        "lc": null
-      },
-      "Argenti": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/51ed7fb2a3f01b66fe672002e46f03a6.png",
-        "eidolon": 0,
-        "element": "physical",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "Passkey",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/890399b3af46def2b16787ca2c265acf.png",
-          "rarity": 3,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Feixiao": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/d06c523af5d19df5f25aa4cace83fd72.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "I Venture Forth to Hunt",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/e2c04ac4662ee7e97d4bee4762d7c57d.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Huohuo": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/b29b1bd3925083fa5ba5abf1b57d6b7f.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 7,
-        "level": 80,
-        "lc": {
-          "name": "Shared Feeling",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/eba548552641ba533f7488d18ef347b1.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Dan Heng \u2022 Imbibitor Lunae": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/f50ddd711745c2d0cdf306272c8f1fb5.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "A Secret Vow",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/8fe3b51e4d5880422bc5588ceeabb60d.png",
-          "rarity": 4,
-          "level": 1,
-          "superimposition": 5
-        }
-      },
-      "Blade": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/9f23be2f0db3517c582564df660d1f6a.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 1,
-        "level": 80,
-        "lc": null
-      },
-      "Seele": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/22696798531997e0e5ef9aac84a5637e.png",
-        "eidolon": 2,
-        "element": "quantum",
-        "path": 2,
-        "level": 80,
-        "lc": null
-      },
-      "Bronya": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/56426312f5bb41fc185a08075337618e.png",
-        "eidolon": 4,
-        "element": "wind",
-        "path": 4,
-        "level": 80,
-        "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/547eef48477847da73287109ad34fbca.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 2
-        }
-      },
-      "Archer": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/7abb90cf7cd606d5c088905438d54c70.png",
-        "eidolon": 0,
-        "element": "quantum",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "The Hell Where Ideals Burn",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/534ccb51946c90b437ce6e7083008a6f.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Saber": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/916a604f65e47085ece986c6b60122ac.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "A Thankless Coronation",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/33ef080a309960f31eec9e6033794cce.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Kafka": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/1fe3c8a595c88cb3b645850b23140208.png",
-        "eidolon": 0,
-        "element": "lightning",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "Before the Tutorial Mission Starts",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/acf7ce7590e04bbf2d09c1bdbec44297.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Welt": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/9903512e44a1f6f610f7e84cf4f8cb1f.png",
-        "eidolon": 1,
-        "element": "imaginary",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "In the Name of the World",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/c939de49e3d3281e5b19e4bb56546684.png",
-          "rarity": 5,
-          "level": 1,
-          "superimposition": 2
-        }
-      },
-      "Himeko": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/11103c34e505b4d10563b147d0e1c75e.png",
-        "eidolon": 3,
-        "element": "fire",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "The Seriousness of Breakfast",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/b8eb18eacd71d54d8b39836b295e76ed.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Gepard": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/875b35b6e14872f7170abbb952a43237.png",
-        "eidolon": 1,
-        "element": "ice",
-        "path": 6,
-        "level": 70,
-        "lc": {
-          "name": "Day One of My New Life",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/df723fd41843726275337208cdd18bb3.png",
-          "rarity": 4,
-          "level": 60,
-          "superimposition": 5
-        }
-      },
-      "Bailu": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/4be356a3c4721b5ed421c9f9e44f1396.png",
-        "eidolon": 0,
-        "element": "lightning",
-        "path": 7,
-        "level": 60,
-        "lc": null
-      },
-      "Yanqing": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u42a2d/a73dd375ded6dddcf63852297d2fcacf.png",
-        "eidolon": 1,
-        "element": "ice",
-        "path": 2,
-        "level": 60,
-        "lc": null
-      }
-    },
-    "stamina": 59,
-    "current_train_score": 500,
-    "anomaly_arbitration": {
-      "season": "Don't Mess With Pom-Pom",
-      "boss_stars": 3,
-      "mini_boss_stars": 7,
-      "cycles_used": 10,
-      "boss_record": {
-        "characters": [
-          {
-            "id": 1504,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 8007,
-            "level": 80,
-            "eidolon": 6
-          }
-        ],
-        "cycles_used": 1,
-        "stars": 3,
-        "medal_type": "ChallengePeakRankIconTypeGold"
-      },
-      "mini_boss_records": [
-        {
-          "characters": [
-            {
-              "id": 1405,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1313,
-              "level": 80,
-              "eidolon": 2
-            },
-            {
-              "id": 1406,
-              "level": 80,
-              "eidolon": 1
-            },
-            {
-              "id": 1414,
-              "level": 80,
-              "eidolon": 2
-            }
-          ],
-          "cycles_used": 2,
-          "stars": 3
-        },
-        {
-          "characters": [
-            {
-              "id": 1014,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1306,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 8007,
-              "level": 80,
-              "eidolon": 6
-            },
-            {
-              "id": 1217,
-              "level": 80,
-              "eidolon": 0
-            }
-          ],
-          "cycles_used": 5,
-          "stars": 1
-        },
-        {
-          "characters": [
-            {
-              "id": 1220,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1304,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1309,
-              "level": 80,
-              "eidolon": 1
-            },
-            {
-              "id": 1504,
-              "level": 80,
-              "eidolon": 1
-            }
-          ],
-          "cycles_used": 2,
-          "stars": 3
-        }
-      ]
-    },
-    "apocalyptic_shadow": {
-      "total_stars": 12,
-      "floor_data": {
-        "floor": "Militant Lupine: Difficulty 4",
-        "score": 7144,
-        "first_half": [
-          {
-            "id": 1015,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1406,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1301,
-            "level": 80,
-            "eidolon": 6
-          }
-        ],
-        "second_half": [
-          {
-            "id": 1005,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1410,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ]
-      }
-    },
-    "pure_fiction": {
-      "season": "Virtual Made Manifest",
-      "total_stars": 12,
-      "floor_data": {
-        "floor": "Virtual Made Manifest (IV)",
-        "score": 69160,
-        "first_half": [
-          {
-            "id": 1220,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1304,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1504,
-            "level": 80,
-            "eidolon": 1
-          }
-        ],
-        "second_half": [
-          {
-            "id": 1405,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ]
-      }
-    },
-    "memory_of_chaos": {
-      "season": "Grand Finale",
-      "total_stars": 36,
-      "floor_data": {
-        "floor": "Grand Finale (XII)",
-        "cycles": 3,
-        "first_half": [
-          {
-            "id": 1504,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 8007,
-            "level": 80,
-            "eidolon": 6
-          },
-          {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1406,
-            "level": 80,
-            "eidolon": 1
-          }
-        ],
-        "second_half": [
-          {
-            "id": 1405,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ]
-      }
-    }
-  },
+  "last_updated": "2026-04-21T22:58:53.900665-04:00",
+  "hsr_data": {},
   "genshin_data": {
     "nickname": "axelle",
     "level": 57,
@@ -965,7 +267,7 @@
         }
       }
     },
-    "resin": 56,
+    "resin": 119,
     "daily_task": 4
   },
   "hsr_diary": {
@@ -979,13 +281,8 @@
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
-      {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 15000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
-      },
       {
         "name": "Advanced Combat Record",
         "count": 3,
@@ -1102,7 +399,7 @@
         },
         {
           "awardId": "endfield_attendance_3_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -1164,6 +461,40 @@
     "aurylenes": 289,
     "chest_count": 619,
     "six_star_characters": {
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Lifeng": {
         "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
@@ -1194,40 +525,6 @@
           "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
           "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1283,6 +580,23 @@
           "refineLevel": 1
         }
       },
+      "Yvonne": {
+        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Wedge",
+          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Ardelia": {
         "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -1300,19 +614,19 @@
           "refineLevel": 0
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
         "property": "Cryo",
-        "weaponType": "Handcannon",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Wedge",
-          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
           "rarity": "6",
-          "type": "Handcannon",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1332,23 +646,6 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 1
-        }
-      },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
         }
       },
       "Wulfgard": {
@@ -1436,23 +733,6 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1470,6 +750,23 @@
           "refineLevel": 3
         }
       },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1483,23 +780,6 @@
           "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Antal": {
-        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1537,9 +817,26 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Antal": {
+        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 1,
+        "weapon": {
+          "name": "Jiminy 12",
+          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
+          "rarity": "3",
+          "type": "Arts Unit",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "56",
+    "stamina": "126",
     "daily_mission": 100,
     "last_updated": "2026-04-21T14:37:12.709366-04:00"
   }
