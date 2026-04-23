@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-22T23:21:52.761569-04:00",
+  "last_updated": "2026-04-23T14:40:03.525668-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/046431ce7950392c9849d8eb53c5e448.png",
     "achievements": 1598,
-    "active_days": 877,
+    "active_days": 878,
     "avatar_count": 54,
     "chest_count": 1783,
     "five_star_characters": {
@@ -373,7 +373,7 @@
           "name": "In the Name of the World",
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/2dd245907cde05c27140a0534de6e0e2.png",
           "rarity": 5,
-          "level": 1,
+          "level": 80,
           "superimposition": 2
         }
       },
@@ -422,7 +422,7 @@
         "lc": null
       }
     },
-    "stamina": 186,
+    "stamina": 79,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Happiness Syntax",
@@ -907,30 +907,35 @@
         }
       }
     },
-    "resin": 35,
-    "daily_task": 4
+    "resin": 150,
+    "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-04-22",
-    "Net Currency Gain": 640,
+    "Date": "2026-04-23",
+    "Net Currency Gain": 230,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-04-22",
-    "Net Currency Gain": 60,
+    "Date": "2026-04-23",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Set",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+        "name": "Oroberyl",
+        "count": 100,
+        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+      },
+      {
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 23,
+      "totalSignIns": 24,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1049,8 +1054,8 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_1_5",
@@ -1086,9 +1091,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Intermediate Combat Record",
+      "count": 5,
+      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
     }
   },
   "endfield_data": {
@@ -1096,7 +1101,7 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 81,
-    "active_days": 11,
+    "active_days": 12,
     "avatar_count": 22,
     "aurylenes": 289,
     "chest_count": 619,
@@ -1115,23 +1120,6 @@
           "rarity": "6",
           "type": "Handcannon",
           "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 80,
           "refineLevel": 0
         }
       },
@@ -1169,6 +1157,23 @@
           "refineLevel": 0
         }
       },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Chen Qianyu": {
         "avatarSqUrl": "data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
         "rarity": "5",
@@ -1184,6 +1189,23 @@
           "type": "Sword",
           "level": 90,
           "refineLevel": 5
+        }
+      },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 83,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 82,
+          "refineLevel": 0
         }
       },
       "Endministrator": {
@@ -1203,19 +1225,19 @@
           "refineLevel": 1
         }
       },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 81,
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 80,
         "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
-          "type": "Sword",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1237,23 +1259,6 @@
           "refineLevel": 0
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1267,6 +1272,23 @@
           "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 1
+        }
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 80,
+        "weapon": {
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 1
         }
@@ -1286,23 +1308,6 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
-        }
-      },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 1
         }
       },
       "Alesh": {
@@ -1390,23 +1395,6 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1424,19 +1412,19 @@
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
         "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1474,10 +1462,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Estella": {
+        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "249",
-    "daily_mission": 20,
-    "last_updated": "2026-04-21T14:37:12.709366-04:00"
+    "stamina": "217",
+    "daily_mission": 100,
+    "last_updated": "2026-04-23T14:40:03.525370-04:00"
   }
 }
