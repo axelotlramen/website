@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-04-27T14:46:42.835518-04:00",
+  "last_updated": "2026-04-28T14:59:36.819080-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/046431ce7950392c9849d8eb53c5e448.png",
     "achievements": 1630,
-    "active_days": 882,
+    "active_days": 883,
     "avatar_count": 54,
     "chest_count": 1859,
     "five_star_characters": {
@@ -156,11 +156,11 @@
         "path": 4,
         "level": 80,
         "lc": {
-          "name": "A Grounded Ascent",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/1fe729265b5b7be5ef7d386ffe5ce633.png",
-          "rarity": 5,
+          "name": "Dance! Dance! Dance!",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/818ec5e201d3d8616bdc4c84ef5f5945.png",
+          "rarity": 4,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 5
         }
       },
       "Firefly": {
@@ -198,11 +198,11 @@
         "path": 4,
         "level": 80,
         "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/818ec5e201d3d8616bdc4c84ef5f5945.png",
-          "rarity": 4,
+          "name": "A Grounded Ascent",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/1fe729265b5b7be5ef7d386ffe5ce633.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 1
         }
       },
       "Dr. Ratio": {
@@ -428,8 +428,8 @@
         "lc": null
       }
     },
-    "stamina": 270,
-    "current_train_score": 100,
+    "stamina": 32,
+    "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Happiness Syntax",
       "boss_stars": 3,
@@ -543,7 +543,57 @@
         }
       ]
     },
-    "apocalyptic_shadow": {},
+    "apocalyptic_shadow": {
+      "total_stars": 12,
+      "floor_data": {
+        "floor": "Idol of the Locusts: Difficulty 4",
+        "score": 7061,
+        "first_half": [
+          {
+            "id": 1015,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1306,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 8007,
+            "level": 80,
+            "eidolon": 6
+          },
+          {
+            "id": 1414,
+            "level": 80,
+            "eidolon": 2
+          }
+        ],
+        "second_half": [
+          {
+            "id": 1410,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1005,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1309,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1217,
+            "level": 80,
+            "eidolon": 0
+          }
+        ]
+      }
+    },
     "pure_fiction": {
       "season": "Virtual Made Manifest",
       "total_stars": 12,
@@ -654,7 +704,7 @@
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 972,
-    "active_days": 336,
+    "active_days": 338,
     "avatar_count": 55,
     "oculus": 1164,
     "chest_count": 3866,
@@ -785,7 +835,7 @@
         "element": "Geo",
         "weaponType": 1,
         "level": 70,
-        "friendship": 5,
+        "friendship": 6,
         "weapon": {
           "name": "Festering Desire",
           "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/685c320aa78fc0c2e29f2e445393949a.png",
@@ -915,16 +965,16 @@
         }
       }
     },
-    "resin": 197,
-    "daily_task": 0
+    "resin": 17,
+    "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-04-27",
-    "Net Currency Gain": 110,
+    "Date": "2026-04-28",
+    "Net Currency Gain": 190,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-04-27",
+    "Date": "2026-04-28",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -932,13 +982,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Set",
-        "count": 5,
-        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 2000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 28,
+      "totalSignIns": 29,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1077,13 +1127,13 @@
         },
         {
           "awardId": "endfield_attendance_5_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
@@ -1104,7 +1154,7 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 81,
-    "active_days": 14,
+    "active_days": 15,
     "avatar_count": 22,
     "aurylenes": 289,
     "chest_count": 619,
@@ -1143,23 +1193,6 @@
           "refineLevel": 0
         }
       },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1174,6 +1207,23 @@
           "rarity": "6",
           "type": "Sword",
           "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1201,13 +1251,13 @@
         "profession": "Striker",
         "property": "Heat",
         "weaponType": "Sword",
-        "level": 85,
+        "level": 87,
         "weapon": {
           "name": "Umbral Torch",
           "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
-          "level": 84,
+          "level": 86,
           "refineLevel": 0
         }
       },
@@ -1262,23 +1312,6 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Wulfgard": {
         "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
@@ -1311,6 +1344,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 1
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1364,36 +1414,19 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
         "property": "Electric",
-        "weaponType": "Sword",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Sword",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1415,38 +1448,38 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Striker",
+        "profession": "Vanguard",
         "property": "Electric",
-        "weaponType": "Polearm",
+        "weaponType": "Sword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
       },
-      "Estella": {
-        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
         "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
-        "weaponType": "Polearm",
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
           "level": 1,
-          "refineLevel": 0
+          "refineLevel": 3
         }
       },
       "Fluorite": {
@@ -1482,10 +1515,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Estella": {
+        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "232",
-    "daily_mission": 0,
-    "last_updated": "2026-04-25T22:54:12.846076-04:00"
+    "stamina": "6",
+    "daily_mission": 100,
+    "last_updated": "2026-04-28T14:59:36.818728-04:00"
   }
 }
