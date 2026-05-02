@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-01T14:36:49.162179-04:00",
+  "last_updated": "2026-05-02T14:06:45.182736-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/046431ce7950392c9849d8eb53c5e448.png",
-    "achievements": 1632,
-    "active_days": 886,
+    "achievements": 1634,
+    "active_days": 887,
     "avatar_count": 54,
     "chest_count": 1859,
     "five_star_characters": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 49,
+    "stamina": 44,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Happiness Syntax",
@@ -710,7 +710,7 @@
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 972,
-    "active_days": 340,
+    "active_days": 342,
     "avatar_count": 55,
     "oculus": 1164,
     "chest_count": 3866,
@@ -971,16 +971,16 @@
         }
       }
     },
-    "resin": 176,
+    "resin": 112,
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-05-01",
-    "Net Currency Gain": 150,
+    "Date": "2026-05-02",
+    "Net Currency Gain": 580,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-01",
+    "Date": "2026-05-02",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -988,13 +988,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
-        "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 2000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 2,
+      "totalSignIns": 3,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1003,13 +1003,13 @@
         },
         {
           "awardId": "endfield_attendance_4_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_8_80",
@@ -1155,9 +1155,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 2000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Oroberyl",
+      "count": 80,
+      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
     }
   },
   "endfield_data": {
@@ -1165,11 +1165,28 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 81,
-    "active_days": 16,
+    "active_days": 17,
     "avatar_count": 22,
     "aurylenes": 289,
     "chest_count": 619,
     "six_star_characters": {
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Tangtang": {
         "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
@@ -1183,23 +1200,6 @@
           "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
           "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1238,6 +1238,23 @@
           "refineLevel": 0
         }
       },
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Chen Qianyu": {
         "avatarSqUrl": "data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
         "rarity": "5",
@@ -1253,23 +1270,6 @@
           "type": "Sword",
           "level": 90,
           "refineLevel": 5
-        }
-      },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 89,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 88,
-          "refineLevel": 0
         }
       },
       "Endministrator": {
@@ -1323,19 +1323,19 @@
           "refineLevel": 0
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
-          "type": "Handcannon",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 1
         }
@@ -1357,19 +1357,19 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
+        "property": "Heat",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
           "rarity": "5",
-          "type": "Arts Unit",
+          "type": "Handcannon",
           "level": 80,
           "refineLevel": 1
         }
@@ -1425,23 +1425,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1459,21 +1442,21 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
           "level": 1,
-          "refineLevel": 0
+          "refineLevel": 3
         }
       },
       "Snowshine": {
@@ -1489,6 +1472,23 @@
           "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1545,8 +1545,8 @@
         }
       }
     },
-    "stamina": "243",
-    "daily_mission": 0,
-    "last_updated": "2026-04-30T14:50:12.622293-04:00"
+    "stamina": "38",
+    "daily_mission": 100,
+    "last_updated": "2026-05-02T14:06:45.182370-04:00"
   }
 }
